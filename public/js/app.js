@@ -251,38 +251,273 @@ const state = {
 // ------------------------------------------------------------
 const I18N = {
   ro: {
-    soundOn: 'Sunete pornite', soundOff: 'Sunete oprite', soundEnable: 'Pornește sunetele', soundDisable: 'Oprește sunetele',
-    heroEyebrow: 'Joacă • Învață • Zâmbește', heroTitle: 'Arena Matematica', heroLead: 'Alege rapid dacă vrei să pornești un joc sau să intri într-un joc deja creat.',
-    createChoiceTitle: 'Pornește un joc', createChoiceText: 'Tu alegi clasa, tipul de întrebări și pornești joaca', joinChoiceTitle: 'Intră în joc', joinChoiceText: 'Scrii codul jocului sau alegi din lista de camere', back: 'Înapoi',
-    createEyebrow: 'Creează joc', createHeading: 'Pregătește jocul', createHelper: 'Completează doar câteva lucruri și jocul este gata.', name: 'Cum te cheamă?', avatar: 'Alege-ți avatarul', grade: 'În ce clasă sunteți?', mode: 'Ce fel de întrebări?', math: 'Matematică', general: 'Cultură generală', mixed: 'Mixt', moreOptions: 'Mai multe opțiuni', questions: 'Întrebări', time: 'Timp', noTimer: 'Fără cronometru', createGame: 'Pornește jocul 🚀',
-    joinEyebrow: 'Intră în joc', joinHeading: 'Hai în joc!', joinHelper: 'Spune-ne numele tău și intră imediat în camera potrivită.', join: 'Intră', orChoose: 'sau alege un joc', available: '🎯 Jocuri disponibile', adult: 'Pentru profesor / părinte',
-    lobby: 'Camera de joc', gameOf: 'Jocul lui', leave: 'Ieși', gameCode: 'Codul jocului', shareCode: 'Spune codul colegilor tăi', whoPlays: '👧👦 Cine joacă?', ready: '✨ Gata de joacă?', start: 'Începem! 🚀', wait: '⏳ Gazda va porni jocul...',
-    chooseCorrect: 'Alege răspunsul corect', boardShow: '🏆 Vezi clasamentul', boardHide: '🙈 Ascunde clasamentul', leaderboard: '🏆 Clasament', finished: 'Ai terminat!', badges: '🏅 Badge-urile tale', playAgain: 'Mai joc o dată 🎮',
-    placeholderName: 'Prenumele tău', placeholderCode: 'Cod: 4821',
-    emptyRooms: 'Nu este niciun joc disponibil acum.<br>Poți crea tu primul joc!', roomGame: 'Jocul lui', classWord: 'Clasa', noTime: 'Fără timp', you: 'tu', hostFallback: 'gazdei',
-    allPro: '⭐ Toți jucătorii sunt PRO — banca completă de întrebări este activă.', freeRoom: n => `🆓 Partida folosește banca FREE (primele ${n} de întrebări), deoarece există cel puțin un jucător FREE.`, secondsQuestion: 'secunde / întrebare',
-    needName: 'Scrie mai întâi prenumele tău 🙂', joinFailed: 'Nu am putut intra în joc.', createFailed: 'Nu am putut crea jocul.', badCode: 'Codul jocului are 4 cifre 🙂', startFailed: 'Nu am putut porni jocul.',
-    correct: (points, streak) => `🌟 Bravo! +${points} stele!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`, wrong: answer => `💪 Aproape! Răspunsul era ${answer}. Seria pornește din nou.`, timeout: answer => `⏰ Timpul s-a terminat. Răspunsul era ${answer}.`,
-    winner: 'Super! Ai câștigat! 🎉', bravo: 'Bravo! 🎉', final: (correct,total,score,best) => `Ai rezolvat corect ${correct} din ${total} întrebări și ai strâns ${score} stele. Cea mai bună serie: ${best}.`,
-    newBadge: 'Badge nou', noBadges: 'Mai joacă o rundă pentru a debloca badge-uri! 🌟', imageAlt: 'Imagine pentru întrebare',
-    activePro: '⭐ PRO ACTIV', activate: 'Activează', copied: 'Copiat ✓', selectCode: 'Selectează codul'
+    soundOn: 'Sunete pornite',
+    soundOff: 'Sunete oprite',
+    soundEnable: 'Pornește sunetele',
+    soundDisable: 'Oprește sunetele',
+
+    heroEyebrow: 'Joacă • Învață • Zâmbește',
+    heroTitle: 'Arena Matematica',
+    heroLead: 'Alege rapid dacă vrei să pornești un joc sau să intri într-un joc deja creat.',
+
+    createChoiceTitle: 'Pornește un joc',
+    createChoiceText: 'Tu alegi clasa, tipul de întrebări și pornești joaca',
+    joinChoiceTitle: 'Intră în joc',
+    joinChoiceText: 'Scrii codul jocului sau alegi din lista de camere',
+    back: 'Înapoi',
+
+    createEyebrow: 'Creează joc',
+    createHeading: 'Pregătește jocul',
+    createHelper: 'Completează doar câteva lucruri și jocul este gata.',
+    name: 'Cum te cheamă?',
+    avatar: 'Alege-ți avatarul',
+    grade: 'În ce clasă sunteți?',
+    mode: 'Ce fel de întrebări?',
+    math: 'Matematică',
+    general: 'Cultură generală',
+    mixed: 'Mixt',
+    moreOptions: 'Mai multe opțiuni',
+    questions: 'Întrebări',
+    time: 'Timp',
+    noTimer: 'Fără cronometru',
+    createGame: 'Pornește jocul 🚀',
+
+    joinEyebrow: 'Intră în joc',
+    joinHeading: 'Hai în joc!',
+    joinHelper: 'Spune-ne numele tău și intră imediat în camera potrivită.',
+    join: 'Intră',
+    orChoose: 'sau alege un joc',
+    available: '🎯 Jocuri disponibile',
+
+    adult: 'Pentru profesor / părinte',
+
+    licenseEyebrow: 'Licența ta',
+    licenseFreeText: 'deblochează primele 20 de întrebări.',
+    licenseProText: 'deblochează peste 100 de întrebări.',
+    licenseKeyLabel: '🔑 Ai deja o licență PRO?',
+    proLicenseText: 'licență PRO',
+    paypalUnavailable: 'Plata PayPal nu este configurată momentan.',
+    purchasedLicenseLabel: '🎉 Licența ta PRO:',
+    licenseKeepText:
+      'Păstrează acest cod. Îl poți folosi și pe alt dispozitiv, dar nu simultan în două sesiuni.',
+    teacherPanel: '👩‍🏫 Panou profesor',
+
+    activePro: '⭐ PRO ACTIV',
+    proActiveButton: 'PRO activ',
+    activate: 'Activează',
+    copyCode: 'Copiază codul',
+    copied: 'Copiat ✓',
+    selectCode: 'Selectează codul',
+
+    enterLicense: 'Introdu codul licenței PRO.',
+    licenseActivationFailed: 'Licența nu a putut fi activată.',
+    licenseActivated: 'Licența PRO este activă pe această sesiune.',
+    licenseServerError: 'Nu am putut contacta serverul pentru activarea licenței.',
+    licenseExpired: 'Activarea PRO a expirat. Activează din nou codul.',
+
+    paypalCreateFailed: 'Nu am putut crea comanda PayPal.',
+    paypalConfirming: 'Confirmăm plata PayPal…',
+    paypalConfirmFailed: 'Plata nu a putut fi confirmată.',
+    paypalCancelled: 'Plata a fost anulată.',
+    paypalError: 'A apărut o eroare PayPal. Încearcă din nou.',
+
+    lobby: 'Camera de joc',
+    gameOf: 'Jocul lui',
+    leave: 'Ieși',
+    gameCode: 'Codul jocului',
+    shareCode: 'Spune codul colegilor tăi',
+    whoPlays: '👧👦 Cine joacă?',
+    ready: '✨ Gata de joacă?',
+    start: 'Începem! 🚀',
+    wait: '⏳ Gazda va porni jocul...',
+
+    chooseCorrect: 'Alege răspunsul corect',
+    boardShow: '🏆 Vezi clasamentul',
+    boardHide: '🙈 Ascunde clasamentul',
+    leaderboard: '🏆 Clasament',
+
+    finished: 'Ai terminat!',
+    badges: '🏅 Badge-urile tale',
+    playAgain: 'Mai joc o dată 🎮',
+
+    placeholderName: 'Prenumele tău',
+    placeholderCode: 'Cod: 4821',
+
+    emptyRooms: 'Nu este niciun joc disponibil acum.<br>Poți crea tu primul joc!',
+    roomGame: 'Jocul lui',
+    classWord: 'Clasa',
+    noTime: 'Fără timp',
+    you: 'tu',
+    hostFallback: 'gazdei',
+
+    allPro:
+      '⭐ Toți jucătorii sunt PRO — banca completă de întrebări este activă.',
+
+    freeRoom: n =>
+      `🆓 Partida folosește banca FREE (primele ${n} de întrebări), deoarece există cel puțin un jucător FREE.`,
+
+    secondsQuestion: 'secunde / întrebare',
+
+    needName: 'Scrie mai întâi prenumele tău 🙂',
+    joinFailed: 'Nu am putut intra în joc.',
+    createFailed: 'Nu am putut crea jocul.',
+    badCode: 'Codul jocului are 4 cifre 🙂',
+    startFailed: 'Nu am putut porni jocul.',
+
+    correct: (points, streak) =>
+      `🌟 Bravo! +${points} stele!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`,
+
+    wrong: answer =>
+      `💪 Aproape! Răspunsul era ${answer}. Seria pornește din nou.`,
+
+    timeout: answer =>
+      `⏰ Timpul s-a terminat. Răspunsul era ${answer}.`,
+
+    winner: 'Super! Ai câștigat! 🎉',
+    bravo: 'Bravo! 🎉',
+
+    final: (correct, total, score, best) =>
+      `Ai rezolvat corect ${correct} din ${total} întrebări și ai strâns ${score} stele. Cea mai bună serie: ${best}.`,
+
+    newBadge: 'Badge nou',
+    noBadges: 'Mai joacă o rundă pentru a debloca badge-uri! 🌟',
+    imageAlt: 'Imagine pentru întrebare'
   },
+
   en: {
-    soundOn: 'Sounds on', soundOff: 'Sounds off', soundEnable: 'Turn sounds on', soundDisable: 'Turn sounds off',
-    heroEyebrow: 'Play • Learn • Smile', heroTitle: 'Math Arena', heroLead: 'Quickly choose whether you want to start a game or join one that has already been created.',
-    createChoiceTitle: 'Start a game', createChoiceText: 'Choose the grade, question type and start playing', joinChoiceTitle: 'Join a game', joinChoiceText: 'Enter the game code or choose from the available rooms', back: 'Back',
-    createEyebrow: 'Create game', createHeading: 'Set up the game', createHelper: 'Fill in just a few things and the game is ready.', name: 'What is your name?', avatar: 'Choose your avatar', grade: 'What grade are you in?', mode: 'What kind of questions?', math: 'Math', general: 'General knowledge', mixed: 'Mixed', moreOptions: 'More options', questions: 'Questions', time: 'Time', noTimer: 'No timer', createGame: 'Start game 🚀',
-    joinEyebrow: 'Join game', joinHeading: 'Let’s play!', joinHelper: 'Tell us your name and join the right room right away.', join: 'Join', orChoose: 'or choose a game', available: '🎯 Available games', adult: 'For teacher / parent',
-    lobby: 'Game room', gameOf: 'Game hosted by', leave: 'Leave', gameCode: 'Game code', shareCode: 'Share this code with your classmates', whoPlays: '👧👦 Who is playing?', ready: '✨ Ready to play?', start: 'Start! 🚀', wait: '⏳ The host will start the game...',
-    chooseCorrect: 'Choose the correct answer', boardShow: '🏆 View leaderboard', boardHide: '🙈 Hide leaderboard', leaderboard: '🏆 Leaderboard', finished: 'You finished!', badges: '🏅 Your badges', playAgain: 'Play again 🎮',
-    placeholderName: 'Your first name', placeholderCode: 'Code: 4821',
-    emptyRooms: 'There are no available games right now.<br>You can create the first one!', roomGame: 'Game hosted by', classWord: 'Grade', noTime: 'No timer', you: 'you', hostFallback: 'host',
-    allPro: '⭐ All players are PRO — the full question bank is active.', freeRoom: n => `🆓 This game uses the FREE bank (the first ${n} questions) because at least one player is FREE.`, secondsQuestion: 'seconds / question',
-    needName: 'Enter your first name first 🙂', joinFailed: 'Could not join the game.', createFailed: 'Could not create the game.', badCode: 'The game code has 4 digits 🙂', startFailed: 'Could not start the game.',
-    correct: (points, streak) => `🌟 Great! +${points} stars!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`, wrong: answer => `💪 Almost! The correct answer was ${answer}. Your streak starts again.`, timeout: answer => `⏰ Time is up. The correct answer was ${answer}.`,
-    winner: 'Awesome! You won! 🎉', bravo: 'Great job! 🎉', final: (correct,total,score,best) => `You answered ${correct} out of ${total} questions correctly and earned ${score} stars. Best streak: ${best}.`,
-    newBadge: 'New badge', noBadges: 'Play another round to unlock badges! 🌟', imageAlt: 'Question image',
-    activePro: '⭐ PRO ACTIVE', activate: 'Activate', copied: 'Copied ✓', selectCode: 'Select code'
+    soundOn: 'Sounds on',
+    soundOff: 'Sounds off',
+    soundEnable: 'Turn sounds on',
+    soundDisable: 'Turn sounds off',
+
+    heroEyebrow: 'Play • Learn • Smile',
+    heroTitle: 'Math Arena',
+    heroLead:
+      'Quickly choose whether you want to start a game or join one that has already been created.',
+
+    createChoiceTitle: 'Start a game',
+    createChoiceText: 'Choose the grade, question type and start playing',
+    joinChoiceTitle: 'Join a game',
+    joinChoiceText: 'Enter the game code or choose from the available rooms',
+    back: 'Back',
+
+    createEyebrow: 'Create game',
+    createHeading: 'Set up the game',
+    createHelper: 'Fill in just a few things and the game is ready.',
+    name: 'What is your name?',
+    avatar: 'Choose your avatar',
+    grade: 'What grade are you in?',
+    mode: 'What kind of questions?',
+    math: 'Math',
+    general: 'General knowledge',
+    mixed: 'Mixed',
+    moreOptions: 'More options',
+    questions: 'Questions',
+    time: 'Time',
+    noTimer: 'No timer',
+    createGame: 'Start game 🚀',
+
+    joinEyebrow: 'Join game',
+    joinHeading: 'Let’s play!',
+    joinHelper: 'Tell us your name and join the right room right away.',
+    join: 'Join',
+    orChoose: 'or choose a game',
+    available: '🎯 Available games',
+
+    adult: 'For teacher / parent',
+
+    licenseEyebrow: 'Your license',
+    licenseFreeText: 'unlocks the first 20 questions.',
+    licenseProText: 'unlocks more than 100 questions.',
+    licenseKeyLabel: '🔑 Already have a PRO license?',
+    proLicenseText: 'PRO license',
+    paypalUnavailable: 'PayPal payment is currently unavailable.',
+    purchasedLicenseLabel: '🎉 Your PRO license:',
+    licenseKeepText:
+      'Keep this code safe. You can use it on another device, but not simultaneously in two sessions.',
+    teacherPanel: '👩‍🏫 Teacher panel',
+
+    activePro: '⭐ PRO ACTIVE',
+    proActiveButton: 'PRO active',
+    activate: 'Activate',
+    copyCode: 'Copy code',
+    copied: 'Copied ✓',
+    selectCode: 'Select code',
+
+    enterLicense: 'Enter your PRO license code.',
+    licenseActivationFailed: 'The license could not be activated.',
+    licenseActivated: 'The PRO license is active for this session.',
+    licenseServerError: 'Could not contact the server to activate the license.',
+    licenseExpired: 'The PRO activation has expired. Activate the code again.',
+
+    paypalCreateFailed: 'Could not create the PayPal order.',
+    paypalConfirming: 'Confirming PayPal payment…',
+    paypalConfirmFailed: 'The payment could not be confirmed.',
+    paypalCancelled: 'The payment was cancelled.',
+    paypalError: 'A PayPal error occurred. Please try again.',
+
+    lobby: 'Game room',
+    gameOf: 'Game hosted by',
+    leave: 'Leave',
+    gameCode: 'Game code',
+    shareCode: 'Share this code with your classmates',
+    whoPlays: '👧👦 Who is playing?',
+    ready: '✨ Ready to play?',
+    start: 'Start! 🚀',
+    wait: '⏳ The host will start the game...',
+
+    chooseCorrect: 'Choose the correct answer',
+    boardShow: '🏆 View leaderboard',
+    boardHide: '🙈 Hide leaderboard',
+    leaderboard: '🏆 Leaderboard',
+
+    finished: 'You finished!',
+    badges: '🏅 Your badges',
+    playAgain: 'Play again 🎮',
+
+    placeholderName: 'Your first name',
+    placeholderCode: 'Code: 4821',
+
+    emptyRooms:
+      'There are no available games right now.<br>You can create the first one!',
+    roomGame: 'Game hosted by',
+    classWord: 'Grade',
+    noTime: 'No timer',
+    you: 'you',
+    hostFallback: 'host',
+
+    allPro:
+      '⭐ All players are PRO — the full question bank is active.',
+
+    freeRoom: n =>
+      `🆓 This game uses the FREE bank (the first ${n} questions) because at least one player is FREE.`,
+
+    secondsQuestion: 'seconds / question',
+
+    needName: 'Enter your first name first 🙂',
+    joinFailed: 'Could not join the game.',
+    createFailed: 'Could not create the game.',
+    badCode: 'The game code has 4 digits 🙂',
+    startFailed: 'Could not start the game.',
+
+    correct: (points, streak) =>
+      `🌟 Great! +${points} stars!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`,
+
+    wrong: answer =>
+      `💪 Almost! The correct answer was ${answer}. Your streak starts again.`,
+
+    timeout: answer =>
+      `⏰ Time is up. The correct answer was ${answer}.`,
+
+    winner: 'Awesome! You won! 🎉',
+    bravo: 'Great job! 🎉',
+
+    final: (correct, total, score, best) =>
+      `You answered ${correct} out of ${total} questions correctly and earned ${score} stars. Best streak: ${best}.`,
+
+    newBadge: 'New badge',
+    noBadges: 'Play another round to unlock badges! 🌟',
+    imageAlt: 'Question image'
   }
 };
 function tr(key, ...args) {
@@ -290,28 +525,148 @@ function tr(key, ...args) {
   return typeof value === 'function' ? value(...args) : value;
 }
 const fixedI18n = {
-  heroEyebrow:'heroEyebrow', heroTitle:'heroTitle', heroLead:'heroLead', createChoiceTitle:'createChoiceTitle', createChoiceText:'createChoiceText', joinChoiceTitle:'joinChoiceTitle', joinChoiceText:'joinChoiceText',
-  createEyebrow:'createEyebrow', createHeading:'createHeading', createHelper:'createHelper', createNameLabel:'name', gradeLabelText:'grade', modeLabelText:'mode', moreOptionsLabel:'moreOptions', questionsLabel:'questions', timeLabel:'time', noTimerLabel:'noTimer', createSubmitBtn:'createGame',
-  joinEyebrow:'joinEyebrow', joinHeading:'joinHeading', joinHelper:'joinHelper', joinNameLabel:'name', joinByCodeBtn:'join', orChooseGame:'orChoose', availableGamesHeading:'available', adultZoneLabel:'adult',
-  lobbyEyebrow:'lobby', hostGamePrefix:'gameOf', leaveBtn:'leave', gameCodeLabel:'gameCode', shareCodeLabel:'shareCode', whoPlaysHeading:'whoPlays', readyHeading:'ready', startBtn:'start', waitText:'wait', chooseAnswerLabel:'chooseCorrect', leaderboardHeading:'leaderboard', finishedEyebrow:'finished', earnedBadgesTitle:'badges', backHomeBtn:'playAgain'
+  heroEyebrow: 'heroEyebrow',
+  heroTitle: 'heroTitle',
+  heroLead: 'heroLead',
+
+  createChoiceTitle: 'createChoiceTitle',
+  createChoiceText: 'createChoiceText',
+  joinChoiceTitle: 'joinChoiceTitle',
+  joinChoiceText: 'joinChoiceText',
+
+  createEyebrow: 'createEyebrow',
+  createHeading: 'createHeading',
+  createHelper: 'createHelper',
+  createNameLabel: 'name',
+  gradeLabelText: 'grade',
+  modeLabelText: 'mode',
+  moreOptionsLabel: 'moreOptions',
+  questionsLabel: 'questions',
+  timeLabel: 'time',
+  noTimerLabel: 'noTimer',
+  createSubmitBtn: 'createGame',
+
+  joinEyebrow: 'joinEyebrow',
+  joinHeading: 'joinHeading',
+  joinHelper: 'joinHelper',
+  joinNameLabel: 'name',
+  joinByCodeBtn: 'join',
+  orChooseGame: 'orChoose',
+  availableGamesHeading: 'available',
+
+  adultZoneLabel: 'adult',
+
+  licenseEyebrow: 'licenseEyebrow',
+  licenseFreeText: 'licenseFreeText',
+  licenseProText: 'licenseProText',
+  licenseKeyLabel: 'licenseKeyLabel',
+  proLicenseText: 'proLicenseText',
+  paypalUnavailable: 'paypalUnavailable',
+  purchasedLicenseLabel: 'purchasedLicenseLabel',
+  licenseKeepText: 'licenseKeepText',
+  teacherPanelLink: 'teacherPanel',
+
+  lobbyEyebrow: 'lobby',
+  hostGamePrefix: 'gameOf',
+  leaveBtn: 'leave',
+  gameCodeLabel: 'gameCode',
+  shareCodeLabel: 'shareCode',
+  whoPlaysHeading: 'whoPlays',
+  readyHeading: 'ready',
+  startBtn: 'start',
+  waitText: 'wait',
+
+  chooseAnswerLabel: 'chooseCorrect',
+  leaderboardHeading: 'leaderboard',
+
+  finishedEyebrow: 'finished',
+  earnedBadgesTitle: 'badges',
+  backHomeBtn: 'playAgain'
 };
 function setLanguage(language, { persist = true, rerender = true } = {}) {
+
   state.language = language === 'en' ? 'en' : 'ro';
-  if (persist) localStorage.setItem('mathArenaLanguage', state.language);
+
+  if (persist) {
+    localStorage.setItem('mathArenaLanguage', state.language);
+  }
+
   document.documentElement.lang = state.language;
-  document.title = state.language === 'en' ? 'Math Arena' : 'Arena Matematică';
-  if (state.language === 'en') void getQuestionTranslator();
-  $('langRoBtn')?.classList.toggle('selected', state.language === 'ro');
-  $('langEnBtn')?.classList.toggle('selected', state.language === 'en');
-  for (const [id, key] of Object.entries(fixedI18n)) if ($(id)) $(id).textContent = tr(key);
-  document.querySelectorAll('.back-label').forEach(el => el.textContent = tr('back'));
-  document.querySelectorAll('.avatar-label').forEach(el => el.textContent = tr('avatar'));
-  document.querySelectorAll('.math-mode-label').forEach(el => el.textContent = tr('math'));
-  document.querySelectorAll('.general-mode-label').forEach(el => el.textContent = tr('general'));
-  document.querySelectorAll('.mixed-mode-label').forEach(el => el.textContent = tr('mixed'));
-  $('createName').placeholder = tr('placeholderName'); $('joinName').placeholder = tr('placeholderName'); $('roomCodeInput').placeholder = tr('placeholderCode');
-  updateSoundButton(); updateLicenseUi();
-  if (rerender) { renderRooms(); if (state.room) renderLobby(state.room); }
+
+  document.title =
+    state.language === 'en'
+      ? 'Math Arena'
+      : 'Arena Matematică';
+
+  if (state.language === 'en') {
+    void getQuestionTranslator();
+  }
+
+  $('langRoBtn')?.classList.toggle(
+    'selected',
+    state.language === 'ro'
+  );
+
+  $('langEnBtn')?.classList.toggle(
+    'selected',
+    state.language === 'en'
+  );
+
+  for (const [id, key] of Object.entries(fixedI18n)) {
+    const element = $(id);
+
+    if (element) {
+      element.textContent = tr(key);
+    }
+  }
+
+  document.querySelectorAll('.back-label').forEach(el => {
+    el.textContent = tr('back');
+  });
+
+  document.querySelectorAll('.avatar-label').forEach(el => {
+    el.textContent = tr('avatar');
+  });
+
+  document.querySelectorAll('.math-mode-label').forEach(el => {
+    el.textContent = tr('math');
+  });
+
+  document.querySelectorAll('.general-mode-label').forEach(el => {
+    el.textContent = tr('general');
+  });
+
+  document.querySelectorAll('.mixed-mode-label').forEach(el => {
+    el.textContent = tr('mixed');
+  });
+
+  if ($('createName')) {
+    $('createName').placeholder = tr('placeholderName');
+  }
+
+  if ($('joinName')) {
+    $('joinName').placeholder = tr('placeholderName');
+  }
+
+  if ($('roomCodeInput')) {
+    $('roomCodeInput').placeholder = tr('placeholderCode');
+  }
+
+  // Butonul pentru copierea licenței
+  if ($('copyLicenseBtn')) {
+    $('copyLicenseBtn').textContent = tr('copyCode');
+  }
+
+  updateSoundButton();
+  updateLicenseUi();
+
+  if (rerender) {
+    renderRooms();
+
+    if (state.room) {
+      renderLobby(state.room);
+    }
+  }
 }
 
 const QUESTION_FALLBACK = {
@@ -454,14 +809,33 @@ function renderBadgeShelf(ids = []) {
 }
 
 function updateLicenseUi(message = '', isError = false) {
+
   const isPro = state.licenseTier === 'pro';
-  $('licenseStatus').textContent = isPro ? tr('activePro') : 'FREE';
-  $('licenseStatus').className = `license-status ${isPro ? 'pro' : 'free'}`;
-  $('licenseKeyInput').value = state.licenseKey || '';
-  $('activateLicenseBtn').textContent = isPro ? (state.language === 'en' ? 'PRO active' : 'PRO activ') : tr('activate');
+
+  $('licenseStatus').textContent =
+    isPro ? tr('activePro') : 'FREE';
+
+  $('licenseStatus').className =
+    `license-status ${isPro ? 'pro' : 'free'}`;
+
+  $('licenseKeyInput').value =
+    state.licenseKey || '';
+
+  $('activateLicenseBtn').textContent =
+    isPro
+      ? tr('proActiveButton')
+      : tr('activate');
+
   $('activateLicenseBtn').disabled = isPro;
+
   $('licenseMessage').textContent = message;
-  $('licenseMessage').className = `license-message ${message ? (isError ? 'bad' : 'ok') : ''}`;
+
+  $('licenseMessage').className =
+    `license-message ${
+      message
+        ? (isError ? 'bad' : 'ok')
+        : ''
+    }`;
 }
 
 function setLicenseFree(message = '') {
@@ -474,35 +848,87 @@ function setLicenseFree(message = '') {
 }
 
 async function activateLicense(key, { silent = false } = {}) {
-  const licenseKey = String(key || '').trim().toUpperCase();
+
+  const licenseKey =
+    String(key || '')
+      .trim()
+      .toUpperCase();
+
   if (!licenseKey) {
-    if (!silent) updateLicenseUi('Introdu codul licenței PRO.', true);
+
+    if (!silent) {
+      updateLicenseUi(
+        tr('enterLicense'),
+        true
+      );
+    }
+
     return false;
   }
 
   try {
+
     const response = await fetch('/api/license/activate', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ licenseKey, activationId: state.activationId })
+
+      headers: {
+        'Content-Type': 'application/json'
+      },
+
+      body: JSON.stringify({
+        licenseKey,
+        activationId: state.activationId
+      })
     });
+
     const data = await response.json();
+
     if (!response.ok || !data.ok) {
+
       setLicenseFree('');
-      if (!silent) updateLicenseUi(data.message || 'Licența nu a putut fi activată.', true);
+
+      if (!silent) {
+        updateLicenseUi(
+          data.message || tr('licenseActivationFailed'),
+          true
+        );
+      }
+
       return false;
     }
 
     state.licenseTier = 'pro';
     state.licenseToken = data.token;
     state.licenseKey = licenseKey;
-    localStorage.setItem('mathArenaProLicense', licenseKey);
-    updateLicenseUi('Licența PRO este activă pe această sesiune.');
-    startLicenseHeartbeat(Number(data.heartbeatMs) || 15000);
-    socket.emit('license:refresh', { licenseToken: state.licenseToken });
+
+    localStorage.setItem(
+      'mathArenaProLicense',
+      licenseKey
+    );
+
+    updateLicenseUi(
+      tr('licenseActivated')
+    );
+
+    startLicenseHeartbeat(
+      Number(data.heartbeatMs) || 15000
+    );
+
+    socket.emit('license:refresh', {
+      licenseToken: state.licenseToken
+    });
+
     return true;
+
   } catch {
-    if (!silent) updateLicenseUi('Nu am putut contacta serverul pentru activarea licenței.', true);
+
+    if (!silent) {
+      updateLicenseUi(
+        tr('licenseServerError'),
+        true
+      );
+    }
+
     return false;
   }
 }
@@ -561,35 +987,105 @@ function loadPayPalSdk(clientId, currency) {
 }
 
 function renderPayPalButtons() {
-  if (!window.paypal || state.paypalRendered) return;
+
+  if (!window.paypal || state.paypalRendered) {
+    return;
+  }
+
   state.paypalRendered = true;
+
   window.paypal.Buttons({
-    style: { layout: 'vertical', shape: 'rect', label: 'paypal' },
+
+    style: {
+      layout: 'vertical',
+      shape: 'rect',
+      label: 'paypal'
+    },
+
     createOrder: async () => {
-      const response = await fetch('/api/paypal/orders', { method: 'POST' });
+
+      const response =
+        await fetch('/api/paypal/orders', {
+          method: 'POST'
+        });
+
       const data = await response.json();
-      if (!response.ok || !data.orderId) throw new Error(data.message || 'Nu am putut crea comanda PayPal.');
+
+      if (!response.ok || !data.orderId) {
+        throw new Error(
+          data.message ||
+          tr('paypalCreateFailed')
+        );
+      }
+
       return data.orderId;
     },
+
     onApprove: async data => {
-      $('licenseMessage').textContent = 'Confirmăm plata PayPal…';
-      const response = await fetch(`/api/paypal/orders/${encodeURIComponent(data.orderID)}/capture`, { method: 'POST' });
-      const result = await response.json();
-      if (!response.ok || !result.licenseKey) {
-        updateLicenseUi(result.message || 'Plata nu a putut fi confirmată.', true);
+
+      $('licenseMessage').textContent =
+        tr('paypalConfirming');
+
+      const response = await fetch(
+        `/api/paypal/orders/${encodeURIComponent(data.orderID)}/capture`,
+        {
+          method: 'POST'
+        }
+      );
+
+      const result =
+        await response.json();
+
+      if (
+        !response.ok ||
+        !result.licenseKey
+      ) {
+
+        updateLicenseUi(
+          result.message ||
+          tr('paypalConfirmFailed'),
+          true
+        );
+
         return;
       }
-      state.licenseKey = result.licenseKey;
-      localStorage.setItem('mathArenaProLicense', result.licenseKey);
-      $('purchasedLicenseKey').textContent = result.licenseKey;
-      $('licenseResult').classList.remove('hidden');
-      await activateLicense(result.licenseKey);
+
+      state.licenseKey =
+        result.licenseKey;
+
+      localStorage.setItem(
+        'mathArenaProLicense',
+        result.licenseKey
+      );
+
+      $('purchasedLicenseKey').textContent =
+        result.licenseKey;
+
+      $('licenseResult')
+        .classList
+        .remove('hidden');
+
+      await activateLicense(
+        result.licenseKey
+      );
     },
-    onCancel: () => updateLicenseUi('Plata a fost anulată.', true),
-    onError: () => updateLicenseUi('A apărut o eroare PayPal. Încearcă din nou.', true)
+
+    onCancel: () => {
+      updateLicenseUi(
+        tr('paypalCancelled'),
+        true
+      );
+    },
+
+    onError: () => {
+      updateLicenseUi(
+        tr('paypalError'),
+        true
+      );
+    }
+
   }).render('#paypal-button-container');
 }
-
 function joinRoom(code) {
   const name = currentJoinName();
   if (!name) {

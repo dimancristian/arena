@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ro">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +8,14 @@
   <title>Arena Matematică</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <div class="language-switch" role="group" aria-label="Language / Limbă">
     <button id="langRoBtn" class="language-btn selected" type="button" data-lang="ro">🇷🇴 RO</button>
     <button id="langEnBtn" class="language-btn" type="button" data-lang="en">🇬🇧 EN</button>
   </div>
-  <button id="soundToggleBtn" class="sound-toggle" type="button" aria-label="Oprește sunetele" title="Sunete pornite">🔊</button>
+  <button id="soundToggleBtn" class="sound-toggle" type="button" aria-label="Oprește sunetele"
+    title="Sunete pornite">🔊</button>
   <main class="app-shell">
     <section id="homeScreen" class="screen">
       <header class="hero">
@@ -40,7 +43,11 @@
         <button class="back-link" data-back-home type="button">← <span class="back-label">Înapoi</span></button>
         <div class="action-heading">
           <span class="big-emoji">🚀</span>
-          <div><p id="createEyebrow" class="eyebrow">Creează joc</p><h2 id="createHeading">Pregătește jocul</h2><p id="createHelper" class="helper-text">Completează doar câteva lucruri și jocul este gata.</p></div>
+          <div>
+            <p id="createEyebrow" class="eyebrow">Creează joc</p>
+            <h2 id="createHeading">Pregătește jocul</h2>
+            <p id="createHelper" class="helper-text">Completează doar câteva lucruri și jocul este gata.</p>
+          </div>
         </div>
 
         <form id="createForm">
@@ -75,9 +82,12 @@
           <div class="mode-picker">
             <span class="field-title">🎯 <span id="modeLabelText">Ce fel de întrebări?</span></span>
             <div class="mode-buttons">
-              <button type="button" class="mode-btn selected" data-mode="math">🧮 <span class="math-mode-label">Matematică</span></button>
-              <button type="button" class="mode-btn" data-mode="general">🌍 <span class="general-mode-label">Cultură generală</span></button>
-              <button type="button" class="mode-btn" data-mode="mixed">🎲 <span class="mixed-mode-label">Mixt</span></button>
+              <button type="button" class="mode-btn selected" data-mode="math">🧮 <span
+                  class="math-mode-label">Matematică</span></button>
+              <button type="button" class="mode-btn" data-mode="general">🌍 <span class="general-mode-label">Cultură
+                  generală</span></button>
+              <button type="button" class="mode-btn" data-mode="mixed">🎲 <span
+                  class="mixed-mode-label">Mixt</span></button>
             </div>
           </div>
 
@@ -115,7 +125,11 @@
         <button class="back-link" data-back-home type="button">← <span class="back-label">Înapoi</span></button>
         <div class="action-heading">
           <span class="big-emoji">🎮</span>
-          <div><p id="joinEyebrow" class="eyebrow">Intră în joc</p><h2 id="joinHeading">Hai în joc!</h2><p id="joinHelper" class="helper-text">Spune-ne numele tău și intră imediat în camera potrivită.</p></div>
+          <div>
+            <p id="joinEyebrow" class="eyebrow">Intră în joc</p>
+            <h2 id="joinHeading">Hai în joc!</h2>
+            <p id="joinHelper" class="helper-text">Spune-ne numele tău și intră imediat în camera potrivită.</p>
+          </div>
         </div>
 
         <label>👋 <span id="joinNameLabel">Cum te cheamă?</span>
@@ -133,65 +147,118 @@
             <button type="button" class="avatar-btn" data-avatar="🦄" aria-label="Unicorn">🦄</button>
             <button type="button" class="avatar-btn" data-avatar="🤖" aria-label="Robot">🤖</button>
             <button type="button" class="avatar-btn" data-avatar="🚀" aria-label="Rachetă">🚀</button>
-        </div>
           </div>
+        </div>
 
         <div class="code-join">
-          <input id="roomCodeInput" inputmode="numeric" maxlength="4" placeholder="Cod: 4821" aria-label="Codul jocului">
+          <input id="roomCodeInput" inputmode="numeric" maxlength="4" placeholder="Cod: 4821"
+            aria-label="Codul jocului">
           <button id="joinByCodeBtn" type="button">Intră</button>
         </div>
 
         <div class="divider"><span id="orChooseGame">sau alege un joc</span></div>
-        <div class="rooms-heading"><h3 id="availableGamesHeading">🎯 Jocuri disponibile</h3><span id="roomsCount" class="badge">0</span></div>
+        <div class="rooms-heading">
+          <h3 id="availableGamesHeading">🎯 Jocuri disponibile</h3><span id="roomsCount" class="badge">0</span>
+        </div>
         <div id="availableRooms" class="available-rooms"></div>
       </section>
 
       <p id="homeError" class="error" role="alert"></p>
 
       <details class="adult-zone">
-        <summary>⚙️ <span id="adultZoneLabel">Pentru profesor / părinte</span></summary>
+        <summary>
+          ⚙️ <span id="adultZoneLabel">Pentru profesor / părinte</span>
+        </summary>
+
         <div class="adult-zone-content">
-    
 
-      <section class="license-card" aria-labelledby="licenseTitle">
-        <div class="license-top">
-          <div>
-            <p class="eyebrow">Licența ta</p>
-            <h2 id="licenseTitle">Arena Matematica <span class="pro-gradient">PRO</span></h2>
-            <p class="license-copy"><strong>FREE</strong> deblochează primele 20 de întrebări. 
-                                    <strong>PRO</strong> deblochează peste 100 de întrebări.</p>
-          </div>
-          <div id="licenseStatus" class="license-status free">FREE</div>
-        </div>
+          <section class="license-card" aria-labelledby="licenseTitle">
+            <div class="license-top">
+              <div>
+                <p id="licenseEyebrow" class="eyebrow">Licența ta</p>
 
-        <div class="license-actions">
-          <div class="license-activate">
-            <label for="licenseKeyInput">🔑 Ai deja o licență PRO?</label>
-            <div class="license-input-row">
-              <input id="licenseKeyInput" maxlength="35" autocomplete="off" placeholder="MA-PRO-XXXX-XXXX-XXXX-XXXX">
-              <button id="activateLicenseBtn" type="button" class="soft-button">Activează</button>
+                <h2 id="licenseTitle">
+                  Arena Matematica <span class="pro-gradient">PRO</span>
+                </h2>
+
+                <p class="license-copy">
+                  <strong>FREE</strong>
+                  <span id="licenseFreeText">
+                    deblochează primele 20 de întrebări.
+                  </span>
+
+                  <strong>PRO</strong>
+                  <span id="licenseProText">
+                    deblochează peste 100 de întrebări.
+                  </span>
+                </p>
+              </div>
+
+              <div id="licenseStatus" class="license-status free">FREE</div>
             </div>
-            <p id="licenseMessage" class="license-message" aria-live="polite"></p>
-          </div>
 
-          <div class="license-buy">
-            <div class="pro-price"><strong id="proPrice">—</strong><span>licență PRO</span></div>
-            <div id="paypal-button-container"></div>
-            <p id="paypalUnavailable" class="small-note hidden">Plata PayPal nu este configurată momentan.</p>
-          </div>
-        </div>
+            <div class="license-actions">
 
-        <div id="licenseResult" class="license-result hidden">
-          <strong>🎉 Licența ta PRO:</strong>
-          <code id="purchasedLicenseKey"></code>
-          <button id="copyLicenseBtn" type="button" class="soft-button">Copiază codul</button>
-          <small>Păstrează acest cod. Îl poți folosi și pe alt dispozitiv, dar nu simultan în două sesiuni.</small>
-        </div>
-      </section>
+              <div class="license-activate">
+                <label id="licenseKeyLabel" for="licenseKeyInput">
+                  🔑 Ai deja o licență PRO?
+                </label>
 
-    <footer class="app-footer"><a href="/admin">👩‍🏫 Panou profesor</a></footer>
+                <div class="license-input-row">
+                  <input id="licenseKeyInput" maxlength="35" autocomplete="off"
+                    placeholder="MA-PRO-XXXX-XXXX-XXXX-XXXX">
+
+                  <button id="activateLicenseBtn" type="button" class="soft-button">
+                    Activează
+                  </button>
+                </div>
+
+                <p id="licenseMessage" class="license-message" aria-live="polite"></p>
+              </div>
+
+              <div class="license-buy">
+                <div class="pro-price">
+                  <strong id="proPrice">—</strong>
+                  <span id="proLicenseText">licență PRO</span>
+                </div>
+
+                <div id="paypal-button-container"></div>
+
+                <p id="paypalUnavailable" class="small-note hidden">
+                  Plata PayPal nu este configurată momentan.
+                </p>
+              </div>
+
+            </div>
+
+            <div id="licenseResult" class="license-result hidden">
+              <strong id="purchasedLicenseLabel">
+                🎉 Licența ta PRO:
+              </strong>
+
+              <code id="purchasedLicenseKey"></code>
+
+              <button id="copyLicenseBtn" type="button" class="soft-button">
+                Copiază codul
+              </button>
+
+              <small id="licenseKeepText">
+                Păstrează acest cod. Îl poți folosi și pe alt dispozitiv,
+                dar nu simultan în două sesiuni.
+              </small>
+            </div>
+
+          </section>
+
+          <footer class="app-footer">
+            <a id="teacherPanelLink" href="/admin">
+              👩‍🏫 Panou profesor
+            </a>
+          </footer>
+
         </div>
       </details>
+
     </section>
 
     <section id="lobbyScreen" class="screen hidden">
@@ -234,7 +301,9 @@
         <span class="score-pill">⭐ <strong id="myScore">0</strong></span>
       </div>
 
-      <div id="timerWrap" class="timer-track"><div id="timerBar"></div></div>
+      <div id="timerWrap" class="timer-track">
+        <div id="timerBar"></div>
+      </div>
 
       <article class="question-card">
         <div class="question-sticker" aria-hidden="true">⭐</div>
@@ -273,4 +342,5 @@
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/app.js"></script>
 </body>
+
 </html>
