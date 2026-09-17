@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14b8a6">
+  <title>Arena Matematică</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="language-switch" role="group" aria-label="Language / Limbă">
+    <button id="langRoBtn" class="language-btn selected" type="button" data-lang="ro">🇷🇴 RO</button>
+    <button id="langEnBtn" class="language-btn" type="button" data-lang="en">🇬🇧 EN</button>
+  </div>
+  <button id="soundToggleBtn" class="sound-toggle" type="button" aria-label="Oprește sunetele" title="Sunete pornite">🔊</button>
+  <main class="app-shell">
+    <section id="homeScreen" class="screen">
+      <header class="hero">
+        <div class="logo" aria-hidden="true">🧮</div>
+        <p id="heroEyebrow" class="eyebrow">Joacă • Învață • Zâmbește</p>
+        <h1 id="heroTitle">Arena Matematica</h1>
+        <p id="heroLead" class="lead">Alege rapid dacă vrei să pornești un joc sau să intri într-un joc deja creat.</p>
+      </header>
+
+      <div id="homeChoice" class="choice-grid">
+        <button id="showCreateBtn" class="big-choice create-choice" type="button">
+          <span class="choice-icon">🚀</span>
+          <span id="createChoiceTitle" class="choice-title">Pornește un joc</span>
+          <span id="createChoiceText" class="choice-text">Tu alegi clasa, tipul de întrebări și pornești joaca</span>
+        </button>
+
+        <button id="showJoinBtn" class="big-choice join-choice" type="button">
+          <span class="choice-icon">🎮</span>
+          <span id="joinChoiceTitle" class="choice-title">Intră în joc</span>
+          <span id="joinChoiceText" class="choice-text">Scrii codul jocului sau alegi din lista de camere</span>
+        </button>
+      </div>
+
+      <section id="createPanel" class="action-card hidden">
+        <button class="back-link" data-back-home type="button">← <span class="back-label">Înapoi</span></button>
+        <div class="action-heading">
+          <span class="big-emoji">🚀</span>
+          <div><p id="createEyebrow" class="eyebrow">Creează joc</p><h2 id="createHeading">Pregătește jocul</h2><p id="createHelper" class="helper-text">Completează doar câteva lucruri și jocul este gata.</p></div>
+        </div>
+
+        <form id="createForm">
+          <label>👋 <span id="createNameLabel">Cum te cheamă?</span>
+            <input id="createName" maxlength="20" autocomplete="name" required placeholder="Prenumele tău">
+          </label>
+
+          <div class="avatar-picker" data-avatar-picker>
+            <span class="field-title">🧑‍🚀 <span class="avatar-label">Alege-ți avatarul</span></span>
+            <div class="avatar-buttons" role="group" aria-label="Alege avatarul">
+              <button type="button" class="avatar-btn selected" data-avatar="🦊" aria-label="Vulpe">🦊</button>
+              <button type="button" class="avatar-btn" data-avatar="🐼" aria-label="Panda">🐼</button>
+              <button type="button" class="avatar-btn" data-avatar="🦁" aria-label="Leu">🦁</button>
+              <button type="button" class="avatar-btn" data-avatar="🐸" aria-label="Broască">🐸</button>
+              <button type="button" class="avatar-btn" data-avatar="🐙" aria-label="Caracatiță">🐙</button>
+              <button type="button" class="avatar-btn" data-avatar="🦄" aria-label="Unicorn">🦄</button>
+              <button type="button" class="avatar-btn" data-avatar="🤖" aria-label="Robot">🤖</button>
+              <button type="button" class="avatar-btn" data-avatar="🚀" aria-label="Rachetă">🚀</button>
+            </div>
+          </div>
+
+          <div class="grade-picker" role="group" aria-label="Alege clasa">
+            <span class="field-title">📚 <span id="gradeLabelText">În ce clasă sunteți?</span></span>
+            <div class="grade-buttons">
+              <button type="button" class="grade-btn selected" data-grade="1">I</button>
+              <button type="button" class="grade-btn" data-grade="2">II</button>
+              <button type="button" class="grade-btn" data-grade="3">III</button>
+              <button type="button" class="grade-btn" data-grade="4">IV</button>
+            </div>
+          </div>
+
+          <div class="mode-picker">
+            <span class="field-title">🎯 <span id="modeLabelText">Ce fel de întrebări?</span></span>
+            <div class="mode-buttons">
+              <button type="button" class="mode-btn selected" data-mode="math">🧮 <span class="math-mode-label">Matematică</span></button>
+              <button type="button" class="mode-btn" data-mode="general">🌍 <span class="general-mode-label">Cultură generală</span></button>
+              <button type="button" class="mode-btn" data-mode="mixed">🎲 <span class="mixed-mode-label">Mixt</span></button>
+            </div>
+          </div>
+
+          <details class="simple-settings">
+            <summary>⚙️ <span id="moreOptionsLabel">Mai multe opțiuni</span></summary>
+            <div class="settings-grid">
+              <label>❓ <span id="questionsLabel">Întrebări</span>
+                <select id="questions">
+                  <option value="5">5</option>
+                  <option value="10" selected>10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                </select>
+              </label>
+              <label>⏱️ <span id="timeLabel">Timp</span>
+                <select id="questionTime">
+                  <option value="10">10 sec.</option>
+                  <option value="15" selected>15 sec.</option>
+                  <option value="20">20 sec.</option>
+                  <option value="30">30 sec.</option>
+                </select>
+              </label>
+              <label class="toggle-row">
+                <input id="noTimer" type="checkbox">
+                <span id="noTimerLabel">Fără cronometru</span>
+              </label>
+            </div>
+          </details>
+
+          <button id="createSubmitBtn" class="primary huge" type="submit">Pornește jocul 🚀</button>
+        </form>
+      </section>
+
+      <section id="joinPanel" class="action-card hidden">
+        <button class="back-link" data-back-home type="button">← <span class="back-label">Înapoi</span></button>
+        <div class="action-heading">
+          <span class="big-emoji">🎮</span>
+          <div><p id="joinEyebrow" class="eyebrow">Intră în joc</p><h2 id="joinHeading">Hai în joc!</h2><p id="joinHelper" class="helper-text">Spune-ne numele tău și intră imediat în camera potrivită.</p></div>
+        </div>
+
+        <label>👋 <span id="joinNameLabel">Cum te cheamă?</span>
+          <input id="joinName" maxlength="20" autocomplete="name" placeholder="Prenumele tău">
+        </label>
+
+        <div class="avatar-picker" data-avatar-picker>
+          <span class="field-title">🧑‍🚀 <span class="avatar-label">Alege-ți avatarul</span></span>
+          <div class="avatar-buttons" role="group" aria-label="Alege avatarul">
+            <button type="button" class="avatar-btn selected" data-avatar="🦊" aria-label="Vulpe">🦊</button>
+            <button type="button" class="avatar-btn" data-avatar="🐼" aria-label="Panda">🐼</button>
+            <button type="button" class="avatar-btn" data-avatar="🦁" aria-label="Leu">🦁</button>
+            <button type="button" class="avatar-btn" data-avatar="🐸" aria-label="Broască">🐸</button>
+            <button type="button" class="avatar-btn" data-avatar="🐙" aria-label="Caracatiță">🐙</button>
+            <button type="button" class="avatar-btn" data-avatar="🦄" aria-label="Unicorn">🦄</button>
+            <button type="button" class="avatar-btn" data-avatar="🤖" aria-label="Robot">🤖</button>
+            <button type="button" class="avatar-btn" data-avatar="🚀" aria-label="Rachetă">🚀</button>
+        </div>
+          </div>
+
+        <div class="code-join">
+          <input id="roomCodeInput" inputmode="numeric" maxlength="4" placeholder="Cod: 4821" aria-label="Codul jocului">
+          <button id="joinByCodeBtn" type="button">Intră</button>
+        </div>
+
+        <div class="divider"><span id="orChooseGame">sau alege un joc</span></div>
+        <div class="rooms-heading"><h3 id="availableGamesHeading">🎯 Jocuri disponibile</h3><span id="roomsCount" class="badge">0</span></div>
+        <div id="availableRooms" class="available-rooms"></div>
+      </section>
+
+      <p id="homeError" class="error" role="alert"></p>
+
+      <details class="adult-zone">
+        <summary>⚙️ <span id="adultZoneLabel">Pentru profesor / părinte</span></summary>
+        <div class="adult-zone-content">
+    
+
+      <section class="license-card" aria-labelledby="licenseTitle">
+        <div class="license-top">
+          <div>
+            <p class="eyebrow">Licența ta</p>
+            <h2 id="licenseTitle">Arena Matematica <span class="pro-gradient">PRO</span></h2>
+            <p class="license-copy"><strong>FREE</strong> deblochează primele 20 de întrebări. 
+                                    <strong>PRO</strong> deblochează peste 100 de întrebări.</p>
+          </div>
+          <div id="licenseStatus" class="license-status free">FREE</div>
+        </div>
+
+        <div class="license-actions">
+          <div class="license-activate">
+            <label for="licenseKeyInput">🔑 Ai deja o licență PRO?</label>
+            <div class="license-input-row">
+              <input id="licenseKeyInput" maxlength="35" autocomplete="off" placeholder="MA-PRO-XXXX-XXXX-XXXX-XXXX">
+              <button id="activateLicenseBtn" type="button" class="soft-button">Activează</button>
+            </div>
+            <p id="licenseMessage" class="license-message" aria-live="polite"></p>
+          </div>
+
+          <div class="license-buy">
+            <div class="pro-price"><strong id="proPrice">—</strong><span>licență PRO</span></div>
+            <div id="paypal-button-container"></div>
+            <p id="paypalUnavailable" class="small-note hidden">Plata PayPal nu este configurată momentan.</p>
+          </div>
+        </div>
+
+        <div id="licenseResult" class="license-result hidden">
+          <strong>🎉 Licența ta PRO:</strong>
+          <code id="purchasedLicenseKey"></code>
+          <button id="copyLicenseBtn" type="button" class="soft-button">Copiază codul</button>
+          <small>Păstrează acest cod. Îl poți folosi și pe alt dispozitiv, dar nu simultan în două sesiuni.</small>
+        </div>
+      </section>
+
+    <footer class="app-footer"><a href="/admin">👩‍🏫 Panou profesor</a></footer>
+        </div>
+      </details>
+    </section>
+
+    <section id="lobbyScreen" class="screen hidden">
+      <div class="lobby-top">
+        <div>
+          <p id="lobbyEyebrow" class="eyebrow">Camera de joc</p>
+          <h1><span id="hostGamePrefix">Jocul lui</span> <span id="hostName">...</span> 🎮</h1>
+        </div>
+        <button id="leaveBtn" class="soft-button" type="button">Ieși</button>
+      </div>
+
+      <div class="room-code-card">
+        <div class="sparkles" aria-hidden="true">✨✨✨</div>
+        <span id="gameCodeLabel">Codul jocului</span>
+        <strong id="roomCode">----</strong>
+        <small id="shareCodeLabel">Spune codul colegilor tăi</small>
+      </div>
+
+      <div class="lobby-grid">
+        <article class="card">
+          <h2 id="whoPlaysHeading">👧👦 Cine joacă?</h2>
+          <div id="playersList" class="players"></div>
+        </article>
+
+        <article class="card game-ready-card">
+          <h2 id="readyHeading">✨ Gata de joacă?</h2>
+          <div id="settingsBox" class="settings-summary"></div>
+          <button id="startBtn" class="primary huge hidden" type="button">Începem! 🚀</button>
+          <div id="waitText" class="waiting-message">⏳ Gazda va porni jocul...</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="screen hidden">
+      <div class="game-head">
+        <span id="questionProgress" class="progress-pill">1 / 10</span>
+        <span id="questionKind" class="kind-pill">Adunare</span>
+        <span id="gameTier" class="tier-pill free">FREE · 20</span>
+        <span id="comboPill" class="combo-pill hidden">🔥 <strong id="comboCount">0</strong>x</span>
+        <span class="score-pill">⭐ <strong id="myScore">0</strong></span>
+      </div>
+
+      <div id="timerWrap" class="timer-track"><div id="timerBar"></div></div>
+
+      <article class="question-card">
+        <div class="question-sticker" aria-hidden="true">⭐</div>
+        <p id="chooseAnswerLabel" class="eyebrow">Alege răspunsul corect</p>
+        <div id="questionImageWrap" class="question-image-wrap hidden">
+          <img id="questionImage" class="question-image" src="" alt="">
+        </div>
+        <h1 id="questionText">7 + 8 = ?</h1>
+        <div id="answers" class="answers"></div>
+        <div id="answerFeedback" class="feedback" aria-live="polite"></div>
+      </article>
+
+      <div id="badgeToast" class="badge-toast hidden" aria-live="polite"></div>
+
+      <button id="toggleBoardBtn" class="soft-button board-toggle" type="button">🏆 Vezi clasamentul</button>
+      <article id="liveBoardCard" class="card leaderboard-card hidden">
+        <h2 id="leaderboardHeading">🏆 Clasament</h2>
+        <div id="leaderboard" class="leaderboard"></div>
+      </article>
+    </section>
+
+    <section id="finalScreen" class="screen final-screen hidden">
+      <div class="trophy">🏆</div>
+      <p id="finishedEyebrow" class="eyebrow">Ai terminat!</p>
+      <h1 id="finalTitle">Bravo!</h1>
+      <p id="finalMessage" class="lead"></p>
+      <section class="earned-badges" aria-labelledby="earnedBadgesTitle">
+        <h2 id="earnedBadgesTitle">🏅 Badge-urile tale</h2>
+        <div id="finalBadges" class="badge-shelf"></div>
+      </section>
+      <div id="finalLeaderboard" class="final-board"></div>
+      <button id="backHomeBtn" class="primary huge" type="button">Mai joc o dată 🎮</button>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

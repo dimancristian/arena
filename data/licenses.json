@@ -1,0 +1,13 @@
+{
+  "licenses": [
+    {
+      "id": "manual-test-001",
+      "orderId": "MANUAL-TEST-001",
+      "captureId": "MANUAL-TEST",
+      "licenseHash": "65988ee3731135f3e952d7d6fdd23e6d3dc9df05134c176769a3f6f2e1c099b2",
+      "status": "active",
+      "createdAt": "2026-09-16T12:45:00.000Z"
+    }
+  ],
+  "pendingOrders": {}
+}

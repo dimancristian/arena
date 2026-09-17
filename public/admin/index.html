@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arena Matematica · Profesor</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Arena Matematica</p>
+        <h1>👩‍🏫 Panou profesor</h1>
+        <p>Adaugă întrebări cu 4 variante de răspuns și imagine opțională.</p>
+      </div>
+      <div class="header-actions">
+        <a class="soft-btn" href="/">🎮 Joc</a>
+        <button id="logoutBtn" class="soft-btn hidden" type="button">Ieșire</button>
+      </div>
+    </header>
+
+    <section id="loginCard" class="card login-card">
+      <h2>🔐 Autentificare</h2>
+      <form id="loginForm">
+        <label>Parola profesorului
+          <input id="password" type="password" required autocomplete="current-password" placeholder="Parolă">
+        </label>
+        <button class="primary" type="submit">Intră în panou</button>
+      </form>
+      <p id="loginError" class="message error"></p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="dashboard-grid">
+        <article class="card">
+          <h2>➕ Întrebare nouă</h2>
+          <form id="questionForm" enctype="multipart/form-data">
+            <label>Întrebarea
+              <textarea name="text" id="text" maxlength="500" required placeholder="Ex. Care este capitala României?"></textarea>
+            </label>
+
+            <div class="two-cols">
+              <label>Categorie
+                <input name="kind" id="kind" maxlength="40" value="Cultură generală" required>
+              </label>
+              <label>Clase
+                <div class="grade-range">
+                  <select name="minGrade" id="minGrade">
+                    <option value="1">De la clasa I</option>
+                    <option value="2">De la clasa II</option>
+                    <option value="3">De la clasa III</option>
+                    <option value="4">De la clasa IV</option>
+                  </select>
+                  <select name="maxGrade" id="maxGrade">
+                    <option value="1">Până la clasa I</option>
+                    <option value="2">Până la clasa II</option>
+                    <option value="3">Până la clasa III</option>
+                    <option value="4" selected>Până la clasa IV</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <fieldset>
+              <legend>4 variante de răspuns</legend>
+              <p class="hint">Bifează cercul din stânga variantei corecte.</p>
+              <div class="answers-admin">
+                <label class="answer-row"><input type="radio" name="correctIndex" value="0" required><input name="answer1" required placeholder="Răspuns 1"></label>
+                <label class="answer-row"><input type="radio" name="correctIndex" value="1"><input name="answer2" required placeholder="Răspuns 2"></label>
+                <label class="answer-row"><input type="radio" name="correctIndex" value="2"><input name="answer3" required placeholder="Răspuns 3"></label>
+                <label class="answer-row"><input type="radio" name="correctIndex" value="3"><input name="answer4" required placeholder="Răspuns 4"></label>
+              </div>
+            </fieldset>
+
+            <label>🖼️ Imagine opțională
+              <input name="image" id="image" type="file" accept="image/png,image/jpeg,image/webp">
+              <small>PNG, JPG/JPEG sau WEBP · maxim 4 MB</small>
+            </label>
+            <div id="imagePreviewWrap" class="preview hidden"><img id="imagePreview" alt="Previzualizare"></div>
+
+            <label>Descriere imagine (opțional)
+              <input name="imageAlt" maxlength="160" placeholder="Ex. Harta României">
+            </label>
+
+            <button class="primary big" type="submit">Salvează întrebarea ✅</button>
+          </form>
+          <p id="formMessage" class="message"></p>
+        </article>
+
+        <article class="card list-card">
+          <div class="list-head">
+            <div>
+              <p class="eyebrow">Bibliotecă</p>
+              <h2>Întrebări adăugate</h2>
+            </div>
+            <span id="questionCount" class="count">0</span>
+          </div>
+          <div id="questionsList" class="questions-list"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

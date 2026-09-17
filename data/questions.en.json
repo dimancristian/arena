@@ -1,0 +1,6370 @@
+{
+  "version": 1,
+  "variants": [
+    {
+      "key": "Timp␟Câte zile are o săptămână?␟7␟",
+      "kind": "Time",
+      "text": "How many days are in a week?",
+      "correct": "7",
+      "answers": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerMap": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Calendar␟Câte luni are un an?␟12␟",
+      "kind": "Calendar",
+      "text": "How many months are in a year?",
+      "correct": "12",
+      "answers": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answerMap": {
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "13": "13"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟În ce anotimp ninge de obicei?␟Iarna␟/images/questions/seasons.svg",
+      "kind": "Nature",
+      "text": "In which season does it usually snow?",
+      "correct": "Winter",
+      "answers": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ],
+      "answerMap": {
+        "Primăvara": "Spring",
+        "Vara": "Summer",
+        "Toamna": "Autumn",
+        "Iarna": "Winter"
+      },
+      "imageAlt": "Symbols for the seasons"
+    },
+    {
+      "key": "Animale␟Ce animal spune „miau”?␟Pisica␟",
+      "kind": "Animals",
+      "text": "Which animal says “meow”?",
+      "correct": "Cat",
+      "answers": [
+        "Dog",
+        "Cat",
+        "Cow",
+        "Duck"
+      ],
+      "answerMap": {
+        "Câinele": "Dog",
+        "Pisica": "Cat",
+        "Vaca": "Cow",
+        "Rața": "Duck"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Corp␟Cu ce organ vedem?␟Ochii␟",
+      "kind": "Body",
+      "text": "Which organ do we use to see?",
+      "correct": "Eyes",
+      "answers": [
+        "Ears",
+        "Nose",
+        "Eyes",
+        "Hands"
+      ],
+      "answerMap": {
+        "Urechile": "Ears",
+        "Nasul": "Nose",
+        "Ochii": "Eyes",
+        "Mâinile": "Hands"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Corp␟Cu ce organ auzim?␟Urechile␟",
+      "kind": "Body",
+      "text": "Which organ do we use to hear?",
+      "correct": "Ears",
+      "answers": [
+        "Eyes",
+        "Ears",
+        "Legs",
+        "Teeth"
+      ],
+      "answerMap": {
+        "Ochii": "Eyes",
+        "Urechile": "Ears",
+        "Picioarele": "Legs",
+        "Dinții": "Teeth"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Culori␟Ce culoare obții din albastru și galben?␟Verde␟",
+      "kind": "Colors",
+      "text": "What color do you get by mixing blue and yellow?",
+      "correct": "Green",
+      "answers": [
+        "Green",
+        "Red",
+        "Purple",
+        "Orange"
+      ],
+      "answerMap": {
+        "Verde": "Green",
+        "Roșu": "Red",
+        "Mov": "Purple",
+        "Portocaliu": "Orange"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal trăiește de obicei în apă?␟Peștele␟/images/questions/animal-fish.svg",
+      "kind": "Nature",
+      "text": "Which animal usually lives in water?",
+      "correct": "Fish",
+      "answers": [
+        "Cat",
+        "Horse",
+        "Fish",
+        "Chicken"
+      ],
+      "answerMap": {
+        "Pisica": "Cat",
+        "Calul": "Horse",
+        "Peștele": "Fish",
+        "Găina": "Chicken"
+      },
+      "imageAlt": "Stylized fish"
+    },
+    {
+      "key": "Forme␟Câte laturi are un pătrat?␟4␟/images/questions/shapes.svg",
+      "kind": "Shapes",
+      "text": "How many sides does a square have?",
+      "correct": "4",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerMap": {
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "imageAlt": "Geometric shapes"
+    },
+    {
+      "key": "Forme␟Care formă nu are colțuri?␟Cercul␟",
+      "kind": "Shapes",
+      "text": "Which shape has no corners?",
+      "correct": "Circle",
+      "answers": [
+        "Square",
+        "Triangle",
+        "Circle",
+        "Rectangle"
+      ],
+      "answerMap": {
+        "Pătratul": "Square",
+        "Triunghiul": "Triangle",
+        "Cercul": "Circle",
+        "Dreptunghiul": "Rectangle"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Câte ore are o zi?␟24␟/images/questions/clock-3.svg",
+      "kind": "Time",
+      "text": "How many hours are in a day?",
+      "correct": "24",
+      "answers": [
+        "12",
+        "18",
+        "24",
+        "30"
+      ],
+      "answerMap": {
+        "12": "12",
+        "18": "18",
+        "24": "24",
+        "30": "30"
+      },
+      "imageAlt": "Analog clock"
+    },
+    {
+      "key": "Timp␟Câte minute are o oră?␟60␟",
+      "kind": "Time",
+      "text": "How many minutes are in an hour?",
+      "correct": "60",
+      "answers": [
+        "30",
+        "45",
+        "60",
+        "100"
+      ],
+      "answerMap": {
+        "30": "30",
+        "45": "45",
+        "60": "60",
+        "100": "100"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Bani␟Câți bani sunt într-un leu?␟100 bani␟/images/questions/coins.svg",
+      "kind": "Money",
+      "text": "How many bani are in one Romanian leu?",
+      "correct": "100 bani",
+      "answers": [
+        "10 bani",
+        "50 bani",
+        "100 bani",
+        "1000 bani"
+      ],
+      "answerMap": {
+        "10 bani": "10 bani",
+        "50 bani": "50 bani",
+        "100 bani": "100 bani",
+        "1000 bani": "1000 bani"
+      },
+      "imageAlt": "Stylized coins"
+    },
+    {
+      "key": "Natură␟Ce ne oferă Soarele în timpul zilei?␟Lumină␟",
+      "kind": "Nature",
+      "text": "What does the Sun give us during the day?",
+      "correct": "Light",
+      "answers": [
+        "Snow",
+        "Light",
+        "Earth",
+        "Rain"
+      ],
+      "answerMap": {
+        "Zăpadă": "Snow",
+        "Lumină": "Light",
+        "Pământ": "Earth",
+        "Ploaie": "Rain"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Animale␟Care animal are aripi?␟Pasărea␟/images/questions/animal-bird.svg",
+      "kind": "Animals",
+      "text": "Which animal has wings?",
+      "correct": "Bird",
+      "answers": [
+        "Cat",
+        "Bird",
+        "Horse",
+        "Fish"
+      ],
+      "answerMap": {
+        "Pisica": "Cat",
+        "Pasărea": "Bird",
+        "Calul": "Horse",
+        "Peștele": "Fish"
+      },
+      "imageAlt": "Stylized bird"
+    },
+    {
+      "key": "Limbă␟Care este o vocală?␟A␟",
+      "kind": "Language",
+      "text": "Which letter is a vowel?",
+      "correct": "A",
+      "answers": [
+        "B",
+        "C",
+        "A",
+        "D"
+      ],
+      "answerMap": {
+        "B": "B",
+        "C": "C",
+        "A": "A",
+        "D": "D"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟În ce țară se află București?␟România␟/images/questions/romania.svg",
+      "kind": "Geography",
+      "text": "In which country is Bucharest?",
+      "correct": "Romania",
+      "answers": [
+        "Romania",
+        "France",
+        "Italy",
+        "Spain"
+      ],
+      "answerMap": {
+        "România": "Romania",
+        "Franța": "France",
+        "Italia": "Italy",
+        "Spania": "Spain"
+      },
+      "imageAlt": "Map of Romania"
+    },
+    {
+      "key": "Știință␟Apa este de obicei...␟lichidă␟",
+      "kind": "Science",
+      "text": "Water is usually...",
+      "correct": "liquid",
+      "answers": [
+        "solid",
+        "liquid",
+        "metal",
+        "permanent gas"
+      ],
+      "answerMap": {
+        "solidă": "solid",
+        "lichidă": "liquid",
+        "metal": "metal",
+        "gaz permanent": "permanent gas"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟De ce are nevoie o plantă ca să crească?␟Apă și lumină␟/images/questions/plant-parts.svg",
+      "kind": "Nature",
+      "text": "What does a plant need to grow?",
+      "correct": "Water and light",
+      "answers": [
+        "Only darkness",
+        "Water and light",
+        "Only rocks",
+        "Snow"
+      ],
+      "answerMap": {
+        "Doar întuneric": "Only darkness",
+        "Apă și lumină": "Water and light",
+        "Doar pietre": "Only rocks",
+        "Zăpadă": "Snow"
+      },
+      "imageAlt": "Plant with roots, stem, leaves and flower"
+    },
+    {
+      "key": "Siguranță␟Ce culoare a semaforului înseamnă „oprește”?␟Roșu␟/images/questions/traffic-light.svg",
+      "kind": "Safety",
+      "text": "Which traffic-light color means “stop”?",
+      "correct": "Red",
+      "answers": [
+        "Green",
+        "Yellow",
+        "Red",
+        "Blue"
+      ],
+      "answerMap": {
+        "Verde": "Green",
+        "Galben": "Yellow",
+        "Roșu": "Red",
+        "Albastru": "Blue"
+      },
+      "imageAlt": "Traffic light with three colors"
+    },
+    {
+      "key": "Numărare␟Câte stele vezi în imagine?␟7␟/images/questions/count-stars.svg",
+      "kind": "Counting",
+      "text": "How many stars can you see in the image?",
+      "correct": "7",
+      "answers": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerMap": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      },
+      "imageAlt": "Seven yellow stars"
+    },
+    {
+      "key": "Numărare␟Câte mere vezi în imagine?␟6␟/images/questions/count-apples.svg",
+      "kind": "Counting",
+      "text": "How many apples can you see in the image?",
+      "correct": "6",
+      "answers": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answerMap": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7"
+      },
+      "imageAlt": "Six red apples"
+    },
+    {
+      "key": "Numărare␟Câte baloane sunt în imagine?␟4␟/images/questions/count-balloons.svg",
+      "kind": "Counting",
+      "text": "How many balloons are in the image?",
+      "correct": "4",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerMap": {
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "imageAlt": "Four colorful balloons"
+    },
+    {
+      "key": "Timp␟Cât arată ceasul din imagine?␟3:00␟/images/questions/clock-3.svg",
+      "kind": "Time",
+      "text": "What time does the clock in the image show?",
+      "correct": "3:00",
+      "answers": [
+        "2:00",
+        "3:00",
+        "6:00",
+        "12:15"
+      ],
+      "answerMap": {
+        "2:00": "2:00",
+        "3:00": "3:00",
+        "6:00": "6:00",
+        "12:15": "12:15"
+      },
+      "imageAlt": "Clock showing half past six"
+    },
+    {
+      "key": "Timp␟Cât arată ceasul din imagine?␟6:30␟/images/questions/clock-630.svg",
+      "kind": "Time",
+      "text": "What time does the clock in the image show?",
+      "correct": "6:30",
+      "answers": [
+        "6:00",
+        "6:30",
+        "3:30",
+        "12:30"
+      ],
+      "answerMap": {
+        "6:00": "6:00",
+        "6:30": "6:30",
+        "3:30": "3:30",
+        "12:30": "12:30"
+      },
+      "imageAlt": "Clock showing half past six"
+    },
+    {
+      "key": "Geometrie␟Ce formă geometrică vezi?␟Triunghi␟/images/questions/shape-triangle.svg",
+      "kind": "Geometry",
+      "text": "Which geometric shape do you see?",
+      "correct": "Triangle",
+      "answers": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Rectangle"
+      ],
+      "answerMap": {
+        "Cerc": "Circle",
+        "Pătrat": "Square",
+        "Triunghi": "Triangle",
+        "Dreptunghi": "Rectangle"
+      },
+      "imageAlt": "Blue rectangle"
+    },
+    {
+      "key": "Geometrie␟Ce formă geometrică vezi?␟Dreptunghi␟/images/questions/shape-rectangle.svg",
+      "kind": "Geometry",
+      "text": "Which geometric shape do you see?",
+      "correct": "Rectangle",
+      "answers": [
+        "Square",
+        "Circle",
+        "Rectangle",
+        "Triangle"
+      ],
+      "answerMap": {
+        "Pătrat": "Square",
+        "Cerc": "Circle",
+        "Dreptunghi": "Rectangle",
+        "Triunghi": "Triangle"
+      },
+      "imageAlt": "Blue rectangle"
+    },
+    {
+      "key": "Logică␟Ce formă urmează în șir?␟Cerc␟/images/questions/pattern.svg",
+      "kind": "Logic",
+      "text": "Which shape comes next in the pattern?",
+      "correct": "Circle",
+      "answers": [
+        "Circle",
+        "Triangle",
+        "Star",
+        "Hexagon"
+      ],
+      "answerMap": {
+        "Cerc": "Circle",
+        "Triunghi": "Triangle",
+        "Stea": "Star",
+        "Hexagon": "Hexagon"
+      },
+      "imageAlt": "Alternating pattern: circle, square, circle, square"
+    },
+    {
+      "key": "Vreme␟Ce fenomen meteo arată imaginea?␟Ploaie␟/images/questions/weather-rain.svg",
+      "kind": "Weather",
+      "text": "What weather phenomenon is shown in the image?",
+      "correct": "Rain",
+      "answers": [
+        "Snow",
+        "Rain",
+        "Rainbow",
+        "Wind"
+      ],
+      "answerMap": {
+        "Ninsoare": "Snow",
+        "Ploaie": "Rain",
+        "Curcubeu": "Rainbow",
+        "Vânt": "Wind"
+      },
+      "imageAlt": "Cloud with raindrops"
+    },
+    {
+      "key": "Biologie␟Ce parte a plantei se află în pământ?␟Rădăcina␟/images/questions/plant-parts.svg",
+      "kind": "Biology",
+      "text": "Which part of a plant is in the ground?",
+      "correct": "Root",
+      "answers": [
+        "Flower",
+        "Leaf",
+        "Root",
+        "Stem"
+      ],
+      "answerMap": {
+        "Floarea": "Flower",
+        "Frunza": "Leaf",
+        "Rădăcina": "Root",
+        "Tulpina": "Stem"
+      },
+      "imageAlt": "Plant with roots visible in the soil"
+    },
+    {
+      "key": "Geometrie␟Ce fracție din cerc este colorată?␟1/2␟/images/questions/fractions-half.svg",
+      "kind": "Geometry",
+      "text": "What fraction of the circle is colored?",
+      "correct": "1/2",
+      "answers": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "3/4"
+      ],
+      "answerMap": {
+        "1/4": "1/4",
+        "1/2": "1/2",
+        "1/3": "1/3",
+        "3/4": "3/4"
+      },
+      "imageAlt": "One quarter of a circle colored"
+    },
+    {
+      "key": "Geometrie␟Ce fracție din cerc este colorată?␟1/4␟/images/questions/fractions-quarter.svg",
+      "kind": "Geometry",
+      "text": "What fraction of the circle is colored?",
+      "correct": "1/4",
+      "answers": [
+        "1/2",
+        "1/4",
+        "2/3",
+        "3/4"
+      ],
+      "answerMap": {
+        "1/2": "1/2",
+        "1/4": "1/4",
+        "2/3": "2/3",
+        "3/4": "3/4"
+      },
+      "imageAlt": "One quarter of a circle colored"
+    },
+    {
+      "key": "Geografie␟Ce țară are acest drapel?␟România␟/images/questions/romania-flag.svg",
+      "kind": "Geography",
+      "text": "Which country has this flag?",
+      "correct": "Romania",
+      "answers": [
+        "Romania",
+        "France",
+        "Italy",
+        "Germany"
+      ],
+      "answerMap": {
+        "România": "Romania",
+        "Franța": "France",
+        "Italia": "Italy",
+        "Germania": "Germany"
+      },
+      "imageAlt": "Vertical blue, yellow and red flag"
+    },
+    {
+      "key": "Bani␟Ce sumă arată imaginea?␟1 leu și 50 bani␟/images/questions/coins.svg",
+      "kind": "Money",
+      "text": "How much money is shown in the image?",
+      "correct": "1 leu and 50 bani",
+      "answers": [
+        "50 bani",
+        "1 leu",
+        "1 leu and 50 bani",
+        "2 lei"
+      ],
+      "answerMap": {
+        "50 bani": "50 bani",
+        "1 leu": "1 leu",
+        "1 leu și 50 bani": "1 leu and 50 bani",
+        "2 lei": "2 lei"
+      },
+      "imageAlt": "One 1-leu coin and one 50-bani coin"
+    },
+    {
+      "key": "Matematică vizuală␟Pe ce număr este punctul roz?␟4␟/images/questions/number-line.svg",
+      "kind": "Visual math",
+      "text": "Which number is the pink dot on?",
+      "correct": "4",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerMap": {
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "imageAlt": "Number line from zero to six with a point at four"
+    },
+    {
+      "key": "Astronomie␟Care este planeta albastră din imagine?␟Pământul␟/images/questions/solar-order.svg",
+      "kind": "Astronomy",
+      "text": "Which is the blue planet in the image?",
+      "correct": "Earth",
+      "answers": [
+        "Mars",
+        "Earth",
+        "Mercury",
+        "Saturn"
+      ],
+      "answerMap": {
+        "Marte": "Mars",
+        "Pământul": "Earth",
+        "Mercur": "Mercury",
+        "Saturn": "Saturn"
+      },
+      "imageAlt": "The Sun and several stylized planets"
+    },
+    {
+      "key": "Geografie␟Care este capitala României?␟București␟/images/questions/romania.svg",
+      "kind": "Geography",
+      "text": "What is the capital of Romania?",
+      "correct": "Bucharest",
+      "answers": [
+        "Brasov",
+        "Bucharest",
+        "Iasi",
+        "Cluj-Napoca"
+      ],
+      "answerMap": {
+        "Brașov": "Brasov",
+        "București": "Bucharest",
+        "Iași": "Iasi",
+        "Cluj-Napoca": "Cluj-Napoca"
+      },
+      "imageAlt": "Map of Romania"
+    },
+    {
+      "key": "Geografie␟Pe ce continent se află România?␟Europa␟",
+      "kind": "Geography",
+      "text": "On which continent is Romania?",
+      "correct": "Europe",
+      "answers": [
+        "Asia",
+        "Africa",
+        "Europe",
+        "South America"
+      ],
+      "answerMap": {
+        "Asia": "Asia",
+        "Africa": "Africa",
+        "Europa": "Europe",
+        "America de Sud": "South America"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este cel mai mare ocean?␟Oceanul Pacific␟",
+      "kind": "Geography",
+      "text": "What is the largest ocean?",
+      "correct": "Pacific Ocean",
+      "answers": [
+        "Atlantic Ocean",
+        "Arctic Ocean",
+        "Indian Ocean",
+        "Pacific Ocean"
+      ],
+      "answerMap": {
+        "Oceanul Atlantic": "Atlantic Ocean",
+        "Oceanul Arctic": "Arctic Ocean",
+        "Oceanul Indian": "Indian Ocean",
+        "Oceanul Pacific": "Pacific Ocean"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Dunărea este...␟un fluviu␟",
+      "kind": "Geography",
+      "text": "The Danube is...",
+      "correct": "a river",
+      "answers": [
+        "a mountain",
+        "a river",
+        "a city",
+        "an ocean"
+      ],
+      "answerMap": {
+        "un munte": "a mountain",
+        "un fluviu": "a river",
+        "un oraș": "a city",
+        "un ocean": "an ocean"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este un punct cardinal?␟Nord␟",
+      "kind": "Geography",
+      "text": "Which of these is a cardinal direction?",
+      "correct": "North",
+      "answers": [
+        "Up",
+        "North",
+        "Round",
+        "Small"
+      ],
+      "answerMap": {
+        "Sus": "Up",
+        "Nord": "North",
+        "Rotund": "Round",
+        "Mic": "Small"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Franței?␟Paris␟",
+      "kind": "Geography",
+      "text": "What is the capital of France?",
+      "correct": "Paris",
+      "answers": [
+        "Rome",
+        "Paris",
+        "Madrid",
+        "Berlin"
+      ],
+      "answerMap": {
+        "Roma": "Rome",
+        "Paris": "Paris",
+        "Madrid": "Madrid",
+        "Berlin": "Berlin"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Italiei?␟Roma␟",
+      "kind": "Geography",
+      "text": "What is the capital of Italy?",
+      "correct": "Rome",
+      "answers": [
+        "Vienna",
+        "Rome",
+        "Athens",
+        "Lisbon"
+      ],
+      "answerMap": {
+        "Viena": "Vienna",
+        "Roma": "Rome",
+        "Atena": "Athens",
+        "Lisabona": "Lisbon"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Spaniei?␟Madrid␟",
+      "kind": "Geography",
+      "text": "What is the capital of Spain?",
+      "correct": "Madrid",
+      "answers": [
+        "Barcelona",
+        "Madrid",
+        "Seville",
+        "Valencia"
+      ],
+      "answerMap": {
+        "Barcelona": "Barcelona",
+        "Madrid": "Madrid",
+        "Sevilla": "Seville",
+        "Valencia": "Valencia"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Germaniei?␟Berlin␟",
+      "kind": "Geography",
+      "text": "What is the capital of Germany?",
+      "correct": "Berlin",
+      "answers": [
+        "Berlin",
+        "Munich",
+        "Hamburg",
+        "Bonn"
+      ],
+      "answerMap": {
+        "Berlin": "Berlin",
+        "Munchen": "Munich",
+        "Hamburg": "Hamburg",
+        "Bonn": "Bonn"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Marii Britanii?␟Londra␟",
+      "kind": "Geography",
+      "text": "What is the capital of the United Kingdom?",
+      "correct": "London",
+      "answers": [
+        "Dublin",
+        "London",
+        "Oxford",
+        "Manchester"
+      ],
+      "answerMap": {
+        "Dublin": "Dublin",
+        "Londra": "London",
+        "Oxford": "Oxford",
+        "Manchester": "Manchester"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Greciei?␟Atena␟",
+      "kind": "Geography",
+      "text": "What is the capital of Greece?",
+      "correct": "Athens",
+      "answers": [
+        "Athens",
+        "Sparta",
+        "Thessaloniki",
+        "Sofia"
+      ],
+      "answerMap": {
+        "Atena": "Athens",
+        "Sparta": "Sparta",
+        "Salonic": "Thessaloniki",
+        "Sofia": "Sofia"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Ungariei?␟Budapesta␟",
+      "kind": "Geography",
+      "text": "What is the capital of Hungary?",
+      "correct": "Budapest",
+      "answers": [
+        "Prague",
+        "Budapest",
+        "Bratislava",
+        "Warsaw"
+      ],
+      "answerMap": {
+        "Praga": "Prague",
+        "Budapesta": "Budapest",
+        "Bratislava": "Bratislava",
+        "Varșovia": "Warsaw"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Bulgariei?␟Sofia␟",
+      "kind": "Geography",
+      "text": "What is the capital of Bulgaria?",
+      "correct": "Sofia",
+      "answers": [
+        "Sofia",
+        "Varna",
+        "Plovdiv",
+        "Burgas"
+      ],
+      "answerMap": {
+        "Sofia": "Sofia",
+        "Varna": "Varna",
+        "Plovdiv": "Plovdiv",
+        "Burgas": "Burgas"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Republicii Moldova?␟Chișinău␟",
+      "kind": "Geography",
+      "text": "What is the capital of the Republic of Moldova?",
+      "correct": "Chisinau",
+      "answers": [
+        "Balti",
+        "Chisinau",
+        "Cahul",
+        "Orhei"
+      ],
+      "answerMap": {
+        "Bălți": "Balti",
+        "Chișinău": "Chisinau",
+        "Cahul": "Cahul",
+        "Orhei": "Orhei"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce mare se află la estul României?␟Marea Neagră␟",
+      "kind": "Geography",
+      "text": "Which sea is east of Romania?",
+      "correct": "Black Sea",
+      "answers": [
+        "Red Sea",
+        "Black Sea",
+        "Baltic Sea",
+        "North Sea"
+      ],
+      "answerMap": {
+        "Marea Roșie": "Red Sea",
+        "Marea Neagră": "Black Sea",
+        "Marea Baltică": "Baltic Sea",
+        "Marea Nordului": "North Sea"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce lanț muntos important se află în România?␟Carpații␟",
+      "kind": "Geography",
+      "text": "Which important mountain range is in Romania?",
+      "correct": "Carpathians",
+      "answers": [
+        "Alps",
+        "Himalayas",
+        "Carpathians",
+        "Andes"
+      ],
+      "answerMap": {
+        "Alpii": "Alps",
+        "Himalaya": "Himalayas",
+        "Carpații": "Carpathians",
+        "Anzii": "Andes"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care râu traversează Bucureștiul?␟Dâmbovița␟",
+      "kind": "Geography",
+      "text": "Which river flows through Bucharest?",
+      "correct": "Dambovita",
+      "answers": [
+        "Olt",
+        "Mures",
+        "Dambovita",
+        "Siret"
+      ],
+      "answerMap": {
+        "Olt": "Olt",
+        "Mureș": "Mures",
+        "Dâmbovița": "Dambovita",
+        "Siret": "Siret"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este cel mai lung fluviu din Europa?␟Volga␟",
+      "kind": "Geography",
+      "text": "What is the longest river in Europe?",
+      "correct": "Volga",
+      "answers": [
+        "Danube",
+        "Volga",
+        "Rhine",
+        "Seine"
+      ],
+      "answerMap": {
+        "Dunărea": "Danube",
+        "Volga": "Volga",
+        "Rinul": "Rhine",
+        "Sena": "Seine"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce țară are forma aproximativă a unei cizme?␟Italia␟",
+      "kind": "Geography",
+      "text": "Which country is shaped roughly like a boot?",
+      "correct": "Italy",
+      "answers": [
+        "Italy",
+        "France",
+        "Norway",
+        "Greece"
+      ],
+      "answerMap": {
+        "Italia": "Italy",
+        "Franța": "France",
+        "Norvegia": "Norway",
+        "Grecia": "Greece"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟În ce țară se află Turnul Eiffel?␟Franța␟",
+      "kind": "Geography",
+      "text": "In which country is the Eiffel Tower?",
+      "correct": "France",
+      "answers": [
+        "Italy",
+        "France",
+        "Germany",
+        "Belgium"
+      ],
+      "answerMap": {
+        "Italia": "Italy",
+        "Franța": "France",
+        "Germania": "Germany",
+        "Belgia": "Belgium"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟În ce oraș se află Colosseumul?␟Roma␟",
+      "kind": "Geography",
+      "text": "In which city is the Colosseum?",
+      "correct": "Rome",
+      "answers": [
+        "Paris",
+        "Athens",
+        "Rome",
+        "Madrid"
+      ],
+      "answerMap": {
+        "Paris": "Paris",
+        "Atena": "Athens",
+        "Roma": "Rome",
+        "Madrid": "Madrid"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟În ce țară se află piramidele de la Giza?␟Egipt␟",
+      "kind": "Geography",
+      "text": "In which country are the pyramids of Giza?",
+      "correct": "Egypt",
+      "answers": [
+        "Egypt",
+        "Mexico",
+        "India",
+        "China"
+      ],
+      "answerMap": {
+        "Egipt": "Egypt",
+        "Mexic": "Mexico",
+        "India": "India",
+        "China": "China"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este cel mai rece continent?␟Antarctica␟",
+      "kind": "Geography",
+      "text": "What is the coldest continent?",
+      "correct": "Antarctica",
+      "answers": [
+        "Europe",
+        "Africa",
+        "Antarctica",
+        "Asia"
+      ],
+      "answerMap": {
+        "Europa": "Europe",
+        "Africa": "Africa",
+        "Antarctica": "Antarctica",
+        "Asia": "Asia"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este cel mai mare continent?␟Asia␟",
+      "kind": "Geography",
+      "text": "What is the largest continent?",
+      "correct": "Asia",
+      "answers": [
+        "Europe",
+        "Asia",
+        "Africa",
+        "Australia"
+      ],
+      "answerMap": {
+        "Europa": "Europe",
+        "Asia": "Asia",
+        "Africa": "Africa",
+        "Australia": "Australia"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care continent este cunoscut pentru Sahara?␟Africa␟",
+      "kind": "Geography",
+      "text": "Which continent is known for the Sahara Desert?",
+      "correct": "Africa",
+      "answers": [
+        "Africa",
+        "Europe",
+        "Asia",
+        "North America"
+      ],
+      "answerMap": {
+        "Africa": "Africa",
+        "Europa": "Europe",
+        "Asia": "Asia",
+        "America de Nord": "North America"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce ocean se află între Europa și America?␟Oceanul Atlantic␟",
+      "kind": "Geography",
+      "text": "Which ocean lies between Europe and America?",
+      "correct": "Atlantic Ocean",
+      "answers": [
+        "Pacific Ocean",
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Arctic Ocean"
+      ],
+      "answerMap": {
+        "Oceanul Pacific": "Pacific Ocean",
+        "Oceanul Indian": "Indian Ocean",
+        "Oceanul Atlantic": "Atlantic Ocean",
+        "Oceanul Arctic": "Arctic Ocean"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Japoniei?␟Tokyo␟",
+      "kind": "Geography",
+      "text": "What is the capital of Japan?",
+      "correct": "Tokyo",
+      "answers": [
+        "Kyoto",
+        "Tokyo",
+        "Osaka",
+        "Nagoya"
+      ],
+      "answerMap": {
+        "Kyoto": "Kyoto",
+        "Tokyo": "Tokyo",
+        "Osaka": "Osaka",
+        "Nagoya": "Nagoya"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Chinei?␟Beijing␟",
+      "kind": "Geography",
+      "text": "What is the capital of China?",
+      "correct": "Beijing",
+      "answers": [
+        "Shanghai",
+        "Beijing",
+        "Hong Kong",
+        "Seoul"
+      ],
+      "answerMap": {
+        "Shanghai": "Shanghai",
+        "Beijing": "Beijing",
+        "Hong Kong": "Hong Kong",
+        "Seul": "Seoul"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala SUA?␟Washington, D.C.␟",
+      "kind": "Geography",
+      "text": "What is the capital of the USA?",
+      "correct": "Washington, D.C.",
+      "answers": [
+        "New York",
+        "Los Angeles",
+        "Washington, D.C.",
+        "Chicago"
+      ],
+      "answerMap": {
+        "New York": "New York",
+        "Los Angeles": "Los Angeles",
+        "Washington, D.C.": "Washington, D.C.",
+        "Chicago": "Chicago"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Canadei?␟Ottawa␟",
+      "kind": "Geography",
+      "text": "What is the capital of Canada?",
+      "correct": "Ottawa",
+      "answers": [
+        "Toronto",
+        "Vancouver",
+        "Ottawa",
+        "Montreal"
+      ],
+      "answerMap": {
+        "Toronto": "Toronto",
+        "Vancouver": "Vancouver",
+        "Ottawa": "Ottawa",
+        "Montreal": "Montreal"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este capitala Portugaliei?␟Lisabona␟",
+      "kind": "Geography",
+      "text": "What is the capital of Portugal?",
+      "correct": "Lisbon",
+      "answers": [
+        "Porto",
+        "Lisbon",
+        "Madrid",
+        "Braga"
+      ],
+      "answerMap": {
+        "Porto": "Porto",
+        "Lisabona": "Lisbon",
+        "Madrid": "Madrid",
+        "Braga": "Braga"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce țară se află la sud de România?␟Bulgaria␟",
+      "kind": "Geography",
+      "text": "Which country is south of Romania?",
+      "correct": "Bulgaria",
+      "answers": [
+        "Poland",
+        "Bulgaria",
+        "Germany",
+        "Norway"
+      ],
+      "answerMap": {
+        "Polonia": "Poland",
+        "Bulgaria": "Bulgaria",
+        "Germania": "Germany",
+        "Norvegia": "Norway"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce țară se află la vest de România?␟Ungaria␟",
+      "kind": "Geography",
+      "text": "Which country is west of Romania?",
+      "correct": "Hungary",
+      "answers": [
+        "Hungary",
+        "Greece",
+        "Italy",
+        "France"
+      ],
+      "answerMap": {
+        "Ungaria": "Hungary",
+        "Grecia": "Greece",
+        "Italia": "Italy",
+        "Franța": "France"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Ce țară se află la nord de România?␟Ucraina␟",
+      "kind": "Geography",
+      "text": "Which country is north of Romania?",
+      "correct": "Ukraine",
+      "answers": [
+        "Serbia",
+        "Ukraine",
+        "Bulgaria",
+        "Turkey"
+      ],
+      "answerMap": {
+        "Serbia": "Serbia",
+        "Ucraina": "Ukraine",
+        "Bulgaria": "Bulgaria",
+        "Turcia": "Turkey"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este un exemplu de insulă?␟Sicilia␟",
+      "kind": "Geography",
+      "text": "Which of these is an example of an island?",
+      "correct": "Sicily",
+      "answers": [
+        "Sicily",
+        "Carpathians",
+        "Danube",
+        "Sahara"
+      ],
+      "answerMap": {
+        "Sicilia": "Sicily",
+        "Carpații": "Carpathians",
+        "Dunărea": "Danube",
+        "Sahara": "Sahara"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este un exemplu de deșert?␟Sahara␟",
+      "kind": "Geography",
+      "text": "Which of these is an example of a desert?",
+      "correct": "Sahara",
+      "answers": [
+        "Sahara",
+        "Amazon",
+        "Alps",
+        "Danube"
+      ],
+      "answerMap": {
+        "Sahara": "Sahara",
+        "Amazon": "Amazon",
+        "Alpi": "Alps",
+        "Dunărea": "Danube"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este un exemplu de munte?␟Everest␟",
+      "kind": "Geography",
+      "text": "Which of these is an example of a mountain?",
+      "correct": "Everest",
+      "answers": [
+        "Everest",
+        "Nile",
+        "Pacific",
+        "Sahara"
+      ],
+      "answerMap": {
+        "Everest": "Everest",
+        "Nil": "Nile",
+        "Pacific": "Pacific",
+        "Sahara": "Sahara"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Care este un exemplu de fluviu?␟Nil␟",
+      "kind": "Geography",
+      "text": "Which of these is an example of a river?",
+      "correct": "Nile",
+      "answers": [
+        "Nile",
+        "Alps",
+        "Sahara",
+        "Atlantic"
+      ],
+      "answerMap": {
+        "Nil": "Nile",
+        "Alpi": "Alps",
+        "Sahara": "Sahara",
+        "Atlantic": "Atlantic"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Unde răsare Soarele?␟La est␟",
+      "kind": "Geography",
+      "text": "Where does the Sun rise?",
+      "correct": "In the east",
+      "answers": [
+        "In the north",
+        "In the south",
+        "In the east",
+        "In the west"
+      ],
+      "answerMap": {
+        "La nord": "In the north",
+        "La sud": "In the south",
+        "La est": "In the east",
+        "La vest": "In the west"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geografie␟Unde apune Soarele?␟La vest␟",
+      "kind": "Geography",
+      "text": "Where does the Sun set?",
+      "correct": "In the west",
+      "answers": [
+        "In the east",
+        "In the west",
+        "In the north",
+        "In the south"
+      ],
+      "answerMap": {
+        "La est": "In the east",
+        "La vest": "In the west",
+        "La nord": "In the north",
+        "La sud": "In the south"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Care planetă este numită „Planeta Roșie”?␟Marte␟/images/questions/solar-system.svg",
+      "kind": "Science",
+      "text": "Which planet is called the “Red Planet”?",
+      "correct": "Mars",
+      "answers": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Mercury"
+      ],
+      "answerMap": {
+        "Venus": "Venus",
+        "Marte": "Mars",
+        "Jupiter": "Jupiter",
+        "Mercur": "Mercury"
+      },
+      "imageAlt": "Stylized planets"
+    },
+    {
+      "key": "Natură␟Ce proces folosesc plantele pentru a-și produce hrana?␟Fotosinteza␟",
+      "kind": "Nature",
+      "text": "What process do plants use to make their food?",
+      "correct": "Photosynthesis",
+      "answers": [
+        "Evaporation",
+        "Photosynthesis",
+        "Freezing",
+        "Melting"
+      ],
+      "answerMap": {
+        "Evaporarea": "Evaporation",
+        "Fotosinteza": "Photosynthesis",
+        "Înghețarea": "Freezing",
+        "Topirea": "Melting"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟La ce temperatură îngheață apa?␟0°C␟",
+      "kind": "Science",
+      "text": "At what temperature does water freeze?",
+      "correct": "0°C",
+      "answers": [
+        "0°C",
+        "10°C",
+        "50°C",
+        "100°C"
+      ],
+      "answerMap": {
+        "0°C": "0°C",
+        "10°C": "10°C",
+        "50°C": "50°C",
+        "100°C": "100°C"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Pământul se învârte în jurul...␟Soarelui␟",
+      "kind": "Science",
+      "text": "Earth revolves around the...",
+      "correct": "Sun",
+      "answers": [
+        "Moon",
+        "Sun",
+        "Mars",
+        "North Pole"
+      ],
+      "answerMap": {
+        "Lunii": "Moon",
+        "Soarelui": "Sun",
+        "Marte": "Mars",
+        "Polului Nord": "North Pole"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce gaz respiră oamenii pentru a trăi?␟Oxigen␟",
+      "kind": "Nature",
+      "text": "Which gas do people breathe to live?",
+      "correct": "Oxygen",
+      "answers": [
+        "Oxygen",
+        "Helium",
+        "Hydrogen",
+        "Steam"
+      ],
+      "answerMap": {
+        "Oxigen": "Oxygen",
+        "Heliu": "Helium",
+        "Hidrogen": "Hydrogen",
+        "Abur": "Steam"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Care este satelitul natural al Pământului?␟Luna␟",
+      "kind": "Nature",
+      "text": "What is Earth’s natural satellite?",
+      "correct": "Moon",
+      "answers": [
+        "Sun",
+        "Moon",
+        "Mars",
+        "Venus"
+      ],
+      "answerMap": {
+        "Soarele": "Sun",
+        "Luna": "Moon",
+        "Marte": "Mars",
+        "Venus": "Venus"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce stare are gheața?␟Solidă␟",
+      "kind": "Science",
+      "text": "What state of matter is ice?",
+      "correct": "Solid",
+      "answers": [
+        "Liquid",
+        "Solid",
+        "Gas",
+        "Luminous"
+      ],
+      "answerMap": {
+        "Lichidă": "Liquid",
+        "Solidă": "Solid",
+        "Gazoasă": "Gas",
+        "Luminoasă": "Luminous"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Cu ce respiră peștii?␟Branhii␟",
+      "kind": "Biology",
+      "text": "What do fish use to breathe?",
+      "correct": "Gills",
+      "answers": [
+        "Lungs",
+        "Gills",
+        "Wings",
+        "Leaves"
+      ],
+      "answerMap": {
+        "Plămâni": "Lungs",
+        "Branhii": "Gills",
+        "Aripi": "Wings",
+        "Frunze": "Leaves"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Care este steaua sistemului nostru solar?␟Soarele␟",
+      "kind": "Astronomy",
+      "text": "What is the star of our solar system?",
+      "correct": "Sun",
+      "answers": [
+        "Moon",
+        "Sun",
+        "Earth",
+        "Mars"
+      ],
+      "answerMap": {
+        "Luna": "Moon",
+        "Soarele": "Sun",
+        "Pământul": "Earth",
+        "Marte": "Mars"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce parte a plantei absoarbe apa din sol?␟Rădăcina␟",
+      "kind": "Nature",
+      "text": "Which part of a plant absorbs water from the soil?",
+      "correct": "Root",
+      "answers": [
+        "Flower",
+        "Leaf",
+        "Root",
+        "Fruit"
+      ],
+      "answerMap": {
+        "Floarea": "Flower",
+        "Frunza": "Leaf",
+        "Rădăcina": "Root",
+        "Fructul": "Fruit"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce parte a plantei produce de obicei semințe?␟Floarea␟",
+      "kind": "Nature",
+      "text": "Which part of a plant usually produces seeds?",
+      "correct": "Flower",
+      "answers": [
+        "Root",
+        "Flower",
+        "Stem",
+        "Bark"
+      ],
+      "answerMap": {
+        "Rădăcina": "Root",
+        "Floarea": "Flower",
+        "Tulpina": "Stem",
+        "Scoarța": "Bark"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Ce organ pompează sângele în corp?␟Inima␟",
+      "kind": "Biology",
+      "text": "Which organ pumps blood through the body?",
+      "correct": "Heart",
+      "answers": [
+        "Brain",
+        "Heart",
+        "Stomach",
+        "Lung"
+      ],
+      "answerMap": {
+        "Creierul": "Brain",
+        "Inima": "Heart",
+        "Stomacul": "Stomach",
+        "Plămânul": "Lung"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Cu ce organ vedem?␟Ochii␟",
+      "kind": "Biology",
+      "text": "Which organ do we use to see?",
+      "correct": "Eyes",
+      "answers": [
+        "Ears",
+        "Eyes",
+        "Nose",
+        "Skin"
+      ],
+      "answerMap": {
+        "Urechile": "Ears",
+        "Ochii": "Eyes",
+        "Nasul": "Nose",
+        "Pielea": "Skin"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Cu ce organ auzim?␟Urechile␟",
+      "kind": "Biology",
+      "text": "Which organ do we use to hear?",
+      "correct": "Ears",
+      "answers": [
+        "Eyes",
+        "Ears",
+        "Hands",
+        "Teeth"
+      ],
+      "answerMap": {
+        "Ochii": "Eyes",
+        "Urechile": "Ears",
+        "Mâinile": "Hands",
+        "Dinții": "Teeth"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Cu ce organ mirosim?␟Nasul␟",
+      "kind": "Biology",
+      "text": "Which organ do we use to smell?",
+      "correct": "Nose",
+      "answers": [
+        "Nose",
+        "Eyes",
+        "Knees",
+        "Hair"
+      ],
+      "answerMap": {
+        "Nasul": "Nose",
+        "Ochii": "Eyes",
+        "Genunchii": "Knees",
+        "Părul": "Hair"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Care organ ne ajută să gândim?␟Creierul␟",
+      "kind": "Biology",
+      "text": "Which organ helps us think?",
+      "correct": "Brain",
+      "answers": [
+        "Heart",
+        "Brain",
+        "Stomach",
+        "Liver"
+      ],
+      "answerMap": {
+        "Inima": "Heart",
+        "Creierul": "Brain",
+        "Stomacul": "Stomach",
+        "Ficatul": "Liver"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal dă lapte și spune „muu”?␟Vaca␟",
+      "kind": "Nature",
+      "text": "Which animal gives milk and says “moo”?",
+      "correct": "Cow",
+      "answers": [
+        "Horse",
+        "Cow",
+        "Cat",
+        "Duck"
+      ],
+      "answerMap": {
+        "Calul": "Horse",
+        "Vaca": "Cow",
+        "Pisica": "Cat",
+        "Rața": "Duck"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal spune „miau”?␟Pisica␟",
+      "kind": "Animals",
+      "text": "Which animal says “meow”?",
+      "correct": "Cat",
+      "answers": [
+        "Dog",
+        "Cat",
+        "Cow",
+        "Duck"
+      ],
+      "answerMap": {
+        "Câinele": "Dog",
+        "Pisica": "Cat",
+        "Vaca": "Cow",
+        "Rața": "Duck"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal spune „ham-ham”?␟Câinele␟",
+      "kind": "Nature",
+      "text": "Which animal says “woof-woof”?",
+      "correct": "Dog",
+      "answers": [
+        "Dog",
+        "Cat",
+        "Horse",
+        "Sheep"
+      ],
+      "answerMap": {
+        "Câinele": "Dog",
+        "Pisica": "Cat",
+        "Calul": "Horse",
+        "Oaia": "Sheep"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal trăiește în apă și are înotătoare?␟Peștele␟",
+      "kind": "Nature",
+      "text": "Which animal lives in water and has fins?",
+      "correct": "Fish",
+      "answers": [
+        "Fish",
+        "Chicken",
+        "Cat",
+        "Butterfly"
+      ],
+      "answerMap": {
+        "Peștele": "Fish",
+        "Găina": "Chicken",
+        "Pisica": "Cat",
+        "Fluturele": "Butterfly"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce insectă produce miere?␟Albina␟",
+      "kind": "Nature",
+      "text": "Which insect makes honey?",
+      "correct": "Bee",
+      "answers": [
+        "Ant",
+        "Bee",
+        "Fly",
+        "Mosquito"
+      ],
+      "answerMap": {
+        "Furnica": "Ant",
+        "Albina": "Bee",
+        "Musca": "Fly",
+        "Țânțarul": "Mosquito"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal are trompă?␟Elefantul␟",
+      "kind": "Nature",
+      "text": "Which animal has a trunk?",
+      "correct": "Elephant",
+      "answers": [
+        "Tiger",
+        "Elephant",
+        "Lion",
+        "Bear"
+      ],
+      "answerMap": {
+        "Tigrul": "Tiger",
+        "Elefantul": "Elephant",
+        "Leul": "Lion",
+        "Ursul": "Bear"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal are gât foarte lung?␟Girafa␟",
+      "kind": "Nature",
+      "text": "Which animal has a very long neck?",
+      "correct": "Giraffe",
+      "answers": [
+        "Giraffe",
+        "Zebra",
+        "Lion",
+        "Bear"
+      ],
+      "answerMap": {
+        "Girafa": "Giraffe",
+        "Zebra": "Zebra",
+        "Leul": "Lion",
+        "Ursul": "Bear"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal poartă cochilia în spate?␟Melcul␟",
+      "kind": "Nature",
+      "text": "Which animal carries a shell on its back?",
+      "correct": "Snail",
+      "answers": [
+        "Snail",
+        "Ant",
+        "Butterfly",
+        "Frog"
+      ],
+      "answerMap": {
+        "Melcul": "Snail",
+        "Furnica": "Ant",
+        "Fluturele": "Butterfly",
+        "Broasca": "Frog"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Care animal este cunoscut pentru dungi alb-negru?␟Zebra␟",
+      "kind": "Nature",
+      "text": "Which animal is known for black-and-white stripes?",
+      "correct": "Zebra",
+      "answers": [
+        "Zebra",
+        "Elephant",
+        "Leopard",
+        "Horse"
+      ],
+      "answerMap": {
+        "Zebra": "Zebra",
+        "Elefantul": "Elephant",
+        "Leopardul": "Leopard",
+        "Calul": "Horse"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Care animal hibernează adesea iarna?␟Ursul␟",
+      "kind": "Nature",
+      "text": "Which animal often hibernates in winter?",
+      "correct": "Bear",
+      "answers": [
+        "Bear",
+        "Dolphin",
+        "Giraffe",
+        "Chicken"
+      ],
+      "answerMap": {
+        "Ursul": "Bear",
+        "Delfinul": "Dolphin",
+        "Girafa": "Giraffe",
+        "Găina": "Chicken"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Care pasăre nu poate zbura?␟Pinguinul␟",
+      "kind": "Nature",
+      "text": "Which bird cannot fly?",
+      "correct": "Penguin",
+      "answers": [
+        "Swallow",
+        "Penguin",
+        "Eagle",
+        "Pigeon"
+      ],
+      "answerMap": {
+        "Rândunica": "Swallow",
+        "Pinguinul": "Penguin",
+        "Vulturul": "Eagle",
+        "Porumbelul": "Pigeon"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce pasăre poate imita uneori vocea oamenilor?␟Papagalul␟",
+      "kind": "Nature",
+      "text": "Which bird can sometimes imitate the human voice?",
+      "correct": "Parrot",
+      "answers": [
+        "Parrot",
+        "Penguin",
+        "Stork",
+        "Chicken"
+      ],
+      "answerMap": {
+        "Papagalul": "Parrot",
+        "Pinguinul": "Penguin",
+        "Barza": "Stork",
+        "Găina": "Chicken"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal este numit adesea „regele junglei”?␟Leul␟",
+      "kind": "Nature",
+      "text": "Which animal is often called the “king of the jungle”?",
+      "correct": "Lion",
+      "answers": [
+        "Lion",
+        "Horse",
+        "Bear",
+        "Rabbit"
+      ],
+      "answerMap": {
+        "Leul": "Lion",
+        "Calul": "Horse",
+        "Ursul": "Bear",
+        "Iepurele": "Rabbit"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce animal este cunoscut pentru viteza sa foarte mare?␟Ghepardul␟",
+      "kind": "Nature",
+      "text": "Which animal is known for its very high speed?",
+      "correct": "Cheetah",
+      "answers": [
+        "Cheetah",
+        "Tortoise",
+        "Panda",
+        "Koala"
+      ],
+      "answerMap": {
+        "Ghepardul": "Cheetah",
+        "Broasca țestoasă": "Tortoise",
+        "Panda": "Panda",
+        "Koala": "Koala"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Apa fierbe în mod obișnuit la...␟100°C␟",
+      "kind": "Science",
+      "text": "Water normally boils at...",
+      "correct": "100°C",
+      "answers": [
+        "0°C",
+        "50°C",
+        "100°C",
+        "200°C"
+      ],
+      "answerMap": {
+        "0°C": "0°C",
+        "50°C": "50°C",
+        "100°C": "100°C",
+        "200°C": "200°C"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce se formează când apa îngheață?␟Gheață␟",
+      "kind": "Science",
+      "text": "What forms when water freezes?",
+      "correct": "Ice",
+      "answers": [
+        "Steam",
+        "Ice",
+        "Sand",
+        "Smoke"
+      ],
+      "answerMap": {
+        "Abur": "Steam",
+        "Gheață": "Ice",
+        "Nisip": "Sand",
+        "Fum": "Smoke"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Cum se numește apa în stare gazoasă?␟Vapori de apă␟",
+      "kind": "Science",
+      "text": "What is water called in its gaseous state?",
+      "correct": "Water vapor",
+      "answers": [
+        "Ice",
+        "Water vapor",
+        "Dust",
+        "Sand"
+      ],
+      "answerMap": {
+        "Gheață": "Ice",
+        "Vapori de apă": "Water vapor",
+        "Praf": "Dust",
+        "Nisip": "Sand"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce forță ne ține pe Pământ?␟Gravitația␟",
+      "kind": "Science",
+      "text": "Which force keeps us on Earth?",
+      "correct": "Gravity",
+      "answers": [
+        "Light",
+        "Gravity",
+        "Sound",
+        "Heat"
+      ],
+      "answerMap": {
+        "Lumina": "Light",
+        "Gravitația": "Gravity",
+        "Sunetul": "Sound",
+        "Căldura": "Heat"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce produce o umbră?␟Blocarea luminii␟",
+      "kind": "Science",
+      "text": "What creates a shadow?",
+      "correct": "Blocking light",
+      "answers": [
+        "Sound",
+        "Blocking light",
+        "Wind",
+        "Magnet"
+      ],
+      "answerMap": {
+        "Sunetul": "Sound",
+        "Blocarea luminii": "Blocking light",
+        "Vântul": "Wind",
+        "Magnetul": "Magnet"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce ne oferă Soarele în timpul zilei?␟Lumină și căldură␟",
+      "kind": "Science",
+      "text": "What does the Sun give us during the day?",
+      "correct": "Light and heat",
+      "answers": [
+        "Snow",
+        "Light and heat",
+        "Rain all the time",
+        "Wind all the time"
+      ],
+      "answerMap": {
+        "Zăpadă": "Snow",
+        "Lumină și căldură": "Light and heat",
+        "Ploaie mereu": "Rain all the time",
+        "Vânt mereu": "Wind all the time"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce instrument măsoară temperatura?␟Termometrul␟",
+      "kind": "Science",
+      "text": "Which instrument measures temperature?",
+      "correct": "Thermometer",
+      "answers": [
+        "Ruler",
+        "Thermometer",
+        "Clock",
+        "Scale"
+      ],
+      "answerMap": {
+        "Rigla": "Ruler",
+        "Termometrul": "Thermometer",
+        "Ceasul": "Clock",
+        "Cântarul": "Scale"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce obiect atrage unele metale?␟Magnetul␟",
+      "kind": "Science",
+      "text": "Which object attracts some metals?",
+      "correct": "Magnet",
+      "answers": [
+        "Glass",
+        "Magnet",
+        "Pencil",
+        "Towel"
+      ],
+      "answerMap": {
+        "Paharul": "Glass",
+        "Magnetul": "Magnet",
+        "Creionul": "Pencil",
+        "Prosopul": "Towel"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Ce material este atras de un magnet?␟Fierul␟",
+      "kind": "Science",
+      "text": "Which material is attracted by a magnet?",
+      "correct": "Iron",
+      "answers": [
+        "Wood",
+        "Iron",
+        "Paper",
+        "Glass"
+      ],
+      "answerMap": {
+        "Lemnul": "Wood",
+        "Fierul": "Iron",
+        "Hârtia": "Paper",
+        "Sticla": "Glass"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Sunetul se aude cu ajutorul...␟urechilor␟",
+      "kind": "Science",
+      "text": "We hear sound with our...",
+      "correct": "ears",
+      "answers": [
+        "eyes",
+        "ears",
+        "nose",
+        "hands"
+      ],
+      "answerMap": {
+        "ochilor": "eyes",
+        "urechilor": "ears",
+        "nasului": "nose",
+        "mâinilor": "hands"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Știință␟Lumina ne ajută să...␟vedem␟",
+      "kind": "Science",
+      "text": "Light helps us to...",
+      "correct": "see",
+      "answers": [
+        "hear",
+        "see",
+        "smell",
+        "taste"
+      ],
+      "answerMap": {
+        "auzim": "hear",
+        "vedem": "see",
+        "mirosim": "smell",
+        "gustăm": "taste"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟În ce anotimp înfloresc multe plante?␟Primăvara␟",
+      "kind": "Nature",
+      "text": "In which season do many plants bloom?",
+      "correct": "Spring",
+      "answers": [
+        "Winter",
+        "Spring",
+        "Autumn",
+        "Night"
+      ],
+      "answerMap": {
+        "Iarna": "Winter",
+        "Primăvara": "Spring",
+        "Toamna": "Autumn",
+        "Noaptea": "Night"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟În ce anotimp sunt de obicei temperaturile cele mai ridicate?␟Vara␟",
+      "kind": "Nature",
+      "text": "In which season are temperatures usually the highest?",
+      "correct": "Summer",
+      "answers": [
+        "Summer",
+        "Winter",
+        "Autumn",
+        "Spring"
+      ],
+      "answerMap": {
+        "Vara": "Summer",
+        "Iarna": "Winter",
+        "Toamna": "Autumn",
+        "Primăvara": "Spring"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟În ce anotimp cad multe frunze din copaci?␟Toamna␟",
+      "kind": "Nature",
+      "text": "In which season do many leaves fall from trees?",
+      "correct": "Autumn",
+      "answers": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ],
+      "answerMap": {
+        "Primăvara": "Spring",
+        "Vara": "Summer",
+        "Toamna": "Autumn",
+        "Iarna": "Winter"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟În ce anotimp ninge cel mai des?␟Iarna␟",
+      "kind": "Nature",
+      "text": "In which season does it snow most often?",
+      "correct": "Winter",
+      "answers": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ],
+      "answerMap": {
+        "Primăvara": "Spring",
+        "Vara": "Summer",
+        "Toamna": "Autumn",
+        "Iarna": "Winter"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce fenomen apare după ploaie când Soarele luminează picăturile de apă?␟Curcubeul␟",
+      "kind": "Nature",
+      "text": "What phenomenon appears after rain when sunlight shines through water droplets?",
+      "correct": "Rainbow",
+      "answers": [
+        "Lightning",
+        "Rainbow",
+        "Fog",
+        "Wind"
+      ],
+      "answerMap": {
+        "Fulgerul": "Lightning",
+        "Curcubeul": "Rainbow",
+        "Ceața": "Fog",
+        "Vântul": "Wind"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce formă de precipitație este formată din fulgi?␟Ninsoarea␟",
+      "kind": "Nature",
+      "text": "Which type of precipitation is made of flakes?",
+      "correct": "Snow",
+      "answers": [
+        "Rain",
+        "Snow",
+        "Fog",
+        "Wind"
+      ],
+      "answerMap": {
+        "Ploaia": "Rain",
+        "Ninsoarea": "Snow",
+        "Ceața": "Fog",
+        "Vântul": "Wind"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Norii sunt formați în principal din...␟picături mici de apă și cristale de gheață␟",
+      "kind": "Nature",
+      "text": "Clouds are mainly made of...",
+      "correct": "tiny water droplets and ice crystals",
+      "answers": [
+        "sand",
+        "smoke",
+        "tiny water droplets and ice crystals",
+        "leaves"
+      ],
+      "answerMap": {
+        "nisip": "sand",
+        "fum": "smoke",
+        "picături mici de apă și cristale de gheață": "tiny water droplets and ice crystals",
+        "frunze": "leaves"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce fenomen produce lumină puternică în timpul furtunii?␟Fulgerul␟",
+      "kind": "Nature",
+      "text": "What phenomenon produces a bright flash during a storm?",
+      "correct": "Lightning",
+      "answers": [
+        "Rainbow",
+        "Lightning",
+        "Fog",
+        "Frost"
+      ],
+      "answerMap": {
+        "Curcubeul": "Rainbow",
+        "Fulgerul": "Lightning",
+        "Ceața": "Fog",
+        "Bruma": "Frost"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce se aude după un fulger?␟Tunetul␟",
+      "kind": "Nature",
+      "text": "What do you hear after lightning?",
+      "correct": "Thunder",
+      "answers": [
+        "Thunder",
+        "Echo",
+        "Music",
+        "Whisper"
+      ],
+      "answerMap": {
+        "Tunetul": "Thunder",
+        "Ecoul": "Echo",
+        "Muzica": "Music",
+        "Șoapta": "Whisper"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Câte picioare are de obicei un păianjen?␟8␟",
+      "kind": "Biology",
+      "text": "How many legs does a spider usually have?",
+      "correct": "8",
+      "answers": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answerMap": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Câte picioare are o insectă?␟6␟",
+      "kind": "Biology",
+      "text": "How many legs does an insect have?",
+      "correct": "6",
+      "answers": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answerMap": {
+        "4": "4",
+        "6": "6",
+        "8": "8",
+        "10": "10"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Ce acoperă corpul păsărilor?␟Penele␟",
+      "kind": "Biology",
+      "text": "What covers a bird’s body?",
+      "correct": "Feathers",
+      "answers": [
+        "Fur",
+        "Feathers",
+        "Scales",
+        "Bark"
+      ],
+      "answerMap": {
+        "Blana": "Fur",
+        "Penele": "Feathers",
+        "Solzii": "Scales",
+        "Scoarța": "Bark"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Ce acoperă corpul peștilor?␟Solzii␟",
+      "kind": "Biology",
+      "text": "What covers a fish’s body?",
+      "correct": "Scales",
+      "answers": [
+        "Feathers",
+        "Scales",
+        "Fur",
+        "Wool"
+      ],
+      "answerMap": {
+        "Penele": "Feathers",
+        "Solzii": "Scales",
+        "Blana": "Fur",
+        "Lâna": "Wool"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Ce folosesc păsările pentru a zbura?␟Aripile␟",
+      "kind": "Biology",
+      "text": "What do birds use to fly?",
+      "correct": "Wings",
+      "answers": [
+        "Fins",
+        "Wings",
+        "Horns",
+        "Paws"
+      ],
+      "answerMap": {
+        "Înotătoarele": "Fins",
+        "Aripile": "Wings",
+        "Coarnele": "Horns",
+        "Labele": "Paws"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟Ce produc găinile?␟Ouă␟",
+      "kind": "Biology",
+      "text": "What do hens produce?",
+      "correct": "Eggs",
+      "answers": [
+        "Milk",
+        "Eggs",
+        "Honey",
+        "Wool"
+      ],
+      "answerMap": {
+        "Lapte": "Milk",
+        "Ouă": "Eggs",
+        "Miere": "Honey",
+        "Lână": "Wool"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Biologie␟De la ce animal obținem lână?␟Oaia␟",
+      "kind": "Biology",
+      "text": "Which animal do we get wool from?",
+      "correct": "Sheep",
+      "answers": [
+        "Sheep",
+        "Cat",
+        "Chicken",
+        "Duck"
+      ],
+      "answerMap": {
+        "Oaia": "Sheep",
+        "Pisica": "Cat",
+        "Găina": "Chicken",
+        "Rața": "Duck"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce copac produce ghinde?␟Stejarul␟",
+      "kind": "Nature",
+      "text": "Which tree produces acorns?",
+      "correct": "Oak",
+      "answers": [
+        "Apple tree",
+        "Oak",
+        "Fir tree",
+        "Cherry tree"
+      ],
+      "answerMap": {
+        "Mărul": "Apple tree",
+        "Stejarul": "Oak",
+        "Bradul": "Fir tree",
+        "Cireșul": "Cherry tree"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce copac rămâne de obicei verde iarna?␟Bradul␟",
+      "kind": "Nature",
+      "text": "Which tree usually stays green in winter?",
+      "correct": "Fir tree",
+      "answers": [
+        "Fir tree",
+        "Apple tree",
+        "Cherry tree",
+        "Plum tree"
+      ],
+      "answerMap": {
+        "Bradul": "Fir tree",
+        "Mărul": "Apple tree",
+        "Cireșul": "Cherry tree",
+        "Prunul": "Plum tree"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Natură␟Ce fruct crește într-un măr?␟Mărul␟",
+      "kind": "Nature",
+      "text": "Which fruit grows on an apple tree?",
+      "correct": "Apple",
+      "answers": [
+        "Peach",
+        "Apple",
+        "Plum",
+        "Pear"
+      ],
+      "answerMap": {
+        "Piersica": "Peach",
+        "Mărul": "Apple",
+        "Pruna": "Plum",
+        "Para": "Pear"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este antonimul cuvântului „rapid”?␟lent␟",
+      "kind": "Language",
+      "text": "What is the opposite of “fast”?",
+      "correct": "slow",
+      "answers": [
+        "quickly",
+        "slow",
+        "big",
+        "happy"
+      ],
+      "answerMap": {
+        "repede": "quickly",
+        "lent": "slow",
+        "mare": "big",
+        "vesel": "happy"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este scris corect?␟copil␟",
+      "kind": "Language",
+      "text": "Which word is spelled correctly?",
+      "correct": "child",
+      "answers": [
+        "chlid",
+        "child",
+        "chyld",
+        "chilld"
+      ],
+      "answerMap": {
+        "copill": "chlid",
+        "copil": "child",
+        "kopil": "chyld",
+        "copiil": "chilld"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care semn încheie de obicei o întrebare?␟?␟",
+      "kind": "Language",
+      "text": "Which punctuation mark usually ends a question?",
+      "correct": "?",
+      "answers": [
+        ".",
+        "!",
+        "?",
+        ","
+      ],
+      "answerMap": {
+        ".": ".",
+        "!": "!",
+        "?": "?",
+        ",": ","
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este pluralul cuvântului „copil”?␟copii␟",
+      "kind": "Language",
+      "text": "What is the plural of “child”?",
+      "correct": "children",
+      "answers": [
+        "childs",
+        "children",
+        "childes",
+        "childrens"
+      ],
+      "answerMap": {
+        "copili": "childs",
+        "copii": "children",
+        "copile": "childes",
+        "copiii": "childrens"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este pluralul cuvântului „carte”?␟cărți␟",
+      "kind": "Language",
+      "text": "What is the plural of “book”?",
+      "correct": "books",
+      "answers": [
+        "book",
+        "books",
+        "bookes",
+        "book's"
+      ],
+      "answerMap": {
+        "carte": "book",
+        "cărți": "books",
+        "carturi": "bookes",
+        "cărții": "book's"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este pluralul cuvântului „floare”?␟flori␟",
+      "kind": "Language",
+      "text": "What is the plural of “flower”?",
+      "correct": "flowers",
+      "answers": [
+        "flower",
+        "flowers",
+        "floweres",
+        "flower's"
+      ],
+      "answerMap": {
+        "floare": "flower",
+        "flori": "flowers",
+        "floari": "floweres",
+        "floruri": "flower's"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este antonimul cuvântului „mare”?␟mic␟",
+      "kind": "Language",
+      "text": "What is the opposite of “big”?",
+      "correct": "small",
+      "answers": [
+        "tall",
+        "small",
+        "long",
+        "wide"
+      ],
+      "answerMap": {
+        "înalt": "tall",
+        "mic": "small",
+        "lung": "long",
+        "lat": "wide"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este antonimul cuvântului „cald”?␟rece␟",
+      "kind": "Language",
+      "text": "What is the opposite of “warm”?",
+      "correct": "cold",
+      "answers": [
+        "cold",
+        "soft",
+        "fast",
+        "heavy"
+      ],
+      "answerMap": {
+        "rece": "cold",
+        "moale": "soft",
+        "repede": "fast",
+        "greu": "heavy"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este antonimul cuvântului „vesel”?␟trist␟",
+      "kind": "Language",
+      "text": "What is the opposite of “happy”?",
+      "correct": "sad",
+      "answers": [
+        "sad",
+        "fast",
+        "small",
+        "clean"
+      ],
+      "answerMap": {
+        "trist": "sad",
+        "rapid": "fast",
+        "mic": "small",
+        "curat": "clean"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este antonimul cuvântului „sus”?␟jos␟",
+      "kind": "Language",
+      "text": "What is the opposite of “up”?",
+      "correct": "down",
+      "answers": [
+        "big",
+        "down",
+        "fast",
+        "near"
+      ],
+      "answerMap": {
+        "mare": "big",
+        "jos": "down",
+        "repede": "fast",
+        "aproape": "near"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este sinonimul cuvântului „fericit”?␟bucuros␟",
+      "kind": "Language",
+      "text": "What is a synonym for “happy”?",
+      "correct": "glad",
+      "answers": [
+        "sad",
+        "glad",
+        "tired",
+        "small"
+      ],
+      "answerMap": {
+        "trist": "sad",
+        "bucuros": "glad",
+        "obosit": "tired",
+        "mic": "small"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este sinonimul cuvântului „rapid”?␟repede␟",
+      "kind": "Language",
+      "text": "What is a synonym for “fast”?",
+      "correct": "quickly",
+      "answers": [
+        "quickly",
+        "slowly",
+        "big",
+        "cold"
+      ],
+      "answerMap": {
+        "repede": "quickly",
+        "încet": "slowly",
+        "mare": "big",
+        "rece": "cold"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt denumește o persoană?␟copil␟",
+      "kind": "Language",
+      "text": "Which word names a person?",
+      "correct": "child",
+      "answers": [
+        "child",
+        "table",
+        "runs",
+        "green"
+      ],
+      "answerMap": {
+        "copil": "child",
+        "masă": "table",
+        "aleargă": "runs",
+        "verde": "green"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt denumește un obiect?␟creion␟",
+      "kind": "Language",
+      "text": "Which word names an object?",
+      "correct": "pencil",
+      "answers": [
+        "quickly",
+        "pencil",
+        "sings",
+        "beautiful"
+      ],
+      "answerMap": {
+        "repede": "quickly",
+        "creion": "pencil",
+        "cântă": "sings",
+        "frumos": "beautiful"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt denumește o acțiune?␟aleargă␟",
+      "kind": "Language",
+      "text": "Which word names an action?",
+      "correct": "runs",
+      "answers": [
+        "table",
+        "runs",
+        "blue",
+        "child"
+      ],
+      "answerMap": {
+        "masă": "table",
+        "aleargă": "runs",
+        "albastru": "blue",
+        "copil": "child"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt arată o însușire?␟frumos␟",
+      "kind": "Language",
+      "text": "Which word describes a quality?",
+      "correct": "beautiful",
+      "answers": [
+        "beautiful",
+        "goes",
+        "child",
+        "backpack"
+      ],
+      "answerMap": {
+        "frumos": "beautiful",
+        "merge": "goes",
+        "copil": "child",
+        "ghiozdan": "backpack"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Cu ce literă începe cuvântul „școală”?␟ș␟",
+      "kind": "Language",
+      "text": "Which letter does the word “school” start with?",
+      "correct": "s",
+      "answers": [
+        "c",
+        "s",
+        "h",
+        "a"
+      ],
+      "answerMap": {
+        "s": "c",
+        "ș": "s",
+        "c": "h",
+        "a": "a"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Cu ce literă începe cuvântul „mere”?␟m␟",
+      "kind": "Language",
+      "text": "Which letter does the word “apple” start with?",
+      "correct": "a",
+      "answers": [
+        "n",
+        "a",
+        "r",
+        "e"
+      ],
+      "answerMap": {
+        "n": "n",
+        "m": "a",
+        "r": "r",
+        "e": "e"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt începe cu litera „P”?␟pisică␟",
+      "kind": "Language",
+      "text": "Which word starts with the letter “P”?",
+      "correct": "pencil",
+      "answers": [
+        "house",
+        "pencil",
+        "table",
+        "flower"
+      ],
+      "answerMap": {
+        "casă": "house",
+        "pisică": "pencil",
+        "masă": "table",
+        "floare": "flower"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt se termină cu litera „a”?␟masa␟",
+      "kind": "Language",
+      "text": "Which word ends with the letter “a”?",
+      "correct": "pizza",
+      "answers": [
+        "child",
+        "pizza",
+        "tree",
+        "train"
+      ],
+      "answerMap": {
+        "copil": "child",
+        "masa": "pizza",
+        "pom": "tree",
+        "tren": "train"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Câte silabe are cuvântul „ma-ma”?␟2␟",
+      "kind": "Language",
+      "text": "How many syllables are in “ta-ble”?",
+      "correct": "2",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerMap": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Câte silabe are cuvântul „ca-să”?␟2␟",
+      "kind": "Language",
+      "text": "How many syllables are in “win-dow”?",
+      "correct": "2",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerMap": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Câte silabe are cuvântul „a-ni-mal”?␟3␟",
+      "kind": "Language",
+      "text": "How many syllables are in “an-i-mal”?",
+      "correct": "3",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerMap": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care propoziție este o întrebare?␟Unde mergi?␟",
+      "kind": "Language",
+      "text": "Which sentence is a question?",
+      "correct": "Where are you going?",
+      "answers": [
+        "Where are you going?",
+        "I am going to school.",
+        "What a beautiful day!",
+        "I open the book."
+      ],
+      "answerMap": {
+        "Unde mergi?": "Where are you going?",
+        "Merg la școală.": "I am going to school.",
+        "Ce zi frumoasă!": "What a beautiful day!",
+        "Deschid cartea.": "I open the book."
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care propoziție exprimă mirare?␟Ce frumos!␟",
+      "kind": "Language",
+      "text": "Which sentence expresses surprise?",
+      "correct": "How beautiful!",
+      "answers": [
+        "I am going home.",
+        "How beautiful!",
+        "Where is the book?",
+        "I am reading."
+      ],
+      "answerMap": {
+        "Merg acasă.": "I am going home.",
+        "Ce frumos!": "How beautiful!",
+        "Unde e cartea?": "Where is the book?",
+        "Eu citesc.": "I am reading."
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Ce semn folosim la finalul unei exclamații?␟!␟",
+      "kind": "Language",
+      "text": "Which punctuation mark do we use at the end of an exclamation?",
+      "correct": "!",
+      "answers": [
+        ".",
+        "!",
+        "?",
+        ","
+      ],
+      "answerMap": {
+        ".": ".",
+        "!": "!",
+        "?": "?",
+        ",": ","
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Ce semn folosim la finalul unei propoziții obișnuite?␟.␟",
+      "kind": "Language",
+      "text": "Which punctuation mark do we use at the end of an ordinary sentence?",
+      "correct": ".",
+      "answers": [
+        ".",
+        "!",
+        "?",
+        ":"
+      ],
+      "answerMap": {
+        ".": ".",
+        "!": "!",
+        "?": "?",
+        ":": ":"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Ce semn folosim pentru a despărți uneori elementele unei enumerări?␟Virgula␟",
+      "kind": "Language",
+      "text": "Which punctuation mark can separate items in a list?",
+      "correct": "Comma",
+      "answers": [
+        "Period",
+        "Comma",
+        "Quotation marks",
+        "Parenthesis"
+      ],
+      "answerMap": {
+        "Punctul": "Period",
+        "Virgula": "Comma",
+        "Ghilimelele": "Quotation marks",
+        "Paranteza": "Parenthesis"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este scris cu diacritice corect?␟țară␟",
+      "kind": "Language",
+      "text": "Which word is spelled correctly?",
+      "correct": "country",
+      "answers": [
+        "cuntry",
+        "country",
+        "countree",
+        "countrry"
+      ],
+      "answerMap": {
+        "tara": "cuntry",
+        "țară": "country",
+        "târă": "countree",
+        "țarra": "countrry"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este scris corect?␟școală␟",
+      "kind": "Language",
+      "text": "Which word is spelled correctly?",
+      "correct": "school",
+      "answers": [
+        "skool",
+        "school",
+        "scholl",
+        "scool"
+      ],
+      "answerMap": {
+        "scoala": "skool",
+        "școală": "school",
+        "școallă": "scholl",
+        "scoală": "scool"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este nume de animal?␟câine␟",
+      "kind": "Language",
+      "text": "Which word names an animal?",
+      "correct": "dog",
+      "answers": [
+        "dog",
+        "table",
+        "green",
+        "runs"
+      ],
+      "answerMap": {
+        "câine": "dog",
+        "masă": "table",
+        "verde": "green",
+        "aleargă": "runs"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este nume de plantă?␟trandafir␟",
+      "kind": "Language",
+      "text": "Which word names a plant?",
+      "correct": "rose",
+      "answers": [
+        "rose",
+        "cloud",
+        "door",
+        "train"
+      ],
+      "answerMap": {
+        "trandafir": "rose",
+        "nor": "cloud",
+        "ușă": "door",
+        "tren": "train"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt este nume de loc?␟parc␟",
+      "kind": "Language",
+      "text": "Which word names a place?",
+      "correct": "park",
+      "answers": [
+        "park",
+        "happy",
+        "runs",
+        "blue"
+      ],
+      "answerMap": {
+        "parc": "park",
+        "vesel": "happy",
+        "aleargă": "runs",
+        "albastru": "blue"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este diminutivul uzual pentru „casă”?␟căsuță␟",
+      "kind": "Language",
+      "text": "Which is a common diminutive expression for “house”?",
+      "correct": "little house",
+      "answers": [
+        "little house",
+        "big house",
+        "houses",
+        "housing"
+      ],
+      "answerMap": {
+        "căsuță": "little house",
+        "casoi": "big house",
+        "case": "houses",
+        "căsesc": "housing"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este diminutivul uzual pentru „floare”?␟floricică␟",
+      "kind": "Language",
+      "text": "Which is a common diminutive expression for “flower”?",
+      "correct": "little flower",
+      "answers": [
+        "little flower",
+        "big flower",
+        "flowering",
+        "flowers"
+      ],
+      "answerMap": {
+        "floricică": "little flower",
+        "floroi": "big flower",
+        "floresc": "flowering",
+        "floarelor": "flowers"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt rimează cu „soare”?␟floare␟",
+      "kind": "Language",
+      "text": "Which word rhymes with “sun”?",
+      "correct": "fun",
+      "answers": [
+        "fun",
+        "table",
+        "child",
+        "train"
+      ],
+      "answerMap": {
+        "floare": "fun",
+        "masă": "table",
+        "copil": "child",
+        "tren": "train"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care cuvânt rimează cu „casă”?␟masă␟",
+      "kind": "Language",
+      "text": "Which word rhymes with “cat”?",
+      "correct": "hat",
+      "answers": [
+        "hat",
+        "child",
+        "cloud",
+        "road"
+      ],
+      "answerMap": {
+        "masă": "hat",
+        "copil": "child",
+        "nor": "cloud",
+        "drum": "road"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este forma corectă?␟copiii se joacă␟",
+      "kind": "Language",
+      "text": "Which sentence is grammatically correct?",
+      "correct": "Children play.",
+      "answers": [
+        "Children plays.",
+        "Children play.",
+        "Children plays well.",
+        "Childrens play."
+      ],
+      "answerMap": {
+        "copii se joacă": "Children plays.",
+        "copiii se joacă": "Children play.",
+        "copiii se joace": "Children plays well.",
+        "copiii se joakă": "Childrens play."
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este forma corectă?␟eu citesc␟",
+      "kind": "Language",
+      "text": "Which sentence is grammatically correct?",
+      "correct": "I read.",
+      "answers": [
+        "I read.",
+        "I reads.",
+        "I to read.",
+        "I reades."
+      ],
+      "answerMap": {
+        "eu citesc": "I read.",
+        "eu citește": "I reads.",
+        "eu citi": "I to read.",
+        "eu citesci": "I reades."
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Limbă␟Care este forma corectă?␟noi mergem␟",
+      "kind": "Language",
+      "text": "Which sentence is grammatically correct?",
+      "correct": "We go.",
+      "answers": [
+        "We goes.",
+        "We go.",
+        "We goes you.",
+        "We wenting."
+      ],
+      "answerMap": {
+        "noi merge": "We goes.",
+        "noi mergem": "We go.",
+        "noi mergi": "We goes you.",
+        "noi mers": "We wenting."
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Ce sărbătorim în România la 1 Decembrie?␟Ziua Națională␟",
+      "kind": "History",
+      "text": "What do we celebrate in Romania on December 1?",
+      "correct": "National Day",
+      "answers": [
+        "Children's Day",
+        "National Day",
+        "New Year's Day",
+        "Europe Day"
+      ],
+      "answerMap": {
+        "Ziua Copilului": "Children's Day",
+        "Ziua Națională": "National Day",
+        "Anul Nou": "New Year's Day",
+        "Ziua Europei": "Europe Day"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟În ce zi sărbătorim Ziua Copilului în România?␟1 iunie␟",
+      "kind": "History",
+      "text": "When is Children’s Day celebrated in Romania?",
+      "correct": "June 1",
+      "answers": [
+        "January 1",
+        "March 1",
+        "June 1",
+        "December 1"
+      ],
+      "answerMap": {
+        "1 ianuarie": "January 1",
+        "1 martie": "March 1",
+        "1 iunie": "June 1",
+        "1 decembrie": "December 1"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce faci înainte să traversezi strada?␟Te asiguri␟",
+      "kind": "Civic education",
+      "text": "What should you do before crossing the street?",
+      "correct": "Look carefully and make sure it is safe",
+      "answers": [
+        "Run immediately",
+        "Look carefully and make sure it is safe",
+        "Close your eyes",
+        "Turn your back"
+      ],
+      "answerMap": {
+        "Alergi imediat": "Run immediately",
+        "Te asiguri": "Look carefully and make sure it is safe",
+        "Închizi ochii": "Close your eyes",
+        "Te întorci cu spatele": "Turn your back"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟La culoarea roșie a semaforului pentru pietoni...␟te oprești␟",
+      "kind": "Civic education",
+      "text": "At a red pedestrian light...",
+      "correct": "you stop",
+      "answers": [
+        "you run",
+        "you stop",
+        "you cross quickly",
+        "you walk backwards"
+      ],
+      "answerMap": {
+        "alergi": "you run",
+        "te oprești": "you stop",
+        "traversezi repede": "you cross quickly",
+        "mergi cu spatele": "you walk backwards"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟La culoarea verde a semaforului pentru pietoni...␟poți traversa după ce te asiguri␟",
+      "kind": "Civic education",
+      "text": "At a green pedestrian light...",
+      "correct": "you may cross after making sure it is safe",
+      "answers": [
+        "you close your eyes",
+        "you may cross after making sure it is safe",
+        "you always stay still",
+        "you run without looking"
+      ],
+      "answerMap": {
+        "închizi ochii": "you close your eyes",
+        "poți traversa după ce te asiguri": "you may cross after making sure it is safe",
+        "stai mereu pe loc": "you always stay still",
+        "alergi fără să te uiți": "you run without looking"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Cum te porți într-o bibliotecă?␟Vorbești încet␟",
+      "kind": "Civic education",
+      "text": "How should you behave in a library?",
+      "correct": "Speak quietly",
+      "answers": [
+        "Shout",
+        "Speak quietly",
+        "Run between the shelves",
+        "Throw books"
+      ],
+      "answerMap": {
+        "Strigi": "Shout",
+        "Vorbești încet": "Speak quietly",
+        "Alergi printre rafturi": "Run between the shelves",
+        "Arunci cărți": "Throw books"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce spui când primești ceva?␟Mulțumesc␟",
+      "kind": "Civic education",
+      "text": "What do you say when someone gives you something?",
+      "correct": "Thank you",
+      "answers": [
+        "I don't want it",
+        "Thank you",
+        "Go away",
+        "Be quiet"
+      ],
+      "answerMap": {
+        "Nu vreau": "I don't want it",
+        "Mulțumesc": "Thank you",
+        "Pleacă": "Go away",
+        "Taci": "Be quiet"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce spui când ceri ceva politicos?␟Te rog␟",
+      "kind": "Civic education",
+      "text": "What do you say when asking for something politely?",
+      "correct": "Please",
+      "answers": [
+        "Please",
+        "Give it to me",
+        "Now",
+        "Go away"
+      ],
+      "answerMap": {
+        "Te rog": "Please",
+        "Dă-mi": "Give it to me",
+        "Acum": "Now",
+        "Pleacă": "Go away"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce faci dacă găsești un obiect care nu este al tău la școală?␟Îl predai unui adult␟",
+      "kind": "Civic education",
+      "text": "What should you do if you find an object at school that is not yours?",
+      "correct": "Give it to an adult",
+      "answers": [
+        "Keep it",
+        "Hide it",
+        "Give it to an adult",
+        "Throw it away"
+      ],
+      "answerMap": {
+        "Îl păstrezi": "Keep it",
+        "Îl ascunzi": "Hide it",
+        "Îl predai unui adult": "Give it to an adult",
+        "Îl arunci": "Throw it away"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce faci dacă vezi un coleg căzut și rănit?␟Chemi un adult și îl ajuți în siguranță␟",
+      "kind": "Civic education",
+      "text": "What should you do if you see a classmate who has fallen and is hurt?",
+      "correct": "Call an adult and help safely",
+      "answers": [
+        "Laugh",
+        "Walk away",
+        "Call an adult and help safely",
+        "Push them"
+      ],
+      "answerMap": {
+        "Râzi": "Laugh",
+        "Pleci": "Walk away",
+        "Chemi un adult și îl ajuți în siguranță": "Call an adult and help safely",
+        "Îl împingi": "Push them"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță␟Numărul unic de urgență în România și UE este...␟112␟",
+      "kind": "Safety",
+      "text": "The single emergency number in Romania and the EU is...",
+      "correct": "112",
+      "answers": [
+        "111",
+        "112",
+        "911",
+        "999"
+      ],
+      "answerMap": {
+        "111": "111",
+        "112": "112",
+        "911": "911",
+        "999": "999"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță␟Dacă simți miros de fum într-o clădire, ce faci?␟Anunți imediat un adult și ieși în siguranță␟",
+      "kind": "Safety",
+      "text": "If you smell smoke in a building, what should you do?",
+      "correct": "Tell an adult immediately and leave safely",
+      "answers": [
+        "Hide",
+        "Tell an adult immediately and leave safely",
+        "Start a fire",
+        "Stay alone"
+      ],
+      "answerMap": {
+        "Te ascunzi": "Hide",
+        "Anunți imediat un adult și ieși în siguranță": "Tell an adult immediately and leave safely",
+        "Deschizi focul": "Start a fire",
+        "Rămâi singur": "Stay alone"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță␟Este sigur să te joci cu prizele electrice?␟Nu␟",
+      "kind": "Safety",
+      "text": "Is it safe to play with electrical outlets?",
+      "correct": "No",
+      "answers": [
+        "Yes",
+        "No",
+        "Only in the evening",
+        "Only if there are many"
+      ],
+      "answerMap": {
+        "Da": "Yes",
+        "Nu": "No",
+        "Doar seara": "Only in the evening",
+        "Doar dacă sunt multe": "Only if there are many"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță␟Când mergi cu bicicleta, ce obiect te protejează capul?␟Casca␟",
+      "kind": "Safety",
+      "text": "When riding a bicycle, what protects your head?",
+      "correct": "Helmet",
+      "answers": [
+        "Cap",
+        "Helmet",
+        "Glove",
+        "Scarf"
+      ],
+      "answerMap": {
+        "Șapca": "Cap",
+        "Casca": "Helmet",
+        "Mănușa": "Glove",
+        "Eșarfa": "Scarf"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟De ce respectăm regulile clasei?␟Pentru siguranță și bună înțelegere␟",
+      "kind": "Civic education",
+      "text": "Why do we follow classroom rules?",
+      "correct": "For safety and good cooperation",
+      "answers": [
+        "To make noise",
+        "For safety and good cooperation",
+        "To be late",
+        "So we do not learn"
+      ],
+      "answerMap": {
+        "Ca să fie gălăgie": "To make noise",
+        "Pentru siguranță și bună înțelegere": "For safety and good cooperation",
+        "Ca să întârziem": "To be late",
+        "Ca să nu învățăm": "So we do not learn"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce înseamnă să fii punctual?␟Să ajungi la timp␟",
+      "kind": "Civic education",
+      "text": "What does it mean to be punctual?",
+      "correct": "To arrive on time",
+      "answers": [
+        "To always be late",
+        "To arrive on time",
+        "To forget the time",
+        "To leave without saying anything"
+      ],
+      "answerMap": {
+        "Să întârzii mereu": "To always be late",
+        "Să ajungi la timp": "To arrive on time",
+        "Să uiți ora": "To forget the time",
+        "Să pleci fără să spui": "To leave without saying anything"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Ce înseamnă să îți respecți colegii?␟Să vorbești și să te porți politicos␟",
+      "kind": "Civic education",
+      "text": "What does it mean to respect your classmates?",
+      "correct": "To speak and behave politely",
+      "answers": [
+        "To insult them",
+        "To speak and behave politely",
+        "To always ignore them",
+        "To take their things"
+      ],
+      "answerMap": {
+        "Să îi jignești": "To insult them",
+        "Să vorbești și să te porți politicos": "To speak and behave politely",
+        "Să îi ignori mereu": "To always ignore them",
+        "Să le iei lucrurile": "To take their things"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Cine a fost Mihai Viteazul?␟Un domnitor român␟",
+      "kind": "History",
+      "text": "Who was Michael the Brave?",
+      "correct": "A Romanian ruler",
+      "answers": [
+        "A painter",
+        "A Romanian ruler",
+        "An astronaut",
+        "A composer"
+      ],
+      "answerMap": {
+        "Un pictor": "A painter",
+        "Un domnitor român": "A Romanian ruler",
+        "Un astronaut": "An astronaut",
+        "Un compozitor": "A composer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Cine a fost Ștefan cel Mare?␟Un domnitor al Moldovei␟",
+      "kind": "History",
+      "text": "Who was Stephen the Great?",
+      "correct": "A ruler of Moldavia",
+      "answers": [
+        "A ruler of Moldavia",
+        "A Roman emperor",
+        "A French writer",
+        "An explorer"
+      ],
+      "answerMap": {
+        "Un domnitor al Moldovei": "A ruler of Moldavia",
+        "Un împărat roman": "A Roman emperor",
+        "Un scriitor francez": "A French writer",
+        "Un explorator": "An explorer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Cine a fost Alexandru Ioan Cuza?␟Domnitorul Principatelor Unite␟",
+      "kind": "History",
+      "text": "Who was Alexandru Ioan Cuza?",
+      "correct": "The ruler of the United Principalities",
+      "answers": [
+        "An astronaut",
+        "The ruler of the United Principalities",
+        "A painter",
+        "An inventor"
+      ],
+      "answerMap": {
+        "Un astronaut": "An astronaut",
+        "Domnitorul Principatelor Unite": "The ruler of the United Principalities",
+        "Un pictor": "A painter",
+        "Un inventator": "An inventor"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟În ce an a avut loc Marea Unire?␟1918␟",
+      "kind": "History",
+      "text": "In what year did the Great Union take place?",
+      "correct": "1918",
+      "answers": [
+        "1848",
+        "1859",
+        "1918",
+        "2007"
+      ],
+      "answerMap": {
+        "1848": "1848",
+        "1859": "1859",
+        "1918": "1918",
+        "2007": "2007"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Unirea Principatelor Române este legată de anul...␟1859␟",
+      "kind": "History",
+      "text": "The Union of the Romanian Principalities is associated with the year...",
+      "correct": "1859",
+      "answers": [
+        "1600",
+        "1859",
+        "1918",
+        "1989"
+      ],
+      "answerMap": {
+        "1600": "1600",
+        "1859": "1859",
+        "1918": "1918",
+        "1989": "1989"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Care este una dintre culorile drapelului României?␟Albastru␟",
+      "kind": "History",
+      "text": "Which is one of the colors of the Romanian flag?",
+      "correct": "Blue",
+      "answers": [
+        "Purple",
+        "Blue",
+        "Pink",
+        "Brown"
+      ],
+      "answerMap": {
+        "Mov": "Purple",
+        "Albastru": "Blue",
+        "Roz": "Pink",
+        "Maro": "Brown"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Istorie␟Drapelul României are culorile...␟albastru, galben și roșu␟",
+      "kind": "History",
+      "text": "The Romanian flag has the colors...",
+      "correct": "blue, yellow and red",
+      "answers": [
+        "green, white and red",
+        "blue, yellow and red",
+        "black, white and green",
+        "purple, pink and orange"
+      ],
+      "answerMap": {
+        "verde, alb și roșu": "green, white and red",
+        "albastru, galben și roșu": "blue, yellow and red",
+        "negru, alb și verde": "black, white and green",
+        "mov, roz și portocaliu": "purple, pink and orange"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Educație civică␟Care este limba oficială a României?␟Limba română␟",
+      "kind": "Civic education",
+      "text": "What is the official language of Romania?",
+      "correct": "Romanian",
+      "answers": [
+        "Romanian",
+        "Italian",
+        "German",
+        "Japanese"
+      ],
+      "answerMap": {
+        "Limba română": "Romanian",
+        "Limba italiană": "Italian",
+        "Limba germană": "German",
+        "Limba japoneză": "Japanese"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce unitate măsurăm lungimea unei camere?␟Metru␟",
+      "kind": "Measurements",
+      "text": "Which unit do we use to measure the length of a room?",
+      "correct": "Meter",
+      "answers": [
+        "Liter",
+        "Meter",
+        "Kilogram",
+        "Minute"
+      ],
+      "answerMap": {
+        "Litru": "Liter",
+        "Metru": "Meter",
+        "Kilogram": "Kilogram",
+        "Minut": "Minute"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce unitate măsurăm masa unui ghiozdan?␟Kilogram␟",
+      "kind": "Measurements",
+      "text": "Which unit do we use to measure the mass of a backpack?",
+      "correct": "Kilogram",
+      "answers": [
+        "Meter",
+        "Liter",
+        "Kilogram",
+        "Hour"
+      ],
+      "answerMap": {
+        "Metru": "Meter",
+        "Litru": "Liter",
+        "Kilogram": "Kilogram",
+        "Oră": "Hour"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Câte laturi are un hexagon?␟6␟",
+      "kind": "Geometry",
+      "text": "How many sides does a hexagon have?",
+      "correct": "6",
+      "answers": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answerMap": {
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "8": "8"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Câte laturi are un triunghi?␟3␟",
+      "kind": "Geometry",
+      "text": "How many sides does a triangle have?",
+      "correct": "3",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answerMap": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Câte laturi are un pătrat?␟4␟",
+      "kind": "Shapes",
+      "text": "How many sides does a square have?",
+      "correct": "4",
+      "answers": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answerMap": {
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6"
+      },
+      "imageAlt": "Geometric shapes"
+    },
+    {
+      "key": "Geometrie␟Câte colțuri are un dreptunghi?␟4␟",
+      "kind": "Geometry",
+      "text": "How many corners does a rectangle have?",
+      "correct": "4",
+      "answers": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answerMap": {
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "6": "6"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce figură geometrică are 3 laturi?␟Triunghiul␟",
+      "kind": "Geometry",
+      "text": "Which geometric shape has 3 sides?",
+      "correct": "Triangle",
+      "answers": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Hexagon"
+      ],
+      "answerMap": {
+        "Cercul": "Circle",
+        "Pătratul": "Square",
+        "Triunghiul": "Triangle",
+        "Hexagonul": "Hexagon"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce figură geometrică nu are laturi?␟Cercul␟",
+      "kind": "Geometry",
+      "text": "Which geometric shape has no sides?",
+      "correct": "Circle",
+      "answers": [
+        "Triangle",
+        "Circle",
+        "Square",
+        "Rectangle"
+      ],
+      "answerMap": {
+        "Triunghiul": "Triangle",
+        "Cercul": "Circle",
+        "Pătratul": "Square",
+        "Dreptunghiul": "Rectangle"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce figură are toate cele 4 laturi egale?␟Pătratul␟",
+      "kind": "Geometry",
+      "text": "Which shape has all 4 sides equal?",
+      "correct": "Square",
+      "answers": [
+        "Rectangle",
+        "Square",
+        "Triangle",
+        "Circle"
+      ],
+      "answerMap": {
+        "Dreptunghiul": "Rectangle",
+        "Pătratul": "Square",
+        "Triunghiul": "Triangle",
+        "Cercul": "Circle"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce corp geometric seamănă cu o minge?␟Sfera␟",
+      "kind": "Geometry",
+      "text": "Which 3D shape looks like a ball?",
+      "correct": "Sphere",
+      "answers": [
+        "Cube",
+        "Sphere",
+        "Cylinder",
+        "Cone"
+      ],
+      "answerMap": {
+        "Cubul": "Cube",
+        "Sfera": "Sphere",
+        "Cilindrul": "Cylinder",
+        "Conul": "Cone"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce corp geometric seamănă cu o cutie cu fețe pătrate?␟Cubul␟",
+      "kind": "Geometry",
+      "text": "Which 3D shape looks like a box with square faces?",
+      "correct": "Cube",
+      "answers": [
+        "Cube",
+        "Sphere",
+        "Cone",
+        "Cylinder"
+      ],
+      "answerMap": {
+        "Cubul": "Cube",
+        "Sfera": "Sphere",
+        "Conul": "Cone",
+        "Cilindrul": "Cylinder"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce corp geometric seamănă cu un zar?␟Cubul␟",
+      "kind": "Geometry",
+      "text": "Which 3D shape looks like a die?",
+      "correct": "Cube",
+      "answers": [
+        "Cone",
+        "Cube",
+        "Sphere",
+        "Pyramid"
+      ],
+      "answerMap": {
+        "Conul": "Cone",
+        "Cubul": "Cube",
+        "Sfera": "Sphere",
+        "Piramida": "Pyramid"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce corp geometric seamănă cu o doză de suc?␟Cilindrul␟",
+      "kind": "Geometry",
+      "text": "Which 3D shape looks like a soda can?",
+      "correct": "Cylinder",
+      "answers": [
+        "Sphere",
+        "Cube",
+        "Cylinder",
+        "Pyramid"
+      ],
+      "answerMap": {
+        "Sfera": "Sphere",
+        "Cubul": "Cube",
+        "Cilindrul": "Cylinder",
+        "Piramida": "Pyramid"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Geometrie␟Ce corp geometric seamănă cu un cornet de înghețată?␟Conul␟",
+      "kind": "Geometry",
+      "text": "Which 3D shape looks like an ice-cream cone?",
+      "correct": "Cone",
+      "answers": [
+        "Cube",
+        "Sphere",
+        "Cone",
+        "Cylinder"
+      ],
+      "answerMap": {
+        "Cubul": "Cube",
+        "Sfera": "Sphere",
+        "Conul": "Cone",
+        "Cilindrul": "Cylinder"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce unitate măsurăm lichidele?␟Litru␟",
+      "kind": "Measurements",
+      "text": "Which unit do we use to measure liquids?",
+      "correct": "Liter",
+      "answers": [
+        "Meter",
+        "Liter",
+        "Kilogram",
+        "Second"
+      ],
+      "answerMap": {
+        "Metru": "Meter",
+        "Litru": "Liter",
+        "Kilogram": "Kilogram",
+        "Secundă": "Second"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce unitate măsurăm timpul scurt?␟Secundă␟",
+      "kind": "Measurements",
+      "text": "Which unit do we use to measure short periods of time?",
+      "correct": "Second",
+      "answers": [
+        "Liter",
+        "Meter",
+        "Second",
+        "Kilogram"
+      ],
+      "answerMap": {
+        "Litru": "Liter",
+        "Metru": "Meter",
+        "Secundă": "Second",
+        "Kilogram": "Kilogram"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce instrument măsurăm lungimea unui caiet?␟Rigla␟",
+      "kind": "Measurements",
+      "text": "Which instrument do we use to measure the length of a notebook?",
+      "correct": "Ruler",
+      "answers": [
+        "Thermometer",
+        "Ruler",
+        "Scale",
+        "Clock"
+      ],
+      "answerMap": {
+        "Termometrul": "Thermometer",
+        "Rigla": "Ruler",
+        "Cântarul": "Scale",
+        "Ceasul": "Clock"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce instrument măsurăm masa?␟Cântarul␟",
+      "kind": "Measurements",
+      "text": "Which instrument do we use to measure mass?",
+      "correct": "Scale",
+      "answers": [
+        "Ruler",
+        "Scale",
+        "Clock",
+        "Compass"
+      ],
+      "answerMap": {
+        "Rigla": "Ruler",
+        "Cântarul": "Scale",
+        "Ceasul": "Clock",
+        "Busola": "Compass"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Cu ce instrument măsurăm timpul?␟Ceasul␟",
+      "kind": "Measurements",
+      "text": "Which instrument do we use to measure time?",
+      "correct": "Clock",
+      "answers": [
+        "Clock",
+        "Thermometer",
+        "Ruler",
+        "Compass"
+      ],
+      "answerMap": {
+        "Ceasul": "Clock",
+        "Termometrul": "Thermometer",
+        "Rigla": "Ruler",
+        "Busola": "Compass"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Câți centimetri are un metru?␟100␟",
+      "kind": "Measurements",
+      "text": "How many centimeters are in one meter?",
+      "correct": "100",
+      "answers": [
+        "10",
+        "50",
+        "100",
+        "1000"
+      ],
+      "answerMap": {
+        "10": "10",
+        "50": "50",
+        "100": "100",
+        "1000": "1000"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Câte minute are o oră?␟60␟",
+      "kind": "Time",
+      "text": "How many minutes are in an hour?",
+      "correct": "60",
+      "answers": [
+        "30",
+        "45",
+        "60",
+        "100"
+      ],
+      "answerMap": {
+        "30": "30",
+        "45": "45",
+        "60": "60",
+        "100": "100"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Câte secunde are un minut?␟60␟",
+      "kind": "Measurements",
+      "text": "How many seconds are in one minute?",
+      "correct": "60",
+      "answers": [
+        "10",
+        "30",
+        "60",
+        "100"
+      ],
+      "answerMap": {
+        "10": "10",
+        "30": "30",
+        "60": "60",
+        "100": "100"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Câte ore are o zi?␟24␟",
+      "kind": "Time",
+      "text": "How many hours are in a day?",
+      "correct": "24",
+      "answers": [
+        "12",
+        "18",
+        "24",
+        "48"
+      ],
+      "answerMap": {
+        "12": "12",
+        "18": "18",
+        "24": "24",
+        "48": "48"
+      },
+      "imageAlt": "Analog clock"
+    },
+    {
+      "key": "Timp␟Câte luni are un an?␟12␟",
+      "kind": "Calendar",
+      "text": "How many months are in a year?",
+      "correct": "12",
+      "answers": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answerMap": {
+        "10": "10",
+        "11": "11",
+        "12": "12",
+        "13": "13"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Ce zi vine după luni?␟Marți␟",
+      "kind": "Time",
+      "text": "Which day comes after Monday?",
+      "correct": "Tuesday",
+      "answers": [
+        "Sunday",
+        "Tuesday",
+        "Friday",
+        "Saturday"
+      ],
+      "answerMap": {
+        "Duminică": "Sunday",
+        "Marți": "Tuesday",
+        "Vineri": "Friday",
+        "Sâmbătă": "Saturday"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Ce zi vine după vineri?␟Sâmbătă␟",
+      "kind": "Time",
+      "text": "Which day comes after Friday?",
+      "correct": "Saturday",
+      "answers": [
+        "Monday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answerMap": {
+        "Luni": "Monday",
+        "Joi": "Thursday",
+        "Sâmbătă": "Saturday",
+        "Duminică": "Sunday"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Ce lună vine după ianuarie?␟Februarie␟",
+      "kind": "Time",
+      "text": "Which month comes after January?",
+      "correct": "February",
+      "answers": [
+        "March",
+        "February",
+        "December",
+        "April"
+      ],
+      "answerMap": {
+        "Martie": "March",
+        "Februarie": "February",
+        "Decembrie": "December",
+        "Aprilie": "April"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Ce lună vine după iunie?␟Iulie␟",
+      "kind": "Time",
+      "text": "Which month comes after June?",
+      "correct": "July",
+      "answers": [
+        "May",
+        "July",
+        "August",
+        "September"
+      ],
+      "answerMap": {
+        "Mai": "May",
+        "Iulie": "July",
+        "August": "August",
+        "Septembrie": "September"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Care este prima lună a anului?␟Ianuarie␟",
+      "kind": "Time",
+      "text": "What is the first month of the year?",
+      "correct": "January",
+      "answers": [
+        "January",
+        "March",
+        "June",
+        "December"
+      ],
+      "answerMap": {
+        "Ianuarie": "January",
+        "Martie": "March",
+        "Iunie": "June",
+        "Decembrie": "December"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Timp␟Care este ultima lună a anului?␟Decembrie␟",
+      "kind": "Time",
+      "text": "What is the last month of the year?",
+      "correct": "December",
+      "answers": [
+        "October",
+        "November",
+        "December",
+        "January"
+      ],
+      "answerMap": {
+        "Octombrie": "October",
+        "Noiembrie": "November",
+        "Decembrie": "December",
+        "Ianuarie": "January"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Ce este mai lung: 1 metru sau 50 centimetri?␟1 metru␟",
+      "kind": "Measurements",
+      "text": "Which is longer: 1 meter or 50 centimeters?",
+      "correct": "1 meter",
+      "answers": [
+        "50 centimeters",
+        "1 meter",
+        "They are equal",
+        "They cannot be compared"
+      ],
+      "answerMap": {
+        "50 centimetri": "50 centimeters",
+        "1 metru": "1 meter",
+        "Sunt egale": "They are equal",
+        "Nu se pot compara": "They cannot be compared"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Ce este mai greu în mod obișnuit: un creion sau un ghiozdan plin?␟Un ghiozdan plin␟",
+      "kind": "Measurements",
+      "text": "Which is usually heavier: a pencil or a full backpack?",
+      "correct": "A full backpack",
+      "answers": [
+        "A pencil",
+        "A full backpack",
+        "They have the same mass",
+        "They cannot be compared"
+      ],
+      "answerMap": {
+        "Un creion": "A pencil",
+        "Un ghiozdan plin": "A full backpack",
+        "Au aceeași masă": "They have the same mass",
+        "Nu se pot compara": "They cannot be compared"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Ce unitate este potrivită pentru înălțimea unui copil?␟Centimetrul␟",
+      "kind": "Measurements",
+      "text": "Which unit is suitable for measuring a child’s height?",
+      "correct": "Centimeter",
+      "answers": [
+        "Liter",
+        "Centimeter",
+        "Kilogram",
+        "Second"
+      ],
+      "answerMap": {
+        "Litru": "Liter",
+        "Centimetrul": "Centimeter",
+        "Kilogramul": "Kilogram",
+        "Secunda": "Second"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Măsurători␟Ce unitate este potrivită pentru apa dintr-o sticlă?␟Litru␟",
+      "kind": "Measurements",
+      "text": "Which unit is suitable for measuring water in a bottle?",
+      "correct": "Liter",
+      "answers": [
+        "Liter",
+        "Meter",
+        "Kilogram",
+        "Minute"
+      ],
+      "answerMap": {
+        "Litru": "Liter",
+        "Metru": "Meter",
+        "Kilogram": "Kilogram",
+        "Minut": "Minute"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Care dispozitiv este folosit pentru a tasta?␟Tastatura␟",
+      "kind": "Computing",
+      "text": "Which device is used for typing?",
+      "correct": "Keyboard",
+      "answers": [
+        "Monitor",
+        "Keyboard",
+        "Speaker",
+        "Printer"
+      ],
+      "answerMap": {
+        "Monitorul": "Monitor",
+        "Tastatura": "Keyboard",
+        "Boxa": "Speaker",
+        "Imprimanta": "Printer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce dispozitiv afișează imaginile calculatorului?␟Monitorul␟",
+      "kind": "Computing",
+      "text": "Which device displays computer images?",
+      "correct": "Monitor",
+      "answers": [
+        "Mouse",
+        "Monitor",
+        "Keyboard",
+        "Microphone"
+      ],
+      "answerMap": {
+        "Mouse-ul": "Mouse",
+        "Monitorul": "Monitor",
+        "Tastatura": "Keyboard",
+        "Microfonul": "Microphone"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce dispozitiv mișcă de obicei cursorul pe ecran?␟Mouse-ul␟",
+      "kind": "Computing",
+      "text": "Which device usually moves the pointer on the screen?",
+      "correct": "Mouse",
+      "answers": [
+        "Mouse",
+        "Printer",
+        "Speaker",
+        "Router"
+      ],
+      "answerMap": {
+        "Mouse-ul": "Mouse",
+        "Imprimanta": "Printer",
+        "Boxa": "Speaker",
+        "Routerul": "Router"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce dispozitiv tipărește pe hârtie?␟Imprimanta␟",
+      "kind": "Computing",
+      "text": "Which device prints on paper?",
+      "correct": "Printer",
+      "answers": [
+        "Printer",
+        "Monitor",
+        "Mouse",
+        "Microphone"
+      ],
+      "answerMap": {
+        "Imprimanta": "Printer",
+        "Monitorul": "Monitor",
+        "Mouse-ul": "Mouse",
+        "Microfonul": "Microphone"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce dispozitiv redă sunetul?␟Boxele␟",
+      "kind": "Computing",
+      "text": "Which device plays sound?",
+      "correct": "Speakers",
+      "answers": [
+        "Speakers",
+        "Keyboard",
+        "Scanner",
+        "Mouse"
+      ],
+      "answerMap": {
+        "Boxele": "Speakers",
+        "Tastatura": "Keyboard",
+        "Scannerul": "Scanner",
+        "Mouse-ul": "Mouse"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce dispozitiv poate înregistra vocea?␟Microfonul␟",
+      "kind": "Computing",
+      "text": "Which device can record your voice?",
+      "correct": "Microphone",
+      "answers": [
+        "Microphone",
+        "Monitor",
+        "Printer",
+        "Mouse"
+      ],
+      "answerMap": {
+        "Microfonul": "Microphone",
+        "Monitorul": "Monitor",
+        "Imprimanta": "Printer",
+        "Mouse-ul": "Mouse"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce înseamnă să salvezi un fișier?␟Să păstrezi modificările␟",
+      "kind": "Computing",
+      "text": "What does it mean to save a file?",
+      "correct": "Keep your changes",
+      "answers": [
+        "Delete the computer",
+        "Keep your changes",
+        "Turn off the internet",
+        "Print automatically"
+      ],
+      "answerMap": {
+        "Să ștergi calculatorul": "Delete the computer",
+        "Să păstrezi modificările": "Keep your changes",
+        "Să închizi internetul": "Turn off the internet",
+        "Să tipărești automat": "Print automatically"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce este un fișier?␟O informație salvată pe un dispozitiv␟",
+      "kind": "Computing",
+      "text": "What is a file?",
+      "correct": "Information saved on a device",
+      "answers": [
+        "A cable",
+        "Information saved on a device",
+        "A chair",
+        "A speaker"
+      ],
+      "answerMap": {
+        "Un cablu": "A cable",
+        "O informație salvată pe un dispozitiv": "Information saved on a device",
+        "Un scaun": "A chair",
+        "Un difuzor": "A speaker"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce este un folder?␟Un loc unde organizăm fișiere␟",
+      "kind": "Computing",
+      "text": "What is a folder?",
+      "correct": "A place where we organize files",
+      "answers": [
+        "A game",
+        "A place where we organize files",
+        "A monitor",
+        "A cable"
+      ],
+      "answerMap": {
+        "Un joc": "A game",
+        "Un loc unde organizăm fișiere": "A place where we organize files",
+        "Un monitor": "A monitor",
+        "Un cablu": "A cable"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce program folosim pentru a vizita site-uri web?␟Browserul␟",
+      "kind": "Computing",
+      "text": "Which program do we use to visit websites?",
+      "correct": "Browser",
+      "answers": [
+        "Browser",
+        "Calculator",
+        "Scanner",
+        "Clock"
+      ],
+      "answerMap": {
+        "Browserul": "Browser",
+        "Calculatorul de buzunar": "Calculator",
+        "Scannerul": "Scanner",
+        "Ceasul": "Clock"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Care este un browser web?␟Chrome␟",
+      "kind": "Computing",
+      "text": "Which of these is a web browser?",
+      "correct": "Chrome",
+      "answers": [
+        "Chrome",
+        "Word",
+        "Paint",
+        "Calculator"
+      ],
+      "answerMap": {
+        "Chrome": "Chrome",
+        "Word": "Word",
+        "Paint": "Paint",
+        "Calculator": "Calculator"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce este internetul?␟O rețea mare de calculatoare și dispozitive conectate␟",
+      "kind": "Computing",
+      "text": "What is the internet?",
+      "correct": "A large network of connected computers and devices",
+      "answers": [
+        "A single game",
+        "A large network of connected computers and devices",
+        "A pencil",
+        "A printer"
+      ],
+      "answerMap": {
+        "Un singur joc": "A single game",
+        "O rețea mare de calculatoare și dispozitive conectate": "A large network of connected computers and devices",
+        "Un creion": "A pencil",
+        "O imprimantă": "A printer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Este bine să spui parola ta oricui?␟Nu␟",
+      "kind": "Computing",
+      "text": "Is it good to tell your password to anyone?",
+      "correct": "No",
+      "answers": [
+        "Yes",
+        "No",
+        "Only online",
+        "Only in games"
+      ],
+      "answerMap": {
+        "Da": "Yes",
+        "Nu": "No",
+        "Doar online": "Only online",
+        "Doar în jocuri": "Only in games"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță online␟Ce trebuie să faci dacă un necunoscut îți cere parola?␟Nu o dai și anunți un adult␟",
+      "kind": "Online safety",
+      "text": "What should you do if a stranger asks for your password?",
+      "correct": "Do not give it and tell an adult",
+      "answers": [
+        "Send it",
+        "Do not give it and tell an adult",
+        "Post it publicly",
+        "Write it on the internet"
+      ],
+      "answerMap": {
+        "O trimiți": "Send it",
+        "Nu o dai și anunți un adult": "Do not give it and tell an adult",
+        "O postezi public": "Post it publicly",
+        "O scrii pe internet": "Write it on the internet"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță online␟Este sigur să dai adresa de acasă unui necunoscut online?␟Nu␟",
+      "kind": "Online safety",
+      "text": "Is it safe to give your home address to an online stranger?",
+      "correct": "No",
+      "answers": [
+        "Yes",
+        "No",
+        "Only if they have a photo",
+        "Only in the evening"
+      ],
+      "answerMap": {
+        "Da": "Yes",
+        "Nu": "No",
+        "Doar dacă are poză": "Only if they have a photo",
+        "Doar seara": "Only in the evening"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Siguranță online␟Ce faci dacă vezi un mesaj online care te sperie?␟Anunți un adult de încredere␟",
+      "kind": "Online safety",
+      "text": "What should you do if you see an online message that scares you?",
+      "correct": "Tell a trusted adult",
+      "answers": [
+        "Send it to everyone",
+        "Tell a trusted adult",
+        "Reply with your password",
+        "Publish it"
+      ],
+      "answerMap": {
+        "Îl trimiți tuturor": "Send it to everyone",
+        "Anunți un adult de încredere": "Tell a trusted adult",
+        "Răspunzi cu parola": "Reply with your password",
+        "Îl publici": "Publish it"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce tastă folosim adesea pentru a crea un spațiu între cuvinte?␟Space␟",
+      "kind": "Computing",
+      "text": "Which key do we often use to make a space between words?",
+      "correct": "Space",
+      "answers": [
+        "Enter",
+        "Space",
+        "Shift",
+        "Esc"
+      ],
+      "answerMap": {
+        "Enter": "Enter",
+        "Space": "Space",
+        "Shift": "Shift",
+        "Esc": "Esc"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce tastă folosim adesea pentru a trece pe un rând nou?␟Enter␟",
+      "kind": "Computing",
+      "text": "Which key do we often use to start a new line?",
+      "correct": "Enter",
+      "answers": [
+        "Enter",
+        "Space",
+        "Caps Lock",
+        "Alt"
+      ],
+      "answerMap": {
+        "Enter": "Enter",
+        "Space": "Space",
+        "Caps Lock": "Caps Lock",
+        "Alt": "Alt"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce tastă șterge de obicei caracterul din stânga cursorului?␟Backspace␟",
+      "kind": "Computing",
+      "text": "Which key usually deletes the character to the left of the cursor?",
+      "correct": "Backspace",
+      "answers": [
+        "Shift",
+        "Backspace",
+        "Tab",
+        "Ctrl"
+      ],
+      "answerMap": {
+        "Shift": "Shift",
+        "Backspace": "Backspace",
+        "Tab": "Tab",
+        "Ctrl": "Ctrl"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce înseamnă „click”?␟Apăsarea unui buton al mouse-ului␟",
+      "kind": "Computing",
+      "text": "What does “click” mean?",
+      "correct": "Pressing a mouse button",
+      "answers": [
+        "Turning off the monitor",
+        "Pressing a mouse button",
+        "Printing",
+        "Turning on the speakers"
+      ],
+      "answerMap": {
+        "Închiderea monitorului": "Turning off the monitor",
+        "Apăsarea unui buton al mouse-ului": "Pressing a mouse button",
+        "Tipărirea": "Printing",
+        "Pornirea boxelor": "Turning on the speakers"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce este o aplicație?␟Un program care face anumite lucruri␟",
+      "kind": "Computing",
+      "text": "What is an application?",
+      "correct": "A program that performs certain tasks",
+      "answers": [
+        "A cable",
+        "A program that performs certain tasks",
+        "A sheet of paper",
+        "A mouse"
+      ],
+      "answerMap": {
+        "Un cablu": "A cable",
+        "Un program care face anumite lucruri": "A program that performs certain tasks",
+        "O foaie": "A sheet of paper",
+        "Un mouse": "A mouse"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce este o pictogramă?␟Un mic simbol grafic pentru o aplicație sau funcție␟",
+      "kind": "Computing",
+      "text": "What is an icon?",
+      "correct": "A small graphic symbol for an app or function",
+      "answers": [
+        "A password",
+        "A small graphic symbol for an app or function",
+        "A cable",
+        "A printer"
+      ],
+      "answerMap": {
+        "O parolă": "A password",
+        "Un mic simbol grafic pentru o aplicație sau funcție": "A small graphic symbol for an app or function",
+        "Un cablu": "A cable",
+        "O imprimantă": "A printer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce face butonul „Play” într-un joc?␟Pornește jocul sau redarea␟",
+      "kind": "Computing",
+      "text": "What does the “Play” button do in a game?",
+      "correct": "Starts the game or playback",
+      "answers": [
+        "Deletes the computer",
+        "Starts the game or playback",
+        "Turns off the internet",
+        "Prints"
+      ],
+      "answerMap": {
+        "Șterge calculatorul": "Deletes the computer",
+        "Pornește jocul sau redarea": "Starts the game or playback",
+        "Închide internetul": "Turns off the internet",
+        "Tipărește": "Prints"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Ce face butonul „Pause”?␟Oprește temporar jocul sau redarea␟",
+      "kind": "Computing",
+      "text": "What does the “Pause” button do?",
+      "correct": "Temporarily stops the game or playback",
+      "answers": [
+        "Deletes the game",
+        "Temporarily stops the game or playback",
+        "Always increases the volume",
+        "Turns off the computer"
+      ],
+      "answerMap": {
+        "Șterge jocul": "Deletes the game",
+        "Oprește temporar jocul sau redarea": "Temporarily stops the game or playback",
+        "Mărește volumul mereu": "Always increases the volume",
+        "Închide calculatorul": "Turns off the computer"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Informatică␟Care este un exemplu de dispozitiv portabil?␟Tableta␟",
+      "kind": "Computing",
+      "text": "Which is an example of a portable device?",
+      "correct": "Tablet",
+      "answers": [
+        "Tablet",
+        "Writing board",
+        "Chalk",
+        "Notebook"
+      ],
+      "answerMap": {
+        "Tableta": "Tablet",
+        "Tabla de scris": "Writing board",
+        "Creta": "Chalk",
+        "Caietul": "Notebook"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Pe ce planetă trăim?␟Pământ␟",
+      "kind": "Astronomy",
+      "text": "Which planet do we live on?",
+      "correct": "Earth",
+      "answers": [
+        "Mars",
+        "Earth",
+        "Venus",
+        "Jupiter"
+      ],
+      "answerMap": {
+        "Marte": "Mars",
+        "Pământ": "Earth",
+        "Venus": "Venus",
+        "Jupiter": "Jupiter"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Care este cea mai apropiată stea de Pământ?␟Soarele␟",
+      "kind": "Astronomy",
+      "text": "What is the closest star to Earth?",
+      "correct": "Sun",
+      "answers": [
+        "Moon",
+        "Sun",
+        "Mars",
+        "Venus"
+      ],
+      "answerMap": {
+        "Luna": "Moon",
+        "Soarele": "Sun",
+        "Marte": "Mars",
+        "Venus": "Venus"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Cum se numește satelitul natural al Pământului?␟Luna␟",
+      "kind": "Astronomy",
+      "text": "What is Earth’s natural satellite called?",
+      "correct": "Moon",
+      "answers": [
+        "Sun",
+        "Moon",
+        "Mars",
+        "Mercury"
+      ],
+      "answerMap": {
+        "Soarele": "Sun",
+        "Luna": "Moon",
+        "Marte": "Mars",
+        "Mercur": "Mercury"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Care planetă este cea mai apropiată de Soare?␟Mercur␟",
+      "kind": "Astronomy",
+      "text": "Which planet is closest to the Sun?",
+      "correct": "Mercury",
+      "answers": [
+        "Mercury",
+        "Earth",
+        "Saturn",
+        "Neptune"
+      ],
+      "answerMap": {
+        "Mercur": "Mercury",
+        "Pământ": "Earth",
+        "Saturn": "Saturn",
+        "Neptun": "Neptune"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Care este cea mai mare planetă din Sistemul Solar?␟Jupiter␟",
+      "kind": "Astronomy",
+      "text": "What is the largest planet in the Solar System?",
+      "correct": "Jupiter",
+      "answers": [
+        "Mars",
+        "Jupiter",
+        "Mercury",
+        "Venus"
+      ],
+      "answerMap": {
+        "Marte": "Mars",
+        "Jupiter": "Jupiter",
+        "Mercur": "Mercury",
+        "Venus": "Venus"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce planetă este cunoscută pentru inelele sale?␟Saturn␟",
+      "kind": "Astronomy",
+      "text": "Which planet is known for its rings?",
+      "correct": "Saturn",
+      "answers": [
+        "Saturn",
+        "Mars",
+        "Earth",
+        "Mercury"
+      ],
+      "answerMap": {
+        "Saturn": "Saturn",
+        "Marte": "Mars",
+        "Pământ": "Earth",
+        "Mercur": "Mercury"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Soarele este...␟o stea␟",
+      "kind": "Astronomy",
+      "text": "The Sun is...",
+      "correct": "a star",
+      "answers": [
+        "a planet",
+        "a star",
+        "a satellite",
+        "an asteroid"
+      ],
+      "answerMap": {
+        "o planetă": "a planet",
+        "o stea": "a star",
+        "un satelit": "a satellite",
+        "un asteroid": "an asteroid"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Luna este...␟un satelit natural␟",
+      "kind": "Astronomy",
+      "text": "The Moon is...",
+      "correct": "a natural satellite",
+      "answers": [
+        "a star",
+        "a natural satellite",
+        "an ocean",
+        "a continent"
+      ],
+      "answerMap": {
+        "o stea": "a star",
+        "un satelit natural": "a natural satellite",
+        "un ocean": "an ocean",
+        "un continent": "a continent"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Cum se numește drumul unei planete în jurul Soarelui?␟Orbită␟",
+      "kind": "Astronomy",
+      "text": "What is the path of a planet around the Sun called?",
+      "correct": "Orbit",
+      "answers": [
+        "Orbit",
+        "Street",
+        "Track",
+        "Line"
+      ],
+      "answerMap": {
+        "Orbită": "Orbit",
+        "Stradă": "Street",
+        "Pistă": "Track",
+        "Linie": "Line"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce vedem adesea pe cer noaptea?␟Stelele␟",
+      "kind": "Astronomy",
+      "text": "What do we often see in the night sky?",
+      "correct": "Stars",
+      "answers": [
+        "A rainbow all the time",
+        "Stars",
+        "The Sun all the time",
+        "Only clouds"
+      ],
+      "answerMap": {
+        "Curcubeul mereu": "A rainbow all the time",
+        "Stelele": "Stars",
+        "Soarele mereu": "The Sun all the time",
+        "Norii doar": "Only clouds"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce instrument folosim pentru a observa mai bine stelele?␟Telescopul␟",
+      "kind": "Astronomy",
+      "text": "Which instrument helps us observe stars better?",
+      "correct": "Telescope",
+      "answers": [
+        "Microscope",
+        "Telescope",
+        "Thermometer",
+        "Scale"
+      ],
+      "answerMap": {
+        "Microscopul": "Microscope",
+        "Telescopul": "Telescope",
+        "Termometrul": "Thermometer",
+        "Cântarul": "Scale"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Cine călătorește în spațiu?␟Astronautul␟",
+      "kind": "Astronomy",
+      "text": "Who travels into space?",
+      "correct": "Astronaut",
+      "answers": [
+        "Astronaut",
+        "Farmer",
+        "Mail carrier",
+        "Baker"
+      ],
+      "answerMap": {
+        "Astronautul": "Astronaut",
+        "Fermierul": "Farmer",
+        "Poștașul": "Mail carrier",
+        "Brutarul": "Baker"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Cum se numește vehiculul care poate ajunge în spațiu?␟Racheta␟",
+      "kind": "Astronomy",
+      "text": "What vehicle can travel into space?",
+      "correct": "Rocket",
+      "answers": [
+        "Rocket",
+        "Bicycle",
+        "Train",
+        "Boat"
+      ],
+      "answerMap": {
+        "Racheta": "Rocket",
+        "Bicicleta": "Bicycle",
+        "Trenul": "Train",
+        "Barca": "Boat"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce planetă este numită uneori „planeta albastră”?␟Pământul␟",
+      "kind": "Astronomy",
+      "text": "Which planet is sometimes called the “blue planet”?",
+      "correct": "Earth",
+      "answers": [
+        "Earth",
+        "Mars",
+        "Mercury",
+        "Venus"
+      ],
+      "answerMap": {
+        "Pământul": "Earth",
+        "Marte": "Mars",
+        "Mercur": "Mercury",
+        "Venus": "Venus"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Câte planete sunt în Sistemul Solar?␟8␟",
+      "kind": "Astronomy",
+      "text": "How many planets are in the Solar System?",
+      "correct": "8",
+      "answers": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answerMap": {
+        "7": "7",
+        "8": "8",
+        "9": "9",
+        "10": "10"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Pluto este considerat astăzi...␟planetă pitică␟",
+      "kind": "Astronomy",
+      "text": "Pluto is now considered a...",
+      "correct": "dwarf planet",
+      "answers": [
+        "star",
+        "dwarf planet",
+        "comet",
+        "galaxy"
+      ],
+      "answerMap": {
+        "stea": "star",
+        "planetă pitică": "dwarf planet",
+        "cometă": "comet",
+        "galaxie": "galaxy"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce este o cometă?␟Un corp ceresc cu gheață și praf␟",
+      "kind": "Astronomy",
+      "text": "What is a comet?",
+      "correct": "A celestial body made of ice and dust",
+      "answers": [
+        "An animal",
+        "A celestial body made of ice and dust",
+        "An ocean",
+        "A mountain"
+      ],
+      "answerMap": {
+        "Un animal": "An animal",
+        "Un corp ceresc cu gheață și praf": "A celestial body made of ice and dust",
+        "Un ocean": "An ocean",
+        "Un munte": "A mountain"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Ce se întâmplă când Pământul se rotește în jurul axei sale?␟Se succed ziua și noaptea␟",
+      "kind": "Astronomy",
+      "text": "What happens when Earth rotates on its axis?",
+      "correct": "Day and night alternate",
+      "answers": [
+        "A new planet appears",
+        "Day and night alternate",
+        "The Moon disappears",
+        "The Sun stops"
+      ],
+      "answerMap": {
+        "Apare o nouă planetă": "A new planet appears",
+        "Se succed ziua și noaptea": "Day and night alternate",
+        "Dispare Luna": "The Moon disappears",
+        "Se oprește Soarele": "The Sun stops"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Aproximativ cât durează o rotație completă a Pământului în jurul axei sale?␟24 de ore␟",
+      "kind": "Astronomy",
+      "text": "About how long does one complete rotation of Earth on its axis take?",
+      "correct": "24 hours",
+      "answers": [
+        "12 hours",
+        "24 hours",
+        "7 days",
+        "30 days"
+      ],
+      "answerMap": {
+        "12 ore": "12 hours",
+        "24 de ore": "24 hours",
+        "7 zile": "7 days",
+        "30 de zile": "30 days"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Astronomie␟Aproximativ cât durează mișcarea Pământului în jurul Soarelui?␟Un an␟",
+      "kind": "Astronomy",
+      "text": "About how long does Earth take to orbit the Sun?",
+      "correct": "One year",
+      "answers": [
+        "One day",
+        "One week",
+        "One month",
+        "One year"
+      ],
+      "answerMap": {
+        "O zi": "One day",
+        "O săptămână": "One week",
+        "O lună": "One month",
+        "Un an": "One year"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Câte note are gama Do-Re-Mi-Fa-Sol-La-Si?␟7␟",
+      "kind": "Music",
+      "text": "How many notes are in the Do-Re-Mi-Fa-Sol-La-Si scale?",
+      "correct": "7",
+      "answers": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answerMap": {
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Ce instrument are clape albe și negre?␟Pianul␟",
+      "kind": "Music",
+      "text": "Which instrument has black and white keys?",
+      "correct": "Piano",
+      "answers": [
+        "Piano",
+        "Drum",
+        "Recorder",
+        "Trumpet"
+      ],
+      "answerMap": {
+        "Pianul": "Piano",
+        "Toba": "Drum",
+        "Fluierul": "Recorder",
+        "Trompeta": "Trumpet"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Ce instrument are corzi și se cântă adesea cu arcușul?␟Vioara␟",
+      "kind": "Music",
+      "text": "Which instrument has strings and is often played with a bow?",
+      "correct": "Violin",
+      "answers": [
+        "Violin",
+        "Drum",
+        "Flute",
+        "Trumpet"
+      ],
+      "answerMap": {
+        "Vioara": "Violin",
+        "Toba": "Drum",
+        "Flautul": "Flute",
+        "Trompeta": "Trumpet"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Ce instrument are de obicei șase corzi?␟Chitara␟",
+      "kind": "Music",
+      "text": "Which instrument usually has six strings?",
+      "correct": "Guitar",
+      "answers": [
+        "Guitar",
+        "Drum",
+        "Flute",
+        "Xylophone"
+      ],
+      "answerMap": {
+        "Chitara": "Guitar",
+        "Toba": "Drum",
+        "Flautul": "Flute",
+        "Xilofonul": "Xylophone"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Ce instrument se lovește cu bețe?␟Toba␟",
+      "kind": "Music",
+      "text": "Which instrument is played by hitting it with sticks?",
+      "correct": "Drum",
+      "answers": [
+        "Drum",
+        "Violin",
+        "Flute",
+        "Guitar"
+      ],
+      "answerMap": {
+        "Toba": "Drum",
+        "Vioara": "Violin",
+        "Flautul": "Flute",
+        "Chitara": "Guitar"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Care dintre acestea este o notă muzicală?␟Do␟",
+      "kind": "Music",
+      "text": "Which of these is a musical note?",
+      "correct": "Do",
+      "answers": [
+        "Do",
+        "Ro",
+        "Pa",
+        "Zu"
+      ],
+      "answerMap": {
+        "Do": "Do",
+        "Ro": "Ro",
+        "Pa": "Pa",
+        "Zu": "Zu"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Muzică␟Ce înseamnă să cânți în ritm?␟Să păstrezi măsura muzicii␟",
+      "kind": "Music",
+      "text": "What does it mean to play in rhythm?",
+      "correct": "To keep the beat of the music",
+      "answers": [
+        "To play very loudly",
+        "To keep the beat of the music",
+        "To talk",
+        "To run"
+      ],
+      "answerMap": {
+        "Să cânți foarte tare": "To play very loudly",
+        "Să păstrezi măsura muzicii": "To keep the beat of the music",
+        "Să vorbești": "To talk",
+        "Să alergi": "To run"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Care sunt culorile primare folosite frecvent în pictură?␟Roșu, galben și albastru␟",
+      "kind": "Art",
+      "text": "What are the primary colors often used in painting?",
+      "correct": "Red, yellow and blue",
+      "answers": [
+        "Red, yellow and blue",
+        "Pink, brown and gray",
+        "Black, white and green",
+        "Orange, purple and pink"
+      ],
+      "answerMap": {
+        "Roșu, galben și albastru": "Red, yellow and blue",
+        "Roz, maro și gri": "Pink, brown and gray",
+        "Negru, alb și verde": "Black, white and green",
+        "Portocaliu, mov și roz": "Orange, purple and pink"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce obții dacă amesteci albastru cu galben?␟Verde␟",
+      "kind": "Art",
+      "text": "What do you get when you mix blue and yellow?",
+      "correct": "Green",
+      "answers": [
+        "Green",
+        "Red",
+        "Purple",
+        "Black"
+      ],
+      "answerMap": {
+        "Verde": "Green",
+        "Roșu": "Red",
+        "Mov": "Purple",
+        "Negru": "Black"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce obții dacă amesteci roșu cu galben?␟Portocaliu␟",
+      "kind": "Art",
+      "text": "What do you get when you mix red and yellow?",
+      "correct": "Orange",
+      "answers": [
+        "Green",
+        "Orange",
+        "Blue",
+        "Brown"
+      ],
+      "answerMap": {
+        "Verde": "Green",
+        "Portocaliu": "Orange",
+        "Albastru": "Blue",
+        "Maro": "Brown"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce obții dacă amesteci roșu cu albastru?␟Mov␟",
+      "kind": "Art",
+      "text": "What do you get when you mix red and blue?",
+      "correct": "Purple",
+      "answers": [
+        "Purple",
+        "Yellow",
+        "Green",
+        "White"
+      ],
+      "answerMap": {
+        "Mov": "Purple",
+        "Galben": "Yellow",
+        "Verde": "Green",
+        "Alb": "White"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Cu ce putem desena pe hârtie?␟Creionul␟",
+      "kind": "Art",
+      "text": "What can we use to draw on paper?",
+      "correct": "Pencil",
+      "answers": [
+        "Pencil",
+        "Spoon",
+        "Pillow",
+        "Plate"
+      ],
+      "answerMap": {
+        "Creionul": "Pencil",
+        "Lingura": "Spoon",
+        "Perna": "Pillow",
+        "Farfuria": "Plate"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce folosim pentru a picta cu acuarele?␟Pensula␟",
+      "kind": "Art",
+      "text": "What do we use to paint with watercolors?",
+      "correct": "Paintbrush",
+      "answers": [
+        "Paintbrush",
+        "Fork",
+        "Ruler",
+        "Spoon"
+      ],
+      "answerMap": {
+        "Pensula": "Paintbrush",
+        "Furculița": "Fork",
+        "Rigla": "Ruler",
+        "Lingura": "Spoon"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce este un portret?␟O imagine a unei persoane␟",
+      "kind": "Art",
+      "text": "What is a portrait?",
+      "correct": "A picture of a person",
+      "answers": [
+        "A map",
+        "A picture of a person",
+        "A song",
+        "A problem"
+      ],
+      "answerMap": {
+        "O hartă": "A map",
+        "O imagine a unei persoane": "A picture of a person",
+        "Un cântec": "A song",
+        "O problemă": "A problem"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Artă␟Ce este un peisaj?␟O imagine a naturii sau a unui loc␟",
+      "kind": "Art",
+      "text": "What is a landscape?",
+      "correct": "A picture of nature or a place",
+      "answers": [
+        "A picture of nature or a place",
+        "A formula",
+        "A sound",
+        "A story made only of numbers"
+      ],
+      "answerMap": {
+        "O imagine a naturii sau a unui loc": "A picture of nature or a place",
+        "O formulă": "A formula",
+        "Un sunet": "A sound",
+        "O poveste doar cu cifre": "A story made only of numbers"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟Unde aruncăm hârtia pentru reciclare?␟În recipientul pentru hârtie␟",
+      "kind": "Environment",
+      "text": "Where should we put paper for recycling?",
+      "correct": "In the paper recycling bin",
+      "answers": [
+        "On the street",
+        "In the river",
+        "In the paper recycling bin",
+        "In the fire"
+      ],
+      "answerMap": {
+        "Pe stradă": "On the street",
+        "În râu": "In the river",
+        "În recipientul pentru hârtie": "In the paper recycling bin",
+        "În foc": "In the fire"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟De ce este bine să reciclăm?␟Pentru a reduce deșeurile și a proteja mediul␟",
+      "kind": "Environment",
+      "text": "Why is recycling good?",
+      "correct": "To reduce waste and protect the environment",
+      "answers": [
+        "To make more trash",
+        "To reduce waste and protect the environment",
+        "To make the water dirty",
+        "To cut down more trees"
+      ],
+      "answerMap": {
+        "Ca să facem mai mult gunoi": "To make more trash",
+        "Pentru a reduce deșeurile și a proteja mediul": "To reduce waste and protect the environment",
+        "Ca să murdărim apa": "To make the water dirty",
+        "Ca să tăiem mai mulți copaci": "To cut down more trees"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟Ce putem face pentru a economisi apă?␟Închidem robinetul când nu îl folosim␟",
+      "kind": "Environment",
+      "text": "What can we do to save water?",
+      "correct": "Turn off the tap when we are not using it",
+      "answers": [
+        "Leave the water running all the time",
+        "Turn off the tap when we are not using it",
+        "Fill the floor with water",
+        "Turn on all the taps"
+      ],
+      "answerMap": {
+        "Lăsăm apa să curgă mereu": "Leave the water running all the time",
+        "Închidem robinetul când nu îl folosim": "Turn off the tap when we are not using it",
+        "Umplem podeaua cu apă": "Fill the floor with water",
+        "Pornim toate robinetele": "Turn on all the taps"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟Ce putem face pentru a economisi energie?␟Stingem lumina când ieșim din cameră␟",
+      "kind": "Environment",
+      "text": "What can we do to save energy?",
+      "correct": "Turn off the light when we leave the room",
+      "answers": [
+        "Leave all the lights on",
+        "Turn off the light when we leave the room",
+        "Turn on all appliances",
+        "Keep opening the refrigerator"
+      ],
+      "answerMap": {
+        "Lăsăm toate becurile aprinse": "Leave all the lights on",
+        "Stingem lumina când ieșim din cameră": "Turn off the light when we leave the room",
+        "Pornim toate aparatele": "Turn on all appliances",
+        "Deschidem frigiderul mereu": "Keep opening the refrigerator"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟Ce plantăm pentru a ajuta natura?␟Copaci␟",
+      "kind": "Environment",
+      "text": "What can we plant to help nature?",
+      "correct": "Trees",
+      "answers": [
+        "Trees",
+        "Plastic",
+        "Glass",
+        "Metal"
+      ],
+      "answerMap": {
+        "Copaci": "Trees",
+        "Plastic": "Plastic",
+        "Sticlă": "Glass",
+        "Metal": "Metal"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Mediu␟Unde este bine să aruncăm gunoiul?␟În coșul de gunoi␟",
+      "kind": "Environment",
+      "text": "Where should we throw away trash?",
+      "correct": "In the trash bin",
+      "answers": [
+        "On the street",
+        "In the trash bin",
+        "In the park",
+        "In the river"
+      ],
+      "answerMap": {
+        "Pe stradă": "On the street",
+        "În coșul de gunoi": "In the trash bin",
+        "În parc": "In the park",
+        "În râu": "In the river"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟De ce ne spălăm pe mâini?␟Pentru a îndepărta murdăria și microbii␟",
+      "kind": "Health",
+      "text": "Why do we wash our hands?",
+      "correct": "To remove dirt and germs",
+      "answers": [
+        "To make the floor wet",
+        "To remove dirt and germs",
+        "To cool the room",
+        "To make the towel dirty"
+      ],
+      "answerMap": {
+        "Pentru a uda podeaua": "To make the floor wet",
+        "Pentru a îndepărta murdăria și microbii": "To remove dirt and germs",
+        "Pentru a răci camera": "To cool the room",
+        "Pentru a murdări prosopul": "To make the towel dirty"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Când este bine să ne spălăm pe mâini?␟Înainte de masă și după folosirea toaletei␟",
+      "kind": "Health",
+      "text": "When should we wash our hands?",
+      "correct": "Before eating and after using the toilet",
+      "answers": [
+        "Only once a month",
+        "Before eating and after using the toilet",
+        "Never",
+        "Only in winter"
+      ],
+      "answerMap": {
+        "Doar o dată pe lună": "Only once a month",
+        "Înainte de masă și după folosirea toaletei": "Before eating and after using the toilet",
+        "Niciodată": "Never",
+        "Doar iarna": "Only in winter"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟De ce ne spălăm pe dinți?␟Pentru a menține dinții curați și sănătoși␟",
+      "kind": "Health",
+      "text": "Why do we brush our teeth?",
+      "correct": "To keep our teeth clean and healthy",
+      "answers": [
+        "To color our teeth",
+        "To keep our teeth clean and healthy",
+        "To wet the toothbrush",
+        "To make noise"
+      ],
+      "answerMap": {
+        "Pentru a colora dinții": "To color our teeth",
+        "Pentru a menține dinții curați și sănătoși": "To keep our teeth clean and healthy",
+        "Pentru a uda periuța": "To wet the toothbrush",
+        "Pentru a face zgomot": "To make noise"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Ce băutură este importantă pentru hidratare?␟Apa␟",
+      "kind": "Health",
+      "text": "Which drink is important for hydration?",
+      "correct": "Water",
+      "answers": [
+        "Water",
+        "Paint",
+        "Oil",
+        "Ink"
+      ],
+      "answerMap": {
+        "Apa": "Water",
+        "Vopseaua": "Paint",
+        "Uleiul": "Oil",
+        "Cerneala": "Ink"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Ce ajută corpul să se odihnească?␟Somnul␟",
+      "kind": "Health",
+      "text": "What helps the body rest?",
+      "correct": "Sleep",
+      "answers": [
+        "Sleep",
+        "Noise",
+        "Running all night",
+        "Bright light"
+      ],
+      "answerMap": {
+        "Somnul": "Sleep",
+        "Zgomotul": "Noise",
+        "Alergatul toată noaptea": "Running all night",
+        "Lumina puternică": "Bright light"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Ce aliment face parte din categoria fructelor?␟Mărul␟",
+      "kind": "Health",
+      "text": "Which food is a fruit?",
+      "correct": "Apple",
+      "answers": [
+        "Apple",
+        "Bread",
+        "Cheese",
+        "Rice"
+      ],
+      "answerMap": {
+        "Mărul": "Apple",
+        "Pâinea": "Bread",
+        "Brânza": "Cheese",
+        "Orezul": "Rice"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Ce aliment face parte din categoria legumelor?␟Morcovul␟",
+      "kind": "Health",
+      "text": "Which food is a vegetable?",
+      "correct": "Carrot",
+      "answers": [
+        "Carrot",
+        "Apple",
+        "Bread",
+        "Yogurt"
+      ],
+      "answerMap": {
+        "Morcovul": "Carrot",
+        "Mărul": "Apple",
+        "Pâinea": "Bread",
+        "Iaurtul": "Yogurt"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Sănătate␟Ce obicei este sănătos?␟Mișcarea regulată␟",
+      "kind": "Health",
+      "text": "Which habit is healthy?",
+      "correct": "Regular exercise",
+      "answers": [
+        "Not sleeping",
+        "Regular exercise",
+        "Not drinking water",
+        "Skipping meals"
+      ],
+      "answerMap": {
+        "Să nu dormi": "Not sleeping",
+        "Mișcarea regulată": "Regular exercise",
+        "Să nu bei apă": "Not drinking water",
+        "Să sari mesele": "Skipping meals"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Cu ce obiect ne protejăm de ploaie?␟Umbrela␟",
+      "kind": "Everyday life",
+      "text": "What object protects us from rain?",
+      "correct": "Umbrella",
+      "answers": [
+        "Umbrella",
+        "Fork",
+        "Pillow",
+        "Pencil"
+      ],
+      "answerMap": {
+        "Umbrela": "Umbrella",
+        "Furculița": "Fork",
+        "Perna": "Pillow",
+        "Creionul": "Pencil"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Ce obiect folosim pentru a tăia hârtia?␟Foarfeca␟",
+      "kind": "Everyday life",
+      "text": "What object do we use to cut paper?",
+      "correct": "Scissors",
+      "answers": [
+        "Scissors",
+        "Spoon",
+        "Pillow",
+        "Mug"
+      ],
+      "answerMap": {
+        "Foarfeca": "Scissors",
+        "Lingura": "Spoon",
+        "Perna": "Pillow",
+        "Cana": "Mug"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Ce obiect folosim pentru a șterge tabla?␟Buretele␟",
+      "kind": "Everyday life",
+      "text": "What object do we use to erase the board?",
+      "correct": "Eraser",
+      "answers": [
+        "Eraser",
+        "Fork",
+        "Shoe",
+        "Mug"
+      ],
+      "answerMap": {
+        "Buretele": "Eraser",
+        "Furculița": "Fork",
+        "Pantoful": "Shoe",
+        "Cana": "Mug"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Ce obiect folosim pentru a scrie cu cerneală?␟Stiloul␟",
+      "kind": "Everyday life",
+      "text": "What object do we use to write with ink?",
+      "correct": "Fountain pen",
+      "answers": [
+        "Fountain pen",
+        "Spoon",
+        "Pillow",
+        "Plate"
+      ],
+      "answerMap": {
+        "Stiloul": "Fountain pen",
+        "Lingura": "Spoon",
+        "Perna": "Pillow",
+        "Farfuria": "Plate"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Ce obiect folosim pentru a transporta cărțile la școală?␟Ghiozdanul␟",
+      "kind": "Everyday life",
+      "text": "What do we use to carry books to school?",
+      "correct": "Backpack",
+      "answers": [
+        "Backpack",
+        "Umbrella",
+        "Plate",
+        "Towel"
+      ],
+      "answerMap": {
+        "Ghiozdanul": "Backpack",
+        "Umbrela": "Umbrella",
+        "Farfuria": "Plate",
+        "Prosopul": "Towel"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Viață de zi cu zi␟Ce încăpere este folosită de obicei pentru gătit?␟Bucătăria␟",
+      "kind": "Everyday life",
+      "text": "Which room is usually used for cooking?",
+      "correct": "Kitchen",
+      "answers": [
+        "Kitchen",
+        "Bedroom",
+        "Balcony",
+        "Garage"
+      ],
+      "answerMap": {
+        "Bucătăria": "Kitchen",
+        "Dormitorul": "Bedroom",
+        "Balconul": "Balcony",
+        "Garajul": "Garage"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce culoare are iarba de obicei?␟Verde␟",
+      "kind": "General knowledge",
+      "text": "What color is grass usually?",
+      "correct": "Green",
+      "answers": [
+        "Green",
+        "Purple",
+        "Black",
+        "Orange"
+      ],
+      "answerMap": {
+        "Verde": "Green",
+        "Mov": "Purple",
+        "Negru": "Black",
+        "Portocaliu": "Orange"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce culoare are zăpada de obicei?␟Albă␟",
+      "kind": "General knowledge",
+      "text": "What color is snow usually?",
+      "correct": "White",
+      "answers": [
+        "White",
+        "Green",
+        "Blue",
+        "Red"
+      ],
+      "answerMap": {
+        "Albă": "White",
+        "Verde": "Green",
+        "Albastră": "Blue",
+        "Roșie": "Red"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce culoare are cărbunele de obicei?␟Negru␟",
+      "kind": "General knowledge",
+      "text": "What color is coal usually?",
+      "correct": "Black",
+      "answers": [
+        "White",
+        "Black",
+        "Pink",
+        "Yellow"
+      ],
+      "answerMap": {
+        "Alb": "White",
+        "Negru": "Black",
+        "Roz": "Pink",
+        "Galben": "Yellow"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce obiect arată ora?␟Ceasul␟",
+      "kind": "General knowledge",
+      "text": "Which object shows the time?",
+      "correct": "Clock",
+      "answers": [
+        "Clock",
+        "Mug",
+        "Pillow",
+        "Fork"
+      ],
+      "answerMap": {
+        "Ceasul": "Clock",
+        "Cana": "Mug",
+        "Perna": "Pillow",
+        "Furculița": "Fork"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce folosim pentru a deschide o ușă încuiată?␟Cheia␟",
+      "kind": "General knowledge",
+      "text": "What do we use to open a locked door?",
+      "correct": "Key",
+      "answers": [
+        "Key",
+        "Spoon",
+        "Pencil",
+        "Pillow"
+      ],
+      "answerMap": {
+        "Cheia": "Key",
+        "Lingura": "Spoon",
+        "Creionul": "Pencil",
+        "Perna": "Pillow"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce mijloc de transport merge pe șine?␟Trenul␟",
+      "kind": "General knowledge",
+      "text": "Which means of transport runs on rails?",
+      "correct": "Train",
+      "answers": [
+        "Train",
+        "Boat",
+        "Airplane",
+        "Bicycle"
+      ],
+      "answerMap": {
+        "Trenul": "Train",
+        "Barca": "Boat",
+        "Avionul": "Airplane",
+        "Bicicleta": "Bicycle"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce mijloc de transport zboară?␟Avionul␟",
+      "kind": "General knowledge",
+      "text": "Which means of transport flies?",
+      "correct": "Airplane",
+      "answers": [
+        "Airplane",
+        "Bus",
+        "Train",
+        "Boat"
+      ],
+      "answerMap": {
+        "Avionul": "Airplane",
+        "Autobuzul": "Bus",
+        "Trenul": "Train",
+        "Barca": "Boat"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce mijloc de transport merge pe apă?␟Barca␟",
+      "kind": "General knowledge",
+      "text": "Which means of transport travels on water?",
+      "correct": "Boat",
+      "answers": [
+        "Boat",
+        "Car",
+        "Train",
+        "Bicycle"
+      ],
+      "answerMap": {
+        "Barca": "Boat",
+        "Mașina": "Car",
+        "Trenul": "Train",
+        "Bicicleta": "Bicycle"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce obiect folosim pentru a telefona?␟Telefonul␟",
+      "kind": "General knowledge",
+      "text": "What object do we use to make a phone call?",
+      "correct": "Phone",
+      "answers": [
+        "Phone",
+        "Spoon",
+        "Pillow",
+        "Notebook"
+      ],
+      "answerMap": {
+        "Telefonul": "Phone",
+        "Lingura": "Spoon",
+        "Perna": "Pillow",
+        "Caietul": "Notebook"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce obiect folosim pentru a fotografia?␟Aparatul foto␟",
+      "kind": "General knowledge",
+      "text": "What object do we use to take photos?",
+      "correct": "Camera",
+      "answers": [
+        "Camera",
+        "Mug",
+        "Pillow",
+        "Broom"
+      ],
+      "answerMap": {
+        "Aparatul foto": "Camera",
+        "Cana": "Mug",
+        "Perna": "Pillow",
+        "Mătura": "Broom"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Care animal trăiește de obicei într-un acvariu?␟Peștele␟",
+      "kind": "General knowledge",
+      "text": "Which animal usually lives in an aquarium?",
+      "correct": "Fish",
+      "answers": [
+        "Fish",
+        "Horse",
+        "Dog",
+        "Chicken"
+      ],
+      "answerMap": {
+        "Peștele": "Fish",
+        "Calul": "Horse",
+        "Câinele": "Dog",
+        "Găina": "Chicken"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Care animal trăiește de obicei într-un stup?␟Albina␟",
+      "kind": "General knowledge",
+      "text": "Which animal usually lives in a beehive?",
+      "correct": "Bee",
+      "answers": [
+        "Bee",
+        "Cow",
+        "Horse",
+        "Cat"
+      ],
+      "answerMap": {
+        "Albina": "Bee",
+        "Vaca": "Cow",
+        "Calul": "Horse",
+        "Pisica": "Cat"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Care animal trăiește de obicei într-o vizuină?␟Vulpea␟",
+      "kind": "General knowledge",
+      "text": "Which animal usually lives in a den?",
+      "correct": "Fox",
+      "answers": [
+        "Fox",
+        "Dolphin",
+        "Chicken",
+        "Giraffe"
+      ],
+      "answerMap": {
+        "Vulpea": "Fox",
+        "Delfinul": "Dolphin",
+        "Găina": "Chicken",
+        "Girafa": "Giraffe"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce aliment se face de obicei din lapte?␟Brânza␟",
+      "kind": "General knowledge",
+      "text": "Which food is usually made from milk?",
+      "correct": "Cheese",
+      "answers": [
+        "Cheese",
+        "Bread",
+        "Rice",
+        "Apple"
+      ],
+      "answerMap": {
+        "Brânza": "Cheese",
+        "Pâinea": "Bread",
+        "Orezul": "Rice",
+        "Mărul": "Apple"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce aliment se obține din grâu?␟Pâinea␟",
+      "kind": "General knowledge",
+      "text": "Which food is made from wheat?",
+      "correct": "Bread",
+      "answers": [
+        "Bread",
+        "Honey",
+        "Yogurt",
+        "Apple"
+      ],
+      "answerMap": {
+        "Pâinea": "Bread",
+        "Mierea": "Honey",
+        "Iaurtul": "Yogurt",
+        "Mărul": "Apple"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce fruct este galben și curbat?␟Banana␟",
+      "kind": "General knowledge",
+      "text": "Which fruit is yellow and curved?",
+      "correct": "Banana",
+      "answers": [
+        "Banana",
+        "Cherry",
+        "Plum",
+        "Strawberry"
+      ],
+      "answerMap": {
+        "Banana": "Banana",
+        "Cireșa": "Cherry",
+        "Pruna": "Plum",
+        "Căpșuna": "Strawberry"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce fruct este de obicei roșu și are semințe mici la exterior?␟Căpșuna␟",
+      "kind": "General knowledge",
+      "text": "Which fruit is usually red and has small seeds on the outside?",
+      "correct": "Strawberry",
+      "answers": [
+        "Strawberry",
+        "Banana",
+        "Pear",
+        "Plum"
+      ],
+      "answerMap": {
+        "Căpșuna": "Strawberry",
+        "Banana": "Banana",
+        "Para": "Pear",
+        "Pruna": "Plum"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce legumă este de obicei portocalie?␟Morcovul␟",
+      "kind": "General knowledge",
+      "text": "Which vegetable is usually orange?",
+      "correct": "Carrot",
+      "answers": [
+        "Carrot",
+        "Eggplant",
+        "Cabbage",
+        "Cucumber"
+      ],
+      "answerMap": {
+        "Morcovul": "Carrot",
+        "Vânăta": "Eggplant",
+        "Varza": "Cabbage",
+        "Castravetele": "Cucumber"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce legumă este de obicei verde și lungă?␟Castravetele␟",
+      "kind": "General knowledge",
+      "text": "Which vegetable is usually green and long?",
+      "correct": "Cucumber",
+      "answers": [
+        "Cucumber",
+        "Carrot",
+        "Beetroot",
+        "Cauliflower"
+      ],
+      "answerMap": {
+        "Castravetele": "Cucumber",
+        "Morcovul": "Carrot",
+        "Sfecla": "Beetroot",
+        "Conopida": "Cauliflower"
+      },
+      "imageAlt": ""
+    },
+    {
+      "key": "Cultură generală␟Ce obiect folosim pentru a mătura podeaua?␟Mătura␟",
+      "kind": "General knowledge",
+      "text": "What object do we use to sweep the floor?",
+      "correct": "Broom",
+      "answers": [
+        "Broom",
+        "Spoon",
+        "Pencil",
+        "Pillow"
+      ],
+      "answerMap": {
+        "Mătura": "Broom",
+        "Lingura": "Spoon",
+        "Creionul": "Pencil",
+        "Perna": "Pillow"
+      },
+      "imageAlt": ""
+    }
+  ]
+}

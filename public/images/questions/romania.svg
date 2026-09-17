@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <rect width="800" height="300" rx="28" fill="#f7f9ff"/>
+  <path d="M215 150 C245 100,305 83,360 95 C415 70,490 80,535 115 C590 115,625 145,605 178 C575 215,515 224,455 210 C400 235,330 220,300 195 C260 205,220 190,205 165 Z" fill="#ffe778" stroke="#e8bd28" stroke-width="6"/>
+  <circle cx="455" cy="145" r="13" fill="#ff5e67"/>
+  <text x="477" y="151" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#374568">București</text>
+  <g transform="translate(95 95)"><rect width="40" height="110" fill="#2457c5"/><rect x="40" width="40" height="110" fill="#ffd83d"/><rect x="80" width="40" height="110" fill="#e93f47"/></g>
+</svg>

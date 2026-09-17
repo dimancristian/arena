@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <rect width="800" height="300" rx="28" fill="#f8fbff"/>
+  <g transform="translate(100 150)"><circle r="55" fill="#ffd85a"/><g stroke="#f5ad20" stroke-width="12"><path d="M0-95V-75M0 75V95M-95 0H-75M75 0H95M-68-68L-54-54M54 54L68 68M68-68L54-54M-54 54L-68 68"/></g></g>
+  <g transform="translate(300 150)"><path d="M-55 65 C-45 0,-20-55,0-75 C20-55,45 0,55 65 Z" fill="#48d597"/><path d="M0-60V80" stroke="#357a59" stroke-width="9"/></g>
+  <g transform="translate(500 150)"><path d="M0-75 C65-60,75 10,20 55 C-20 85,-70 45,-65 0 C-60-35,-30-60,0-75Z" fill="#ff9b54"/><path d="M-10-45L20 65" stroke="#9b6239" stroke-width="9"/></g>
+  <g transform="translate(700 150)" stroke="#78b9ff" stroke-width="10" stroke-linecap="round"><path d="M0-75V75M-65-38L65 38M65-38L-65 38"/><circle r="12" fill="#78b9ff" stroke="none"/></g>
+</svg>

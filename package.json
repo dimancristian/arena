@@ -1,0 +1,26 @@
+{
+  "name": "math-arena",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Arena Matematica multiplayer cu întrebări FREE/PRO, licențe PayPal, panou profesor și protecție anti-sharing.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file=.env --watch server.js",
+    "hash-password": "node --env-file=.env scripts-hash-password.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "express-session": "^1.18.2",
+    "multer": "^2.0.2",
+    "bcrypt": "^6.0.0",
+    "express-rate-limit": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
+}
