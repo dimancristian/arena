@@ -365,7 +365,7 @@ const I18N = {
     startFailed: 'Nu am putut porni jocul.',
 
     correct: (points, streak) =>
-      `🌟 Bravo! +${points} stele!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`,
+      `🌟 Bravo! +${''+points} stele!${streak >= 2 ? ` 🔥 Combo x${streak}!` : ''}`,
 
     wrong: answer =>
       `💪 Aproape! Răspunsul era ${answer}. Seria pornește din nou.`,

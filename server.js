@@ -1183,9 +1183,10 @@ io.on('connection', socket => {
       const comboBonus = Math.min(50, Math.max(0, player.streak - 1) * 10);
       
       let total = 100.0 + speedBonus + comboBonus;
-      let points = total >= 150 ? 2 : 1;
-      
+      let points = total >= 150.0 ? 2 : 1;
+
       player.score += points; player.correct += 1;
+
       if (player.correct === 1) awardBadge(player, 'first', newBadges);
       if (player.streak >= 3) awardBadge(player, 'streak3', newBadges);
       if (player.streak >= 5) awardBadge(player, 'streak5', newBadges);
