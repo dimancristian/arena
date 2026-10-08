@@ -1181,7 +1181,7 @@ io.on('connection', socket => {
       const speedBonus = room.settings.noTimer ? 0 : Math.max(0, Math.round(50 * (1 - elapsed / maxMs)));
       player.streak = (player.streak || 0) + 1; player.bestStreak = Math.max(player.bestStreak || 0, player.streak);
       const comboBonus = Math.min(50, Math.max(0, player.streak - 1) * 10);
-      points = Math.floor((100.0 + speedBonus + comboBonus)/200.0); player.score += points; player.correct += 1;
+      let points = Math.floor((100.0 + speedBonus + comboBonus) / 100.0);player.score += points; player.correct += 1;
       if (player.correct === 1) awardBadge(player, 'first', newBadges);
       if (player.streak >= 3) awardBadge(player, 'streak3', newBadges);
       if (player.streak >= 5) awardBadge(player, 'streak5', newBadges);
