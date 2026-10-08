@@ -1183,7 +1183,7 @@ io.on('connection', socket => {
       const comboBonus = Math.min(50, Math.max(0, player.streak - 1) * 10);
       
       let total = 100.0 + speedBonus + comboBonus;
-      let points = total >= 150.0 ? 2 : 1;
+      points = total >= 150.0 ? 2 : 1;
 
       player.score += points; player.correct += 1;
 
