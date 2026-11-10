@@ -9,18 +9,33 @@ function validInt(value, fallback = null) {
   return Number.isInteger(n) ? n : fallback;
 }
 async function createGameStore(config = {}) {
+
+
   const pool = mysql.createPool({
-    host: config.host || process.env.DB_HOST || 'localhost',
+    host: config.host || process.env.DB_HOST,
     port: Number(config.port || process.env.DB_PORT || 3306),
     user: config.user || process.env.DB_USER,
     password: config.password ?? process.env.DB_PASSWORD,
     database: config.database || process.env.DB_NAME,
+
     waitForConnections: true,
-    connectionLimit: Number(config.connectionLimit || process.env.DB_POOL_LIMIT || 5),
+    connectionLimit: Number(
+      config.connectionLimit || process.env.DB_POOL_LIMIT || 5
+    ),
+    queueLimit: 0,
+
+    connectTimeout: 15000,
+
     timezone: 'Z',
     supportBigNumbers: true,
+
     ...config.poolOptions
   });
+
+  if (!process.env.DB_HOST && !config.host) {
+  throw new Error('DB_HOST nu este configurat');
+}
+
   try {
     await pool.query(`CREATE TABLE IF NOT EXISTS games (
       id VARCHAR(128) CHARACTER SET ascii COLLATE ascii_bin PRIMARY KEY,
