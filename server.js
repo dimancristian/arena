@@ -65,8 +65,8 @@ try { fs.chmodSync(LICENSES_FILE, 0o600); } catch { }
 
 
 // Dashboard MySQL: fișierele modulului sunt în afara directorului public.
-const { createGameStore } = require('./arena-dashboard-mysql-v1/store');
-const { createDashboardRouter } = require('./arena-dashboard-mysql-v1/router');
+const { createGameStore } = require('/store');
+const { createDashboardRouter } = require('/router');
 let dashboardStore = null;
 
 // Operațiile unei partide sunt serializate: start -> answers -> complete/abandon.
