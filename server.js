@@ -65,8 +65,8 @@ try { fs.chmodSync(LICENSES_FILE, 0o600); } catch { }
 
 
 // Dashboard MySQL: fișierele modulului sunt în afara directorului public.
-const { createGameStore } = require('./store');
-const { createDashboardRouter } = require('./router');
+const { createGameStore } = require('./arena-dashboard-postgres-v1/store');
+const { createDashboardRouter } = require('./arena-dashboard-postgres-v1/router');
 let dashboardStore = null;
 
 // Operațiile unei partide sunt serializate: start -> answers -> complete/abandon.
@@ -75,7 +75,7 @@ function queueDashboard(room, action) {
   if (!room.gameId || !dashboardStore) return;
   const prev = room.dashboardQueue || Promise.resolve();
   room.dashboardQueue = prev.catch(() => {}).then(action).catch(error => {
-    console.error('[Dashboard MySQL]', error);
+    console.error('[Dashboard PostgreSQL]', error);
   });
 }
 
@@ -1283,10 +1283,10 @@ async function startServer() {
     // Middleware-ul de sesiune și requireAdmin sunt definite mai sus.
     dashboardStore = await createGameStore();
     app.use('/admin/dashboard', requireAdmin, createDashboardRouter(dashboardStore));
-    console.log('Dashboard administrator MySQL inițializat.');
+    console.log('Dashboard administrator PostgreSQL inițializat.');
   } catch (error) {
-    console.error('Inițializarea Dashboard MySQL a eșuat:', error);
-    // Oprește pornirea pentru a nu ascunde probleme de conexiune/schema MySQL.
+    console.error('Inițializarea Dashboard PostgreSQL a eșuat:', error);
+    // Oprește pornirea pentru a nu ascunde probleme de conexiune/schema PostgreSQL.
     process.exitCode = 1;
     return;
   }

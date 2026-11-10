@@ -1,16 +1,15 @@
-
 {
   "name": "math-arena",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "private": true,
-  "description": "Arena Matematica multiplayer cu intrebari FREE/PRO, licente PayPal, Dashboard MySQL si protectie anti-sharing.",
+  "description": "Arena Matematica multiplayer FREE/PRO, PayPal si Dashboard PostgreSQL",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node --env-file=.env --watch server.js",
     "hash-password": "node --env-file=.env scripts-hash-password.js",
-    "check": "node --check server.js"
+    "check": "node --check server.js && node --check arena-dashboard-postgres-v1/store.js && node --check arena-dashboard-postgres-v1/router.js"
   },
   "dependencies": {
     "express": "^5.1.0",
@@ -19,12 +18,8 @@
     "multer": "^2.0.2",
     "bcrypt": "^6.0.0",
     "express-rate-limit": "^8.1.0",
-    "mysql2": "^3.15.3"
+    "pg": "^8.13.0"
   },
-  "engines": {
-    "node": ">=20 <27"
-  },
-  "allowScripts": {
-    "bcrypt@6.0.0": true
-  }
+  "engines": { "node": ">=20 <27" },
+  "allowScripts": { "bcrypt@6.0.0": true }
 }
