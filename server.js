@@ -64,6 +64,16 @@ try { fs.chmodSync(LICENSES_FILE, 0o600); } catch { }
 
 
 
+const { createGameStore } = require('./arena-dashboard-mysql-v1/store');
+const { createDashboardRouter } = require('./arena-dashboard-mysql-v1/router');
+
+// În funcția async de bootstrap a serverului, înainte de app.listen():
+const dashboardStore = await createGameStore();
+// requireAdmin trebuie să fie middleware-ul real din joc, bazat pe sesiunea serverului.
+app.use('/admin/dashboard', requireAdmin, createDashboardRouter(dashboardStore));
+
+
+
 // Traduceri EN statice pentru toate întrebările builtin.
 // Fișierul conține câte o variantă pentru fiecare combinație distinctă
 // (categorie + text + răspuns corect + imagine), astfel încât întrebările
