@@ -64,13 +64,21 @@ try { fs.chmodSync(LICENSES_FILE, 0o600); } catch { }
 
 
 
-const { createGameStore } = require('./store');
-const { createDashboardRouter } = require('./router');
+// Dashboard MySQL: fișierele modulului sunt în afara directorului public.
+const { createGameStore } = require('./arena-dashboard-mysql-v1/store');
+const { createDashboardRouter } = require('./arena-dashboard-mysql-v1/router');
+let dashboardStore = null;
 
-// În funcția async de bootstrap a serverului, înainte de app.listen():
-const dashboardStore = await createGameStore();
-// requireAdmin trebuie să fie middleware-ul real din joc, bazat pe sesiunea serverului.
-app.use('/admin/dashboard', requireAdmin, createDashboardRouter(dashboardStore));
+// Operațiile unei partide sunt serializate: start -> answers -> complete/abandon.
+// Jocul nu este întrerupt dacă MySQL devine temporar indisponibil.
+function queueDashboard(room, action) {
+  if (!room.gameId || !dashboardStore) return;
+  const prev = room.dashboardQueue || Promise.resolve();
+  room.dashboardQueue = prev.catch(() => {}).then(action).catch(error => {
+    console.error('[Dashboard MySQL]', error);
+  });
+}
+
 
 
 
@@ -1089,6 +1097,11 @@ function sendQuestion(room) {
   if (!room.settings.noTimer) room.timer = setTimeout(() => finishQuestion(room), room.settings.questionTime * 1000);
 }
 function finishGame(room) {
+  if (room.status !== 'playing') return;
+  if (room.gameId) {
+    const results = sortedPlayers(room).map((p, i) => ({ id: p.id, score: p.score, position: i + 1 }));
+    queueDashboard(room, () => dashboardStore.complete(room.gameId, results));
+  }
   room.status = 'finished';
   clearQuestionTimer(room);
   if (room.nextTimer) clearTimeout(room.nextTimer);
@@ -1104,6 +1117,9 @@ function removePlayer(socket) {
   room.players.delete(socket.id);
   socket.leave(code);
   if (room.players.size === 0) {
+    if (room.status === 'playing' && room.gameId) {
+      queueDashboard(room, () => dashboardStore.abandon(room.gameId));
+    }
     clearQuestionTimer(room);
     if (room.nextTimer) clearTimeout(room.nextTimer);
     rooms.delete(code);
@@ -1174,6 +1190,20 @@ io.on('connection', socket => {
     if (room.status !== 'lobby') return callback({ ok: false, message: 'Jocul este deja pornit.' });
     for (const player of room.players.values()) { refreshPlayerTier(player); player.score = 0; player.correct = 0; player.streak = 0; player.bestStreak = 0; player.badges = new Set(); }
     room.status = 'playing'; room.currentIndex = 0; room.usedQuestionIds.clear(); room.contentTier = roomContentTier(room);
+    if (dashboardStore) {
+      room.gameId = crypto.randomUUID();
+      room.dashboardQueue = Promise.resolve();
+      const game = {
+        id: room.gameId,
+        roomCode: room.code,
+        roomName: `Camera ${room.code}`,
+        grade: room.settings.grade,
+        mode: room.settings.mode,
+        totalQuestions: room.settings.questions,
+        players: [...room.players.values()].map(p => ({ id: p.id, name: p.name }))
+      };
+      queueDashboard(room, () => dashboardStore.start(game));
+    }
     callback({ ok: true, contentTier: room.contentTier }); io.to(room.code).emit('game:started', { contentTier: room.contentTier }); broadcastRooms();
     setTimeout(() => sendQuestion(room), 650);
   });
@@ -1184,6 +1214,17 @@ io.on('connection', socket => {
     refreshPlayerTier(player);
     room.answers.add(socket.id);
     const answer = String(payload.answer ?? ''), isCorrect = answer === room.currentQuestion.correct;
+    if (room.gameId) {
+      const event = {
+        gameId: room.gameId,
+        playerId: player.id,
+        questionKey: String(room.currentIndex + 1),
+        category: room.currentQuestion.kind,
+        correct: isCorrect,
+        responseTimeMs: Math.max(0, Date.now() - room.questionStartedAt)
+      };
+      queueDashboard(room, () => dashboardStore.answer(event));
+    }
     let points = 0;
     const newBadges = [];
     if (isCorrect) {
@@ -1226,6 +1267,7 @@ setInterval(() => {
   broadcastRooms();
 }, 10_000).unref();
 
+function installErrorHandler() {
 app.use((err, _req, res, _next) => {
   console.error(err.paypal || err);
   if (err instanceof multer.MulterError) return res.status(422).json({ ok: false, message: err.code === 'LIMIT_FILE_SIZE' ? 'Imaginea este prea mare. Maxim 4 MB.' : 'Fișierul nu a putut fi încărcat.' });
@@ -1234,8 +1276,28 @@ app.use((err, _req, res, _next) => {
   if (String(err.message).startsWith('PAYPAL_')) return res.status(502).json({ ok: false, message: 'PayPal nu a putut procesa cererea. Încearcă din nou.' });
   res.status(500).json({ ok: false, message: 'A apărut o eroare pe server.' });
 });
+}
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Arena Matematica rulează pe http://localhost:${PORT}`);
-  console.log(`Întrebări builtin: ${builtinQuestionBank().length}; FREE: primele ${FREE_QUESTION_LIMIT} din pool-ul selectat.`);
+async function startServer() {
+  try {
+    // Middleware-ul de sesiune și requireAdmin sunt definite mai sus.
+    dashboardStore = await createGameStore();
+    app.use('/admin/dashboard', requireAdmin, createDashboardRouter(dashboardStore));
+    console.log('Dashboard administrator MySQL inițializat.');
+  } catch (error) {
+    console.error('Inițializarea Dashboard MySQL a eșuat:', error);
+    // Oprește pornirea pentru a nu ascunde probleme de conexiune/schema MySQL.
+    process.exitCode = 1;
+    return;
+  }
+  installErrorHandler();
+  server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Arena Matematica rulează pe http://localhost:${PORT}`);
+    console.log(`Întrebări builtin: ${builtinQuestionBank().length}; FREE: primele ${FREE_QUESTION_LIMIT} din pool-ul selectat.`);
+  });
+}
+
+startServer().catch(error => {
+  console.error('Eroare fatală pornire server:', error);
+  process.exitCode = 1;
 });
