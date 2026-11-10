@@ -64,8 +64,8 @@ try { fs.chmodSync(LICENSES_FILE, 0o600); } catch { }
 
 
 
-const { createGameStore } = require('./arena-dashboard-mysql-v1/store');
-const { createDashboardRouter } = require('./arena-dashboard-mysql-v1/router');
+const { createGameStore } = require('./store');
+const { createDashboardRouter } = require('./router');
 
 // În funcția async de bootstrap a serverului, înainte de app.listen():
 const dashboardStore = await createGameStore();
