@@ -1,29 +1,254 @@
-<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dashboard | Arena Matematică</title>
-<style>
-:root{font-family:system-ui,-apple-system,sans-serif;color:#15223b;background:#f3f6fc}*{box-sizing:border-box}
-body{margin:0}.shell{max-width:1180px;padding:30px 18px;margin:auto}header{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
-small{color:#65718a}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:24px 0}.card,.panel{background:white;border:1px solid #dfe6f2;border-radius:17px;padding:20px;box-shadow:0 2px 8px #15223b09}
-.card strong{display:block;font-size:2rem;margin-top:8px}.panels{display:grid;grid-template-columns:2fr 1fr;gap:14px}.panel h2{font-size:1.1rem;margin:0 0 18px}
-.bars{display:flex;align-items:end;gap:8px;min-height:170px;border-bottom:1px solid #d5dfed;padding-top:14px}.bar-slot{flex:1;min-width:0;text-align:center;font-size:.7rem;color:#66718b}.bar{background:#6677eb;border-radius:7px 7px 0 0;margin:auto;width:70%;min-height:2px}
-table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{padding:13px 8px;text-align:left;border-bottom:1px solid #edf0f7}th{color:#65718a;font-weight:600}button,select{background:#fff;border:1px solid #c9d2e4;border-radius:9px;padding:9px 12px;cursor:pointer}button:hover{background:#ecf0ff}.table-wrap{overflow:auto}.muted{color:#65718a}.dialog{border:0;border-radius:16px;max-width:640px;width:calc(100% - 24px);padding:24px;box-shadow:0 20px 80px #0004}.dialog::backdrop{background:#18243c7c}
-@media(max-width:800px){.cards{grid-template-columns:repeat(2,1fr)}.panels{grid-template-columns:1fr}}@media(max-width:480px){.cards{grid-template-columns:1fr 1fr}.card{padding:14px}.card strong{font-size:1.5rem}}
-</style></head><body><main class="shell"><header><div><small>PANOU ADMINISTRATOR</small><h1>📊 Arena Matematică</h1><p class="muted">Statistici și istoric partide finalizate</p></div><button id="refresh">Actualizează</button></header>
-<section class="cards" aria-label="Indicatori"><div class="card"><small>Jocuri finalizate</small><strong id="games">—</strong></div><div class="card"><small>Identificatori de jucători</small><strong id="players">—</strong></div><div class="card"><small>Răspunsuri corecte</small><strong id="accuracy">—</strong></div><div class="card"><small>Durată medie</small><strong id="duration">—</strong></div></section>
-<section class="panels"><article class="panel"><h2>Jocuri în ultimele 30 de zile</h2><div id="trend" class="bars"></div></article><article class="panel"><h2>Jocuri pe clase</h2><div id="grades" class="muted">—</div></article></section>
-<section class="panel" style="margin-top:16px"><header><h2>Istoric partide</h2><label>Clasă <select id="grade"><option value="">Toate</option><option value="1">I</option><option value="2">II</option><option value="3">III</option><option value="4">IV</option></select></label></header><div class="table-wrap"><table><thead><tr><th>Finalizat</th><th>Cameră</th><th>Clasă</th><th>Jucători</th><th>Câștigător</th><th></th></tr></thead><tbody id="history"></tbody></table></div><p id="status" class="muted" role="status"></p><button id="prev">Înapoi</button> <span id="page"></span> <button id="next">Înainte</button></section></main>
-<dialog id="details" class="dialog"><header><h2>Detalii partidă</h2><button id="close">Închide</button></header><div id="detailContent"></div></dialog>
-<script>
-'use strict';const $=id=>document.getElementById(id);let page=1;let lastCount=0;
-const fmtDate=s=>s?new Date(s).toLocaleString('ro-RO'):'—';
-const node=(tag,text)=>{const x=document.createElement(tag);x.textContent=String(text??'—');return x};
-async function api(url){const r=await fetch(url,{credentials:'same-origin'});if(!r.ok)throw Error(r.status===401||r.status===403?'Acces neautorizat. Reautentifică-te.':'Eroare la încărcare ('+r.status+').');return r.json()}
-async function overview(){const d=await api('api/overview');$('games').textContent=d.games;$('players').textContent=d.players;$('accuracy').textContent=d.accuracy+'%';$('duration').textContent=Math.round(d.avg_seconds/60)+' min';
-const trend=$('trend');trend.replaceChildren();const days=new Map(d.trend.map(x=>[x.day,x.games]));const today=new Date();const points=[];for(let i=29;i>=0;i--){const day=new Date(Date.UTC(today.getUTCFullYear(),today.getUTCMonth(),today.getUTCDate()-i)).toISOString().slice(0,10);points.push({day,count:days.get(day)||0})}const max=Math.max(1,...points.map(x=>x.count));
-for(const p of points){const slot=node('div','');slot.className='bar-slot';slot.title=p.day+': '+p.count+' jocuri';const bar=node('div','');bar.className='bar';bar.style.height=(Math.max(2,p.count/max*145))+'px';slot.append(bar);trend.append(slot)}
-const grades=$('grades');grades.replaceChildren();for(const x of d.grades){grades.append(node('p',`Clasa ${x.grade??'—'}: ${x.games} jocuri`))}if(!d.grades.length)grades.textContent='Nu există partide finalizate.'}
-async function history(){const d=await api('api/games?page='+page+'&grade='+encodeURIComponent($('grade').value));lastCount=d.length;const tbody=$('history');tbody.replaceChildren();for(const g of d){const row=document.createElement('tr');for(const v of [fmtDate(g.finished_at),g.room_name||g.room_code||'—',g.grade||'—',g.players,g.winner||'—'])row.append(node('td',v));const cell=node('td','');const btn=node('button','Detalii');btn.addEventListener('click',()=>showDetails(g.id));cell.append(btn);row.append(cell);tbody.append(row)}$('page').textContent='Pagina '+page;$('prev').disabled=page===1;$('next').disabled=d.length<25;$('status').textContent=d.length?'':'Nu există jocuri pentru filtrul selectat.'}
-async function showDetails(id){try{const d=await api('api/games/'+encodeURIComponent(id));const area=$('detailContent');area.replaceChildren(node('p','Cameră: '+(d.game.room_name||d.game.room_code||'—')+' • '+fmtDate(d.game.finished_at)),node('h3','Clasament'));const table=node('table','');const head=document.createElement('tr');for(const h of ['Loc','Jucător','Scor','Corecte','Greșite'])head.append(node('th',h));table.append(head);for(const p of d.players){const row=document.createElement('tr');for(const v of [p.final_position,p.display_name,p.score,p.correct_answers,p.wrong_answers])row.append(node('td',v));table.append(row)}area.append(table,node('h3','Categorii'));for(const c of d.categories)area.append(node('p',`${c.category||'Fără categorie'}: ${c.correct}/${c.answers} corecte`));$('details').showModal()}catch(e){alert(e.message)}}
-async function load(){try{await Promise.all([overview(),history()])}catch(e){$('status').textContent=e.message}}
-$('refresh').addEventListener('click',load);$('grade').addEventListener('change',()=>{page=1;load()});$('prev').addEventListener('click',()=>{if(page>1){page--;load()}});$('next').addEventListener('click',()=>{if(lastCount===25){page++;load()}});$('close').addEventListener('click',()=>$('details').close());load();
-</script></body></html>
+<!doctype html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | Arena Matematică</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #15223b;
+            background: #f3f6fc
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0
+        }
+
+        .shell {
+            max-width: 1180px;
+            padding: 30px 18px;
+            margin: auto
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap
+        }
+
+        small {
+            color: #65718a
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 14px;
+            margin: 24px 0
+        }
+
+        .card,
+        .panel {
+            background: white;
+            border: 1px solid #dfe6f2;
+            border-radius: 17px;
+            padding: 20px;
+            box-shadow: 0 2px 8px #15223b09
+        }
+
+        .card strong {
+            display: block;
+            font-size: 2rem;
+            margin-top: 8px
+        }
+
+        .panels {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 14px
+        }
+
+        .panel h2 {
+            font-size: 1.1rem;
+            margin: 0 0 18px
+        }
+
+        .bars {
+            display: flex;
+            align-items: end;
+            gap: 8px;
+            min-height: 170px;
+            border-bottom: 1px solid #d5dfed;
+            padding-top: 14px
+        }
+
+        .bar-slot {
+            flex: 1;
+            min-width: 0;
+            text-align: center;
+            font-size: .7rem;
+            color: #66718b
+        }
+
+        .bar {
+            background: #6677eb;
+            border-radius: 7px 7px 0 0;
+            margin: auto;
+            width: 70%;
+            min-height: 2px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .9rem
+        }
+
+        td,
+        th {
+            padding: 13px 8px;
+            text-align: left;
+            border-bottom: 1px solid #edf0f7
+        }
+
+        th {
+            color: #65718a;
+            font-weight: 600
+        }
+
+        button,
+        select {
+            background: #fff;
+            border: 1px solid #c9d2e4;
+            border-radius: 9px;
+            padding: 9px 12px;
+            cursor: pointer
+        }
+
+        button:hover {
+            background: #ecf0ff
+        }
+
+        .table-wrap {
+            overflow: auto
+        }
+
+        .muted {
+            color: #65718a
+        }
+
+        .dialog {
+            border: 0;
+            border-radius: 16px;
+            max-width: 640px;
+            width: calc(100% - 24px);
+            padding: 24px;
+            box-shadow: 0 20px 80px #0004
+        }
+
+        .dialog::backdrop {
+            background: #18243c7c
+        }
+
+        @media(max-width:800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .panels {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:480px) {
+            .cards {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .card {
+                padding: 14px
+            }
+
+            .card strong {
+                font-size: 1.5rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="shell">
+        <header>
+            <div><small>PANOU ADMINISTRATOR</small>
+                <h1>📊 Arena Matematică</h1>
+                <p class="muted">Statistici și istoric partide finalizate</p>
+            </div><button id="refresh">Actualizează</button>
+        </header>
+        <section class="cards" aria-label="Indicatori">
+            <div class="card"><small>Jocuri finalizate</small><strong id="games">—</strong></div>
+            <div class="card"><small>Identificatori de jucători</small><strong id="players">—</strong></div>
+            <div class="card"><small>Răspunsuri corecte</small><strong id="accuracy">—</strong></div>
+            <div class="card"><small>Durată medie</small><strong id="duration">—</strong></div>
+        </section>
+        <section class="panels">
+            <article class="panel">
+                <h2>Jocuri în ultimele 30 de zile</h2>
+                <div id="trend" class="bars"></div>
+            </article>
+            <article class="panel">
+                <h2>Jocuri pe clase</h2>
+                <div id="grades" class="muted">—</div>
+            </article>
+        </section>
+        <section class="panel" style="margin-top:16px">
+            <header>
+                <h2>Istoric partide</h2><label>Clasă <select id="grade">
+                        <option value="">Toate</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                    </select></label>
+            </header>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Finalizat</th>
+                            <th>Cameră</th>
+                            <th>Clasă</th>
+                            <th>Jucători</th>
+                            <th>Câștigător</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="history"></tbody>
+                </table>
+            </div>
+            <p id="status" class="muted" role="status"></p><button id="prev">Înapoi</button> <span id="page"></span>
+            <button id="next">Înainte</button>
+        </section>
+    </main>
+    <dialog id="details" class="dialog">
+        <header>
+            <h2>Detalii partidă</h2><button id="close">Închide</button>
+        </header>
+        <div id="detailContent"></div>
+    </dialog>
+    <script>
+        'use strict'; const $ = id => document.getElementById(id); let page = 1; let lastCount = 0;
+        const fmtDate = s => s ? new Date(s).toLocaleString('ro-RO') : '—';
+        const node = (tag, text) => { const x = document.createElement(tag); x.textContent = String(text ?? '—'); return x };
+        async function api(url) { const r = await fetch(url, { credentials: 'same-origin' }); if (!r.ok) throw Error(r.status === 401 || r.status === 403 ? 'Acces neautorizat. Reautentifică-te.' : 'Eroare la încărcare (' + r.status + ').'); return r.json() }
+        async function overview() {
+            const d = await api('api/overview'); $('games').textContent = d.games; $('players').textContent = d.players; $('accuracy').textContent = d.accuracy + '%'; $('duration').textContent = Math.round(d.avg_seconds / 60) + ' min';
+            const trend = $('trend'); trend.replaceChildren(); const days = new Map(d.trend.map(x => [x.day, x.games])); const today = new Date(); const points = []; for (let i = 29; i >= 0; i--) { const day = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate() - i)).toISOString().slice(0, 10); points.push({ day, count: days.get(day) || 0 }) } const max = Math.max(1, ...points.map(x => x.count));
+            for (const p of points) { const slot = node('div', ''); slot.className = 'bar-slot'; slot.title = p.day + ': ' + p.count + ' jocuri'; const bar = node('div', ''); bar.className = 'bar'; bar.style.height = (Math.max(2, p.count / max * 145)) + 'px'; slot.append(bar); trend.append(slot) }
+            const grades = $('grades'); grades.replaceChildren(); for (const x of d.grades) { grades.append(node('p', `Clasa ${x.grade ?? '—'}: ${x.games} jocuri`)) } if (!d.grades.length) grades.textContent = 'Nu există partide finalizate.'
+        }
+        async function history() { const d = await api('/admin/dashboard/api/games?page=' + page + '&grade=' + encodeURIComponent($('grade').value)); lastCount = d.length; const tbody = $('history'); tbody.replaceChildren(); for (const g of d) { const row = document.createElement('tr'); for (const v of [fmtDate(g.finished_at), g.room_name || g.room_code || '—', g.grade || '—', g.players, g.winner || '—']) row.append(node('td', v)); const cell = node('td', ''); const btn = node('button', 'Detalii'); btn.addEventListener('click', () => showDetails(g.id)); cell.append(btn); row.append(cell); tbody.append(row) } $('page').textContent = 'Pagina ' + page; $('prev').disabled = page === 1; $('next').disabled = d.length < 25; $('status').textContent = d.length ? '' : 'Nu există jocuri pentru filtrul selectat.' }
+        async function showDetails(id) { try { const d = await api('/admin/dashboard/api/games/' + encodeURIComponent(id)); const area = $('detailContent'); area.replaceChildren(node('p', 'Cameră: ' + (d.game.room_name || d.game.room_code || '—') + ' • ' + fmtDate(d.game.finished_at)), node('h3', 'Clasament')); const table = node('table', ''); const head = document.createElement('tr'); for (const h of ['Loc', 'Jucător', 'Scor', 'Corecte', 'Greșite']) head.append(node('th', h)); table.append(head); for (const p of d.players) { const row = document.createElement('tr'); for (const v of [p.final_position, p.display_name, p.score, p.correct_answers, p.wrong_answers]) row.append(node('td', v)); table.append(row) } area.append(table, node('h3', 'Categorii')); for (const c of d.categories) area.append(node('p', `${c.category || 'Fără categorie'}: ${c.correct}/${c.answers} corecte`)); $('details').showModal() } catch (e) { alert(e.message) } }
+        async function load() { try { await Promise.all([overview(), history()]) } catch (e) { $('status').textContent = e.message } }
+        $('refresh').addEventListener('click', load); $('grade').addEventListener('change', () => { page = 1; load() }); $('prev').addEventListener('click', () => { if (page > 1) { page--; load() } }); $('next').addEventListener('click', () => { if (lastCount === 25) { page++; load() } }); $('close').addEventListener('click', () => $('details').close()); load();
+    </script>
+</body>
+
+</html>
